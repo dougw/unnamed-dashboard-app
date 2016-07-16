@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  unnamed dashboard
+//  unnamed dashboard app
 //
 //  Created by Dylan Steck on 7/14/16.
 //  Copyright © 2016 Dylan Steck. All rights reserved.
