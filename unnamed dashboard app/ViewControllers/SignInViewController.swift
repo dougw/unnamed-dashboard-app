@@ -11,6 +11,11 @@ import Foundation
 import UIKit
 //import RealmSwift
 class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 //    override func viewDidLoad(){
 //        super.viewDidLoad()
 ////        topLogo.alpha = 0.0
