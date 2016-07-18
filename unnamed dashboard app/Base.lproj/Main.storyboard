@@ -25,16 +25,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. 1234567890" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEP-OU-xHw">
-                                <rect key="frame" x="237" y="285" width="127" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXB-WV-kab">
-                                <rect key="frame" x="269" y="345" width="62" height="30"/>
-                                <state key="normal" title="Continue"/>
+                                <rect key="frame" x="207" y="345" width="186" height="30"/>
+                                <state key="normal" title="Sign In with Phone Number"/>
                                 <connections>
-                                    <segue destination="LLb-nh-YjX" kind="show" id="5rE-aH-Cv3"/>
+                                    <action selector="signinButtonPressed:" destination="rNc-sp-uLD" eventType="touchUpInside" id="F91-Q3-T99"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,68 +39,16 @@
                             <constraint firstItem="WLs-6M-t7V" firstAttribute="centerX" secondItem="DCK-oG-zm3" secondAttribute="centerX" id="Hez-ya-0Qu"/>
                             <constraint firstItem="iXB-WV-kab" firstAttribute="centerX" secondItem="DCK-oG-zm3" secondAttribute="centerX" id="f64-KF-ymV"/>
                             <constraint firstItem="WLs-6M-t7V" firstAttribute="centerY" secondItem="DCK-oG-zm3" secondAttribute="centerY" multiplier="0.8" id="gm2-TE-OUd"/>
-                            <constraint firstItem="aEP-OU-xHw" firstAttribute="centerX" secondItem="DCK-oG-zm3" secondAttribute="centerX" id="iK7-Ha-mMh"/>
-                            <constraint firstItem="aEP-OU-xHw" firstAttribute="centerY" secondItem="DCK-oG-zm3" secondAttribute="centerY" id="ljZ-Z4-mmy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WdF-sK-IAx"/>
                     <connections>
-                        <outlet property="phoneNumberTextField" destination="aEP-OU-xHw" id="t8w-0f-opJ"/>
+                        <outlet property="signinButton" destination="iXB-WV-kab" id="Ily-nw-4Vb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3c-ps-O7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-550" y="-996"/>
-        </scene>
-        <!--Activation Code View Controller-->
-        <scene sceneID="NcB-4g-aMN">
-            <objects>
-                <viewController id="LLb-nh-YjX" customClass="ActivationCodeViewController" customModule="unnamed_dashboard_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nsy-ZN-6M4"/>
-                        <viewControllerLayoutGuide type="bottom" id="tXg-VU-toJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uv5-2C-zLA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-JY-REm">
-                                <rect key="frame" x="240" y="285" width="120" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBI-2t-K8X">
-                                <rect key="frame" x="269" y="345" width="62" height="30"/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <segue destination="oRG-iK-wzB" kind="show" id="REh-iX-4lG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-Xz-sps">
-                                <rect key="frame" x="240" y="230" width="121" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="lBI-2t-K8X" firstAttribute="centerX" secondItem="Uv5-2C-zLA" secondAttribute="centerX" id="7Oq-gC-zjL"/>
-                            <constraint firstItem="xaL-JY-REm" firstAttribute="width" secondItem="Uv5-2C-zLA" secondAttribute="width" multiplier="0.2" id="CgI-nq-RpR"/>
-                            <constraint firstItem="xaL-JY-REm" firstAttribute="centerY" secondItem="Uv5-2C-zLA" secondAttribute="centerY" id="G22-3X-Vnd"/>
-                            <constraint firstItem="Awq-Xz-sps" firstAttribute="centerX" secondItem="Uv5-2C-zLA" secondAttribute="centerX" id="Jvo-Iw-XnP"/>
-                            <constraint firstItem="lBI-2t-K8X" firstAttribute="centerY" secondItem="Uv5-2C-zLA" secondAttribute="centerY" multiplier="1.2" id="Y4q-3J-4IR"/>
-                            <constraint firstItem="Awq-Xz-sps" firstAttribute="centerY" secondItem="Uv5-2C-zLA" secondAttribute="centerY" multiplier="0.8" id="n8q-Ci-54z"/>
-                            <constraint firstItem="xaL-JY-REm" firstAttribute="centerX" secondItem="Uv5-2C-zLA" secondAttribute="centerX" id="pZ7-29-wH6"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="activationCodeTextField" destination="xaL-JY-REm" id="RA6-5b-Orv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qt9-Pi-Fd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-550" y="-194"/>
         </scene>
         <!--Connect Accounts View Controller-->
         <scene sceneID="zdd-Sh-7yH">
@@ -200,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bs4-br-J8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1396" y="582"/>
+            <point key="canvasLocation" x="-1782" y="-996"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="lEQ-Kw-Wel">
@@ -447,7 +390,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="lu6-Na-CXO"/>
         <segue reference="AXY-an-czx"/>
-        <segue reference="Orn-Uz-Mdj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,44 +7,53 @@
 //
 
 import Foundation
-//import CopperKit
+import CopperKit
 import UIKit
 //import RealmSwift
 class SignInViewController: UIViewController {
     
-    @IBOutlet weak var phoneNumberTextField: UITextField!
-    override func viewDidLoad() {
+    @IBOutlet weak var signinButton: UIButton!
+     static let DefaultScopes: [C29Scope] = [.Name, .Picture, .Email, .Phone]
+    // Reference to our CopperKit singleton
+    var copper: C29Application?
+    // Instance variable holding our desired scopes to allow changes, see showOptionsMenu()
+    var desiredScopes: [C29Scope]? = ViewController.DefaultScopes
+    override func viewDidLoad(){
         super.viewDidLoad()
+//        topLogo.alpha = 0.0
+//        UIView.animateWithDuration(3.0) {
+//          self.topLogo.alpha = 1.0
+       }
+    // get a reference to our CopperKit application instance
+    // get a reference to our CopperKit application instance
+    @IBAction func signinButtonPressed(sender: AnyObject){
+    copper = C29Application.sharedInstance
+    // Required: configure it with our app's token
+    copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
+    // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
+    copper!.scopes = desiredScopes
+    // OK, let's make our call
+        copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
+            switch result {
+            case let .Success(userInfo):
+                self.setupViewWithUserInfo(userInfo)
+            case .UserCancelled:
+                print("The user cancelled.")
+            case let .Failure(error):
+                print("Bummer: \(error)")
+            }
+        })
     }
-//    override func viewDidLoad(){
-//        super.viewDidLoad()
-////        topLogo.alpha = 0.0
-////        UIView.animateWithDuration(3.0) {
-////            self.topLogo.alpha = 1.0
-////        }
-//    // get a reference to our CopperKit application instance
-//    // get a reference to our CopperKit application instance
-//    let copper = C29Application.sharedInstance
-//    // Required: configure it with our app's token
-//copper.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
-//    // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
-//    copper.scopes = [.Name, .Email, .Phone]
-//    // OK, let's make our call
-//    copper.login(withViewController: self, completion: { (result: C29UserInfoResult) in
-//    switch result {
-//    case let .Success(userInfo):
-//    // if we get here then the user completed successfully
-//    let userId = userInfo.userId
-//    let name = userInfo.fullName
-//    let picture = userInfo.picture
-//    let email = userInfo.emailAddress
-//    let phone = userInfo.phoneNumber
-//    // continue to inspect userInfo and take it away from here...
-//    case .UserCancelled:
-//    print("The user cancelled.")
-//    case let .Failure(error):
-//    print("Bummer: \(error)")
+//    
+//    func setupViewWithUserInfo(userInfo: C29UserInfo) {
+//        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
+//        self.nameLabel.text = userInfo.fullName
+//        self.emailLabel.text = userInfo.emailAddress
+//        self.phoneLabel.text = userInfo.phoneNumber
+//        self.userIdLabel.text = userInfo.userId
+//        // flip our signout state
+////        self.signedInView.hidden = false
+////        self.signedOutView.hidden = true
 //    }
-//    })
-//}
 }
+

@@ -1,0 +1,1398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008C3A7CCF4D85AA65211A6253F26B37 /* C29RequestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69036567188D7CD977C1ED004697284 /* C29RequestDataSource.swift */; };
+		0775441376AEF308BA920A4F311AB580 /* NBPhoneNumberDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = A6451D48EF29D56AA1FFF250BB58B9EA /* NBPhoneNumberDesc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081801847A1F122F4595B5F17FE8DEBF /* NBMetadataCoreTest.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DA73D0C4DD484071F5B0600C77DD27 /* NBMetadataCoreTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A5AFDDAC7DFD30E6B2C65FD034351C0 /* CopperAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA8D7FCC85B6936D37DB4EF73E91D1B /* CopperAlertTableViewCell.swift */; };
+		0DD6C0B9EE03B10BED92C0F6FC38BF41 /* NBNumberFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDCE9DBAE631CB566ED8DE9DA16F013 /* NBNumberFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E11354EF4191553EE9D11D097E69648 /* C29UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E2C71FF49C5D0917EE0E9898FD296C /* C29UserInfo.swift */; };
+		0E706D8817DE7EC3E810170DAFA03B37 /* NBMetadataCoreMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA5672218B5A9280649C0F35C029DBF /* NBMetadataCoreMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E94E0C931AE02C63496A9C5B9AD806C /* C29RequestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76553B183ABE1E1BF25EEA6EEC4EF860 /* C29RequestStack.swift */; };
+		0F43D6F21E5832BB56F682C9DF748B9C /* NBMetadataCoreMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC09454D82043055E6147E1B22FC589 /* NBMetadataCoreMapper.m */; };
+		11D08CB0D46CB4B586BC8CB8701A6B80 /* NBMetadataCoreTestMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A89F200885B906031F23AF2A30073546 /* NBMetadataCoreTestMapper.m */; };
+		1308494361692DFCE37C5AFAD3AFA62A /* C29Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A56353F190B565A0D3F873F77EA412 /* C29Verification.swift */; };
+		1398861427F503D24FC3DC453BA45430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		13F6E8766BC4FD6BA189B98BFF0C78FC /* C29API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69F55A8402C07EAA1BAA7EDA6F99DF /* C29API.swift */; };
+		1811D1A3AF7BC7257371E78A8564D82C /* NBMetadataCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A62C2744695AB279EE5145881C084 /* NBMetadataCore.m */; };
+		1A515E439ABDACB4682056F22C48692C /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F313067FBDE89190F03B2294C8B08DC /* NBPhoneNumberUtil.m */; };
+		1D54473559F8531EC1BB979D5FEF1DD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C68992DBCB9FEBAC4FB2D30C82F122 /* Images.xcassets */; };
+		1F611ABD4D39375EDB5A105597B7F250 /* CopperAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EBB3A5FA0B9D27FBFFEED8C1E8FC3 /* CopperAlertViewController.swift */; };
+		21A10AC81179724E911578FF6AA2B725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		21CE5834519864A146B388A00C07FE63 /* UIView+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6A55753D496631C0868A442BED1AF4 /* UIView+Copper.swift */; };
+		223CEE9A133283B0547A19629A152739 /* Mixpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBAAC71C63E49F92D35AA5E2C43B51 /* Mixpanel.swift */; };
+		251ACD4448E8CE5F1A35263F962F98DA /* C29CopperworksApplicationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ADEF45F2A1FB18967F15FBFE468E85 /* C29CopperworksApplicationCache.swift */; };
+		2649767D94BC1C6327A457614211A215 /* Saveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E47C733390BF4237AF2E87EB4F4AC /* Saveable.swift */; };
+		2742C28C7677BEDB1CBF68FCCB1586ED /* NBMetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C98709A871E77EA141CFACE661C954 /* NBMetadataHelper.m */; };
+		2D598551C39A0A36FCF3791B4A235FCB /* CopperSignatureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136A2E7211CE1795FE57B17FBA5A0ED /* CopperSignatureRecord.swift */; };
+		2D5A9D7AD5AF71E68C27FB33B5AD4993 /* NBPhoneMetaDataGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 18712132F4309482091B7B16F524917D /* NBPhoneMetaDataGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F95BB8BA965AF6F52472C2D79E79224 /* CopperKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB8490F8A69841B42E5D0F77CD264178 /* CopperKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		356D2348BC734D9A5DEF9542F7DF9E90 /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DD7770D0773A009ED9E7457C2EA82C /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35E0A6E28829D083D41C283BCAE9AD71 /* NBPhoneNumberDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = 316DDC5CC09516B939580A88B9CC64EE /* NBPhoneNumberDesc.m */; };
+		3755071A26D26180204D6471CB98F591 /* CopperAlertPhoneNumberEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA222C4B56F7DE38F6836399D07C12 /* CopperAlertPhoneNumberEntryCell.swift */; };
+		379BF69357EC4559A8DF77C671E92913 /* C29Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4D655609BAED4780EDEC074B5F878 /* C29Text.swift */; };
+		3BD5EA749EA077092496AF621EAAF978 /* CopperRecordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F73287F8680ABBF45FE6F402A629CE /* CopperRecordObject.swift */; };
+		3C0949D161E230AD75D9A782A20822E5 /* CopperUsernameRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A1EBF79DFE3059A703454766BB2B3 /* CopperUsernameRecord.swift */; };
+		3DCB78051EEA93D65F52E857A3CA8AD7 /* UIImage+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF2362BD079D9CE8E61C753D4F2CF3 /* UIImage+Copper.swift */; };
+		3E326C555D46F1A8EF36961E6A461727 /* CopperDateRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436E7391FC8914B6BB603C98299F988 /* CopperDateRecord.swift */; };
+		3E65C6C8269A2C8AC791F5D1B89EC45E /* NBAsYouTypeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 981E2F71C1C4715F671BFDAABEB383CC /* NBAsYouTypeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E794FFB7A28D9C0337B7A8E667241F2 /* C29IdentityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045402BFAA78AB173846F224117FC652 /* C29IdentityDataSource.swift */; };
+		3FB1D90628E942F2C1374B348449AD1A /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AA21CB025FCDABE27B23C43A07835 /* JWT.swift */; };
+		4113C735B516102FC508633B644F5A4B /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E445015C12BC116C8B824B223DB8422 /* NBAsYouTypeFormatter.m */; };
+		44AF20C9C2E6B291110DB32B52C3835A /* NSURL+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97426266D824F617B1C0F68566C572 /* NSURL+Copper.swift */; };
+		453BEEFDD720A8175EC29404DB193256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		45F753208CBC51766D2E449B4F8DBE12 /* C29NetworkActivityRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA86BEE78B52543933ED3F91562FBB2 /* C29NetworkActivityRegistry.swift */; };
+		492F0C27EACC837B90765033E19E5D98 /* C29Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA8BBE616148DF7DAF461EF7A90A40 /* C29Logger.swift */; };
+		4AB4C06DF44C878452DB03E565F193BB /* NSArray+NBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E658BE3C6169310784C870A33C2EE1 /* NSArray+NBAdditions.m */; };
+		4F0E7905A530514EB7FE67FCB2B0CA3A /* C29Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C1134BA8308F7A9A3B6BE1521538F /* C29Scope.swift */; };
+		5078C4242812F89E5409F9223234CA96 /* Pods-unnamed dashboard appTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E3D6B65E781E497EBDEC1A9819F542 /* Pods-unnamed dashboard appTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512C7BA1C26B3EAC49EBBE8D2745CA9C /* NBMetadataCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CDEAD8521D91CB41EF1ED6F9D84C36 /* NBMetadataCoreTest.m */; };
+		5573B10A517A29570D1D288D553D8025 /* C29SessionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9512B98CA126C3D6048A6654EE1EB010 /* C29SessionDataSource.swift */; };
+		557A4D79F1266955FF65811E235DC331 /* CountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D58C1DBF3CE9084AF356A42003F89 /* CountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		588CA572BE95DFB84763901B564A143C /* CopperPhoneRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C82C14093D41A3345E230342E18E71 /* CopperPhoneRecord.swift */; };
+		5940D4C53B7F5786D55594DD8319CD99 /* C29Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D671FDC912A988655C8A590F442FC09 /* C29Config.swift */; };
+		5A249A75404A57E7E66A9D3520E02B91 /* NetworkActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2AFE46D2F7D843008256477A3DFC /* NetworkActivityIndicatorView.swift */; };
+		5BEC2FC110C8693A41252DB1F76A4983 /* C29QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B30E891566CAE9A8B6BBECCFB73E1 /* C29QRCode.swift */; };
+		657EE755C63CD12FB11131C3429158B6 /* Pods-unnamed dashboard appUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE63D71A9D6FA1CD807100EEE9245D7 /* Pods-unnamed dashboard appUITests-dummy.m */; };
+		6677DFC762B983705675CF14035995A5 /* C29CopperworksApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E43DE68719D6BA63B99DF525863599E /* C29CopperworksApplication.swift */; };
+		6C130AE0340410FE2CCB19C574F01DDA /* CopperAlertTwoActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C6F7354E23E9DF5A119C8F8EFB2FE2 /* CopperAlertTwoActionButtonCell.swift */; };
+		6D15C25F914AADBBA357010A81757816 /* C29BrowserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F90E0734BEF9ABFA3161A89A439CF6E /* C29BrowserLoginViewController.swift */; };
+		70EDB22E0B65989AAA3667B0ACEABF17 /* C29UserDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F6CDBA5976C2327A11C7174A93457 /* C29UserDevice.swift */; };
+		7633AABB51BD593E8F2C0716F7A21B64 /* NBPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3E3EA6A8F7763B730209767E495648 /* NBPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DCC1E29D97003B784B5BDD080AECF66 /* CopperAlertMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7CD155BC6965E7B6EA58F08773DAA /* CopperAlertMessageCell.swift */; };
+		7DEFE0C102D6CA773B823BBB21022B80 /* CopperAlertImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5132FFC28F49FA92BBF1EB4AE1277D3D /* CopperAlertImageCell.swift */; };
+		7E921B288970373588CBEB2968361608 /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A72F389F2F31F413EEE6741764DF4E /* NBNumberFormat.m */; };
+		7F771AE285F8AA12BD931D27660B2A1A /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD8AE14FD47450C4562824A09C6EDC /* JWTDecode.swift */; };
+		81B858108B74EBF8ACF3BBE1748C3B11 /* NetworkActivityIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9917A97005C84D44DF8A27CB8AAC1C9 /* NetworkActivityIndicatorView.xib */; };
+		825F1046BA4B2533D392F940D81FD765 /* CountryPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E69DD60A16B93FB8176A1257891066 /* CountryPicker.m */; };
+		82F1EE68D2D7AEDF1A5828E3D0C38F01 /* C29Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDBBDC5EDD88CB8191945A2D024A7A /* C29Application.swift */; };
+		839DB09C0BABE7B03E13E2AB37FB6480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		84AE334BF322C2A8EF76B1042E208D89 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD28010090790336EB5E55914BFCCD1 /* Errors.swift */; };
+		851FAB5F26B7C1D74342F51522FBFA65 /* Pods-unnamed dashboard app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD30FC2AA34AE686B5CB47F145197A7C /* Pods-unnamed dashboard app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		863D9227A3D8B201B6261880FA1D6C69 /* CopperContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35068DC35431088FA405E2048DCEA5E0 /* CopperContact.swift */; };
+		879483EB246BCEAFC6776F1682C9C554 /* C29UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE85510A8220B167359FED1786FAA /* C29UserInfoCoordinator.swift */; };
+		891D82330D56FBAD6043839AC3507EC0 /* NBMetadataCoreTestMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7177C77CCA00073C74FC044AE7A794C7 /* NBMetadataCoreTestMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897DC7234AD06AA928562157D298C80B /* Pods-unnamed dashboard appUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7126592617C890227112F25CB37E40ED /* Pods-unnamed dashboard appUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A757B162F614F6CE617978F9886BB11 /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8553AE26F77D336CECCB75C62F32E5 /* NBPhoneNumber.m */; };
+		8ADECC05ACEDB71947E5DFACFEF79DB7 /* CopperAlertNumberPadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F654CCA403EF2F75FB260D55E6493 /* CopperAlertNumberPadCell.swift */; };
+		8C4C5E6530DEC068D0F4CE22DF6E1158 /* C29CopperworksApplicationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82F9536045562D4647B03B353449E6 /* C29CopperworksApplicationDataSource.swift */; };
+		8CE80F73108F6FF9752DEF685750B981 /* C29ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EF831FDDF483EC735080D63D68D9C /* C29ImageCache.swift */; };
+		8E1856A3E283FEF3C916C08A07D0C262 /* CopperAlertTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD7DD921FF98DCA5B62DD2F242B561 /* CopperAlertTitleCell.swift */; };
+		8EB6AC2E8902B312AE147B26FD4B2A8E /* C29TouchAndHoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440839D406CE005BAD502B0EE444DC5D /* C29TouchAndHoldButton.swift */; };
+		8F274203BF5C80D01BB02C49A0DBE4DC /* CopperKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A29127D10009083BA158F98710D67F18 /* CopperKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9312EE3A14A0AAB9268335454399F631 /* UILabel+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993CCAD4DAAB73417436D0CC72F9F15 /* UILabel+Copper.swift */; };
+		97F7B0C0422ACE787C299A3624DAD420 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49506C5E475ACCF3241CBE3537A1C098 /* SFHFKeychainUtils.m */; };
+		9FF46B718D9674C8CADA4C638460C8B7 /* C29RecordCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37721AA521251C63AB41DAFDAFF5003 /* C29RecordCache.swift */; };
+		A2742EF1F65BCC1B01A373302C060353 /* CopperKitEntryControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB30F48565A6B1ADA19B3BF7D27E48A /* CopperKitEntryControl.swift */; };
+		A89BD0FD74A66B333D1D34B50EF4D856 /* CopperKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C726BA3B5F4AA20C3558F5F117227C01 /* CopperKit-dummy.m */; };
+		A8DCBC9835C9EA36418D6BA542691A8F /* CopperKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 82CF6E1781DBDE53A73EDEC859A30515 /* CopperKit.bundle */; };
+		AA8717FBF56B8AC3A3DD636504C4ED8E /* NBPhoneMetaDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A7EFF0AF5DFB57B40269EE6B277C3F /* NBPhoneMetaDataGenerator.m */; };
+		AE94790A1F7299A2E518E0887BD98055 /* CopperAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6853A35D40B401F8A597A561DE17D986 /* CopperAlert.storyboard */; };
+		AF423E0A307CF0715388F487685624D3 /* ModalCardAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B637C57407C18F04DF2C8D78AD7A49 /* ModalCardAnimatedTransitioning.swift */; };
+		AFAB770D284185DD01F54A73A23F2FD4 /* C29UserInfoSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755515C808B474C25745DF8AF6B7C4F /* C29UserInfoSafariViewController.swift */; };
+		B27BA303524993331E08D8D3CA7B0573 /* String+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670786563AF35D060BD282C507EE302E /* String+Copper.swift */; };
+		B35678C93C3EB8E988D94D0E7C1D5854 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DD02F41C1AB61E729DC9CD50A4F50F /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B462313FC374A113CF9445DA23621332 /* CopperPictureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E199C6FFB8E0C1151525A37711DD1C9 /* CopperPictureRecord.swift */; };
+		B52E84FF4AC8061DB5F878AC03A07708 /* C29User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4F10834315A6DCA3FBFF7127A6EA /* C29User.swift */; };
+		B5BE04AB7B47B3F1BF56C55397B81AD3 /* UIColor+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A41A20610FD48C800E39DB56B614B /* UIColor+Copper.swift */; };
+		B889AABBF4D519CDB9A0087592EB5448 /* CopperAlertActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BA3F7640645E2DDBB0971B193D78B /* CopperAlertActionButtonCell.swift */; };
+		BC43DD592C9A5ACBE400DD3C9F367583 /* Pods-unnamed dashboard app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BB27E376A250CC97B872AF940890A /* Pods-unnamed dashboard app-dummy.m */; };
+		C185B0F9783BB55B9301D85E214C018A /* C29AuthenticationAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD364F6D6176A3A4E99AA51DF5A09F4 /* C29AuthenticationAlertController.swift */; };
+		C309E724CEE0E25687E00189A067384B /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA41AEB566DFE8D6443931A6DE69B3 /* Loadable.swift */; };
+		C3174EF60A11F718E44325AD90C176C9 /* C29Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC5FA66653246CC5D7BC3E81C776D12 /* C29Networking.swift */; };
+		C5E52B38952858EDCB28813DE9AE76C6 /* CopperContactsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C986EC7E3C4647C4396CBC8797F92C0 /* CopperContactsRecord.swift */; };
+		C72A60A57E657B87DD3076AA6F2D59C3 /* C29Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55BF4C057AF3AF2411A3BE7D472405 /* C29Utils.swift */; };
+		C83151AD5755D429FE8E7A5D00BDE4C3 /* CopperAlertViewTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC126C8F6BE13BDAF9799939ADE15 /* CopperAlertViewTableManager.swift */; };
+		C94C8957430D3334E7CF29F076652818 /* NBPhoneMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = E638F15F2895B80DFE629BCDA726B52A /* NBPhoneMetaData.m */; };
+		C9D8E85ED4FA9EB14297BA30A1F7B4C5 /* C29Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E824B27D3B55DC566586717E3CBB1 /* C29Bytes.swift */; };
+		CA3CD34E540E839A832CC7105B498918 /* NBMetadataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A63C1E1CC94A60F439091FF908A8C6 /* NBMetadataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE637EDAB269F0DF6245FA83398D88F8 /* ModalCardTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496913E9D2DB76428CF18B3466A7AC7 /* ModalCardTransitioningDelegate.swift */; };
+		CF6B4DBAD0B9B0C4BFD22A564FB1F8F5 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C29AEB241C808676B592549700CE488 /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5A59FF134EF3A715162D03AF2C792BE /* NBPhoneNumberUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4949DCA8509163BEAE390B5B9BEA0ADB /* NBPhoneNumberUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB25E7CCD5429B8DE384E763E871181 /* CopperAlertDigitEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50F9675B3766550063F1E38A770D7 /* CopperAlertDigitEntryCell.swift */; };
+		DEA8B56227E8BB8142B5F46868C7BBEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		E02361FCAD69A951FD82F99B2223D342 /* NBPhoneNumberDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BCFD6EA15267F897E600AE47383BC59C /* NBPhoneNumberDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E06F54E730F0796E59AD33127728D56B /* CopperAddressBookProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C2767EBCBB1DD5DD2B7548A08693 /* CopperAddressBookProxy.swift */; };
+		E16D63D5412E1DF2BAB9D725592F9DFE /* C29ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B0F4CF9090EF84C10CF8B470FF332 /* C29ImageAssets.swift */; };
+		E21FE3651ACADABA6D9CFEDF6E56703A /* CopperNameRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C5A08FD32DA341175180126B50D6C /* CopperNameRecord.swift */; };
+		E60E339D4DC45210BA93A632AFCA3B23 /* WebKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E5B4F9633BC9946745F6512AA381A8 /* WebKit.storyboard */; };
+		E668847CEA4A1FACE69F8750A4C02722 /* CopperAddressRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3138C3BB5DE3DAF26F62B03CEB584 /* CopperAddressRecord.swift */; };
+		E8FEEE4A10F878AFBF79724FD1679145 /* C29Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D487DC2AB3A3F6B5AAFCDB775AAC5C1 /* C29Alert.swift */; };
+		EBE9A3F93E8D6512D94F7E582A7B4BE0 /* CopperEmailRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3F5428CB8C522DCF3531E438BD5D0 /* CopperEmailRecord.swift */; };
+		EC700B7AC5F00DE5CEF50C0BF30A10DC /* Array+Copper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746A7BBDA4DB2D7D57A9F458362701A /* Array+Copper.swift */; };
+		EE5D8F7990D60AE3790BC8A0BAC34B29 /* NBMetadataCore.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5397CEA9AA0D4C78B0D5402F27D46A /* NBMetadataCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F23BD5DDD29E07C3AA2143BF9A261FD6 /* C29OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E1DDE6C693A2727ABF379EA89E32B /* C29OAuth.swift */; };
+		F29DD8CCFB6D73BE9675F1BA81A2FADD /* Pods-unnamed dashboard appTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3D2B18636088E9E28227BA50C84E4 /* Pods-unnamed dashboard appTests-dummy.m */; };
+		F312F95167B97E6F269347F09CBB9268 /* ModalCardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D652C2C8D6789AEA2D7B955A9699BC30 /* ModalCardPresentationController.swift */; };
+		F6B67BB0495E91BA4094386B104B3457 /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8414FE76A074D54EDF029ECE25891 /* WebKitViewController.swift */; };
+		F8BCAA39C13D756994FB1B83A7D71282 /* ContactSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6696FB068B9F378D573ACC0237D37 /* ContactSource.swift */; };
+		FB68B3E31D1E09816584E61C311F4ACB /* C29Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62FC23830D6A0D48F278C59A1ED3E6E /* C29Request.swift */; };
+		FED49473C1DE59B7AE49B9EA430989CC /* C29RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386367FA72727E2078EE00C2566B8049 /* C29RoundedView.swift */; };
+		FF80063B1E605424272D7956133357CA /* C29Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC07F890F0CBECAF07C0371D42246FF /* C29Records.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9836D1AE8B9D216A236A2E1C4BB8791B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D80D217185DC99B56420B81C76F59D3;
+			remoteInfo = CopperKit;
+		};
+		A341F833485203A874BE87FB884EE1FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C662D2229AD271442E1A95D26539C956;
+			remoteInfo = "CopperKit-CopperKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045402BFAA78AB173846F224117FC652 /* C29IdentityDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29IdentityDataSource.swift; path = CopperKit/C29IdentityDataSource.swift; sourceTree = "<group>"; };
+		05C6F7354E23E9DF5A119C8F8EFB2FE2 /* CopperAlertTwoActionButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertTwoActionButtonCell.swift; path = CopperKit/CopperAlertTwoActionButtonCell.swift; sourceTree = "<group>"; };
+		09BE4F10834315A6DCA3FBFF7127A6EA /* C29User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29User.swift; path = CopperKit/C29User.swift; sourceTree = "<group>"; };
+		0B6BB27E376A250CC97B872AF940890A /* Pods-unnamed dashboard app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-unnamed dashboard app-dummy.m"; sourceTree = "<group>"; };
+		0BD3086474CBBC74020E3E685BE3B869 /* Pods-unnamed dashboard appUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard appUITests-resources.sh"; sourceTree = "<group>"; };
+		0EB30F48565A6B1ADA19B3BF7D27E48A /* CopperKitEntryControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperKitEntryControl.swift; path = CopperKit/CopperKitEntryControl.swift; sourceTree = "<group>"; };
+		114E824B27D3B55DC566586717E3CBB1 /* C29Bytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Bytes.swift; path = CopperKit/C29Bytes.swift; sourceTree = "<group>"; };
+		12DDBBDC5EDD88CB8191945A2D024A7A /* C29Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Application.swift; path = CopperKit/C29Application.swift; sourceTree = "<group>"; };
+		16E3D6B65E781E497EBDEC1A9819F542 /* Pods-unnamed dashboard appTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-unnamed dashboard appTests-umbrella.h"; sourceTree = "<group>"; };
+		17CDEAD8521D91CB41EF1ED6F9D84C36 /* NBMetadataCoreTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTest.m; path = CopperKit/NBMetadataCoreTest.m; sourceTree = "<group>"; };
+		18712132F4309482091B7B16F524917D /* NBPhoneMetaDataGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneMetaDataGenerator.h; path = CopperKit/NBPhoneMetaDataGenerator.h; sourceTree = "<group>"; };
+		188C49F5DEEC0349904548A54C9E4CB5 /* CopperKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CopperKit.modulemap; sourceTree = "<group>"; };
+		18A4D95FCEEFA5B0F95B5387813132CE /* Pods_unnamed_dashboard_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195E269DB606E9D3B007186BE3A2451A /* Pods-unnamed dashboard appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A55BF4C057AF3AF2411A3BE7D472405 /* C29Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Utils.swift; path = CopperKit/C29Utils.swift; sourceTree = "<group>"; };
+		1D487DC2AB3A3F6B5AAFCDB775AAC5C1 /* C29Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Alert.swift; path = CopperKit/C29Alert.swift; sourceTree = "<group>"; };
+		1E43DE68719D6BA63B99DF525863599E /* C29CopperworksApplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29CopperworksApplication.swift; path = CopperKit/C29CopperworksApplication.swift; sourceTree = "<group>"; };
+		200BA3F7640645E2DDBB0971B193D78B /* CopperAlertActionButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertActionButtonCell.swift; path = CopperKit/CopperAlertActionButtonCell.swift; sourceTree = "<group>"; };
+		2136A2E7211CE1795FE57B17FBA5A0ED /* CopperSignatureRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperSignatureRecord.swift; path = CopperKit/CopperSignatureRecord.swift; sourceTree = "<group>"; };
+		2496913E9D2DB76428CF18B3466A7AC7 /* ModalCardTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCardTransitioningDelegate.swift; path = CopperKit/ModalCardTransitioningDelegate.swift; sourceTree = "<group>"; };
+		26A72F389F2F31F413EEE6741764DF4E /* NBNumberFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBNumberFormat.m; path = CopperKit/NBNumberFormat.m; sourceTree = "<group>"; };
+		2AA8D7FCC85B6936D37DB4EF73E91D1B /* CopperAlertTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertTableViewCell.swift; path = CopperKit/CopperAlertTableViewCell.swift; sourceTree = "<group>"; };
+		2B15E0989A6F90426E4184AE5B756CEC /* Pods-unnamed dashboard app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard app-frameworks.sh"; sourceTree = "<group>"; };
+		2C2F654CCA403EF2F75FB260D55E6493 /* CopperAlertNumberPadCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertNumberPadCell.swift; path = CopperKit/CopperAlertNumberPadCell.swift; sourceTree = "<group>"; };
+		2C8553AE26F77D336CECCB75C62F32E5 /* NBPhoneNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumber.m; path = CopperKit/NBPhoneNumber.m; sourceTree = "<group>"; };
+		2CDCE9DBAE631CB566ED8DE9DA16F013 /* NBNumberFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBNumberFormat.h; path = CopperKit/NBNumberFormat.h; sourceTree = "<group>"; };
+		2EC09454D82043055E6147E1B22FC589 /* NBMetadataCoreMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreMapper.m; path = CopperKit/NBMetadataCoreMapper.m; sourceTree = "<group>"; };
+		2F82F9536045562D4647B03B353449E6 /* C29CopperworksApplicationDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29CopperworksApplicationDataSource.swift; path = CopperKit/C29CopperworksApplicationDataSource.swift; sourceTree = "<group>"; };
+		3034A6F32C4F26B0D9E05A35B612D1FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316DDC5CC09516B939580A88B9CC64EE /* NBPhoneNumberDesc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberDesc.m; path = CopperKit/NBPhoneNumberDesc.m; sourceTree = "<group>"; };
+		35068DC35431088FA405E2048DCEA5E0 /* CopperContact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperContact.swift; path = CopperKit/CopperContact.swift; sourceTree = "<group>"; };
+		372A41A20610FD48C800E39DB56B614B /* UIColor+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Copper.swift"; path = "CopperKit/UIColor+Copper.swift"; sourceTree = "<group>"; };
+		3755515C808B474C25745DF8AF6B7C4F /* C29UserInfoSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29UserInfoSafariViewController.swift; path = CopperKit/C29UserInfoSafariViewController.swift; sourceTree = "<group>"; };
+		386367FA72727E2078EE00C2566B8049 /* C29RoundedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29RoundedView.swift; path = CopperKit/C29RoundedView.swift; sourceTree = "<group>"; };
+		3B0EBB3A5FA0B9D27FBFFEED8C1E8FC3 /* CopperAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertViewController.swift; path = CopperKit/CopperAlertViewController.swift; sourceTree = "<group>"; };
+		3C3E3EA6A8F7763B730209767E495648 /* NBPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumber.h; path = CopperKit/NBPhoneNumber.h; sourceTree = "<group>"; };
+		3F1B30E891566CAE9A8B6BBECCFB73E1 /* C29QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29QRCode.swift; path = CopperKit/C29QRCode.swift; sourceTree = "<group>"; };
+		3F5D58C1DBF3CE9084AF356A42003F89 /* CountryPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CountryPicker.h; path = CopperKit/CountryPicker.h; sourceTree = "<group>"; };
+		440839D406CE005BAD502B0EE444DC5D /* C29TouchAndHoldButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29TouchAndHoldButton.swift; path = CopperKit/C29TouchAndHoldButton.swift; sourceTree = "<group>"; };
+		44E3D2B18636088E9E28227BA50C84E4 /* Pods-unnamed dashboard appTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-unnamed dashboard appTests-dummy.m"; sourceTree = "<group>"; };
+		45F8414FE76A074D54EDF029ECE25891 /* WebKitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebKitViewController.swift; path = CopperKit/WebKitViewController.swift; sourceTree = "<group>"; };
+		4949DCA8509163BEAE390B5B9BEA0ADB /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberUtil.h; path = CopperKit/NBPhoneNumberUtil.h; sourceTree = "<group>"; };
+		49506C5E475ACCF3241CBE3537A1C098 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = CopperKit/SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		4AE2FC2CECD1FF45E3EB616574AD45C0 /* Pods-unnamed dashboard appTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-unnamed dashboard appTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4EB7CD155BC6965E7B6EA58F08773DAA /* CopperAlertMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertMessageCell.swift; path = CopperKit/CopperAlertMessageCell.swift; sourceTree = "<group>"; };
+		4F313067FBDE89190F03B2294C8B08DC /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtil.m; path = CopperKit/NBPhoneNumberUtil.m; sourceTree = "<group>"; };
+		5132FFC28F49FA92BBF1EB4AE1277D3D /* CopperAlertImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertImageCell.swift; path = CopperKit/CopperAlertImageCell.swift; sourceTree = "<group>"; };
+		5436E7391FC8914B6BB603C98299F988 /* CopperDateRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperDateRecord.swift; path = CopperKit/CopperDateRecord.swift; sourceTree = "<group>"; };
+		57E658BE3C6169310784C870A33C2EE1 /* NSArray+NBAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+NBAdditions.m"; path = "CopperKit/NSArray+NBAdditions.m"; sourceTree = "<group>"; };
+		5C29AEB241C808676B592549700CE488 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = CopperKit/SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		5D6A55753D496631C0868A442BED1AF4 /* UIView+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Copper.swift"; path = "CopperKit/UIView+Copper.swift"; sourceTree = "<group>"; };
+		5E445015C12BC116C8B824B223DB8422 /* NBAsYouTypeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBAsYouTypeFormatter.m; path = CopperKit/NBAsYouTypeFormatter.m; sourceTree = "<group>"; };
+		5F90E0734BEF9ABFA3161A89A439CF6E /* C29BrowserLoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29BrowserLoginViewController.swift; path = CopperKit/C29BrowserLoginViewController.swift; sourceTree = "<group>"; };
+		64DD7770D0773A009ED9E7457C2EA82C /* NSArray+NBAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+NBAdditions.h"; path = "CopperKit/NSArray+NBAdditions.h"; sourceTree = "<group>"; };
+		670786563AF35D060BD282C507EE302E /* String+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Copper.swift"; path = "CopperKit/String+Copper.swift"; sourceTree = "<group>"; };
+		684E5443FFC96652D834D7E138ADE3A4 /* Pods_unnamed_dashboard_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6853A35D40B401F8A597A561DE17D986 /* CopperAlert.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CopperAlert.storyboard; path = CopperKit/CopperAlert.storyboard; sourceTree = "<group>"; };
+		70D477C8B5261B556606245206A82861 /* Pods-unnamed dashboard appTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-unnamed dashboard appTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7126592617C890227112F25CB37E40ED /* Pods-unnamed dashboard appUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-unnamed dashboard appUITests-umbrella.h"; sourceTree = "<group>"; };
+		7177C77CCA00073C74FC044AE7A794C7 /* NBMetadataCoreTestMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTestMapper.h; path = CopperKit/NBMetadataCoreTestMapper.h; sourceTree = "<group>"; };
+		764ED7BE4134FA7B7CCA03D370D92FAD /* Pods-unnamed dashboard appTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-unnamed dashboard appTests.modulemap"; sourceTree = "<group>"; };
+		76553B183ABE1E1BF25EEA6EEC4EF860 /* C29RequestStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29RequestStack.swift; path = CopperKit/C29RequestStack.swift; sourceTree = "<group>"; };
+		76A56353F190B565A0D3F873F77EA412 /* C29Verification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Verification.swift; path = CopperKit/C29Verification.swift; sourceTree = "<group>"; };
+		77AD6552E76E2E9C772F2B3410FD76E6 /* Pods-unnamed dashboard appUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-unnamed dashboard appUITests.modulemap"; sourceTree = "<group>"; };
+		77BF2362BD079D9CE8E61C753D4F2CF3 /* UIImage+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Copper.swift"; path = "CopperKit/UIImage+Copper.swift"; sourceTree = "<group>"; };
+		77E2C71FF49C5D0917EE0E9898FD296C /* C29UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29UserInfo.swift; path = CopperKit/C29UserInfo.swift; sourceTree = "<group>"; };
+		78F3138C3BB5DE3DAF26F62B03CEB584 /* CopperAddressRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAddressRecord.swift; path = CopperKit/CopperAddressRecord.swift; sourceTree = "<group>"; };
+		7C0B0F4CF9090EF84C10CF8B470FF332 /* C29ImageAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29ImageAssets.swift; path = CopperKit/C29ImageAssets.swift; sourceTree = "<group>"; };
+		7DE63D71A9D6FA1CD807100EEE9245D7 /* Pods-unnamed dashboard appUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-unnamed dashboard appUITests-dummy.m"; sourceTree = "<group>"; };
+		7E199C6FFB8E0C1151525A37711DD1C9 /* CopperPictureRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperPictureRecord.swift; path = CopperKit/CopperPictureRecord.swift; sourceTree = "<group>"; };
+		82CF6E1781DBDE53A73EDEC859A30515 /* CopperKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopperKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		846E1DDE6C693A2727ABF379EA89E32B /* C29OAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29OAuth.swift; path = CopperKit/C29OAuth.swift; sourceTree = "<group>"; };
+		85FC9433F8A79821A3FAF99BF96D1C7C /* ResourceBundle-CopperKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CopperKit-Info.plist"; sourceTree = "<group>"; };
+		86332667FB7D05CAD643F5A67896F89B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86ADEF45F2A1FB18967F15FBFE468E85 /* C29CopperworksApplicationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29CopperworksApplicationCache.swift; path = CopperKit/C29CopperworksApplicationCache.swift; sourceTree = "<group>"; };
+		8885253B35B87F39880A1153D2D41799 /* Pods-unnamed dashboard appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B3A62C2744695AB279EE5145881C084 /* NBMetadataCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCore.m; path = CopperKit/NBMetadataCore.m; sourceTree = "<group>"; };
+		8E6B21B4FBA54E14F634DE947AAFDAEA /* CopperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CopperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7462CC4579861E74228FE6C740A2DA /* CopperKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CopperKit-prefix.pch"; sourceTree = "<group>"; };
+		90403F7B9A593E67D613E6111454B3E6 /* Pods-unnamed dashboard app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard app.debug.xcconfig"; sourceTree = "<group>"; };
+		90C98709A871E77EA141CFACE661C954 /* NBMetadataHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataHelper.m; path = CopperKit/NBMetadataHelper.m; sourceTree = "<group>"; };
+		938BC126C8F6BE13BDAF9799939ADE15 /* CopperAlertViewTableManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertViewTableManager.swift; path = CopperKit/CopperAlertViewTableManager.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9512B98CA126C3D6048A6654EE1EB010 /* C29SessionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29SessionDataSource.swift; path = CopperKit/C29SessionDataSource.swift; sourceTree = "<group>"; };
+		97E4D655609BAED4780EDEC074B5F878 /* C29Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Text.swift; path = CopperKit/C29Text.swift; sourceTree = "<group>"; };
+		981E2F71C1C4715F671BFDAABEB383CC /* NBAsYouTypeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBAsYouTypeFormatter.h; path = CopperKit/NBAsYouTypeFormatter.h; sourceTree = "<group>"; };
+		99D6696FB068B9F378D573ACC0237D37 /* ContactSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactSource.swift; path = CopperKit/ContactSource.swift; sourceTree = "<group>"; };
+		9AAA8BBE616148DF7DAF461EF7A90A40 /* C29Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Logger.swift; path = CopperKit/C29Logger.swift; sourceTree = "<group>"; };
+		9C5F6CDBA5976C2327A11C7174A93457 /* C29UserDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29UserDevice.swift; path = CopperKit/C29UserDevice.swift; sourceTree = "<group>"; };
+		9C986EC7E3C4647C4396CBC8797F92C0 /* CopperContactsRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperContactsRecord.swift; path = CopperKit/CopperContactsRecord.swift; sourceTree = "<group>"; };
+		9C9EF831FDDF483EC735080D63D68D9C /* C29ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29ImageCache.swift; path = CopperKit/C29ImageCache.swift; sourceTree = "<group>"; };
+		9D671FDC912A988655C8A590F442FC09 /* C29Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Config.swift; path = CopperKit/C29Config.swift; sourceTree = "<group>"; };
+		9F1C5A08FD32DA341175180126B50D6C /* CopperNameRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperNameRecord.swift; path = CopperKit/CopperNameRecord.swift; sourceTree = "<group>"; };
+		A1AD7DD921FF98DCA5B62DD2F242B561 /* CopperAlertTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertTitleCell.swift; path = CopperKit/CopperAlertTitleCell.swift; sourceTree = "<group>"; };
+		A1B637C57407C18F04DF2C8D78AD7A49 /* ModalCardAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCardAnimatedTransitioning.swift; path = CopperKit/ModalCardAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		A24F0A728D69D1E8ED55395D6875C833 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29127D10009083BA158F98710D67F18 /* CopperKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CopperKit-umbrella.h"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A37721AA521251C63AB41DAFDAFF5003 /* C29RecordCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29RecordCache.swift; path = CopperKit/C29RecordCache.swift; sourceTree = "<group>"; };
+		A58A1B8A525C161DFEA7A4645BE3751B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6451D48EF29D56AA1FFF250BB58B9EA /* NBPhoneNumberDesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDesc.h; path = CopperKit/NBPhoneNumberDesc.h; sourceTree = "<group>"; };
+		A89F200885B906031F23AF2A30073546 /* NBMetadataCoreTestMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTestMapper.m; path = CopperKit/NBMetadataCoreTestMapper.m; sourceTree = "<group>"; };
+		AAD28010090790336EB5E55914BFCCD1 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = CopperKit/Errors.swift; sourceTree = "<group>"; };
+		AD69F55A8402C07EAA1BAA7EDA6F99DF /* C29API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29API.swift; path = CopperKit/C29API.swift; sourceTree = "<group>"; };
+		AEEA222C4B56F7DE38F6836399D07C12 /* CopperAlertPhoneNumberEntryCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertPhoneNumberEntryCell.swift; path = CopperKit/CopperAlertPhoneNumberEntryCell.swift; sourceTree = "<group>"; };
+		AFC07F890F0CBECAF07C0371D42246FF /* C29Records.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Records.swift; path = CopperKit/C29Records.swift; sourceTree = "<group>"; };
+		B0316F54D8F73937AC84EF3A16AC7DCC /* Pods-unnamed dashboard app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-unnamed dashboard app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3EAA74C80EF3A906216D290D4FAA694 /* Pods-unnamed dashboard appTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard appTests-resources.sh"; sourceTree = "<group>"; };
+		B48F474FE110E803853C1029DF3FEBF5 /* Pods-unnamed dashboard app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-unnamed dashboard app-acknowledgements.plist"; sourceTree = "<group>"; };
+		B64A1EBF79DFE3059A703454766BB2B3 /* CopperUsernameRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperUsernameRecord.swift; path = CopperKit/CopperUsernameRecord.swift; sourceTree = "<group>"; };
+		B8A7EFF0AF5DFB57B40269EE6B277C3F /* NBPhoneMetaDataGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneMetaDataGenerator.m; path = CopperKit/NBPhoneMetaDataGenerator.m; sourceTree = "<group>"; };
+		B9917A97005C84D44DF8A27CB8AAC1C9 /* NetworkActivityIndicatorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NetworkActivityIndicatorView.xib; path = CopperKit/NetworkActivityIndicatorView.xib; sourceTree = "<group>"; };
+		BA8C69CEA852F0473CEA6B7909B60B62 /* Pods-unnamed dashboard appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB8490F8A69841B42E5D0F77CD264178 /* CopperKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CopperKit.h; path = CopperKit/CopperKit.h; sourceTree = "<group>"; };
+		BCFD6EA15267F897E600AE47383BC59C /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDefines.h; path = CopperKit/NBPhoneNumberDefines.h; sourceTree = "<group>"; };
+		BEED453BD308FD9EE837555B75D33E8D /* Pods-unnamed dashboard appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard appTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFDE211FD0BA34296692CFF83689802B /* Pods-unnamed dashboard app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-unnamed dashboard app.modulemap"; sourceTree = "<group>"; };
+		C1BD8AE14FD47450C4562824A09C6EDC /* JWTDecode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTDecode.swift; path = CopperKit/JWTDecode.swift; sourceTree = "<group>"; };
+		C29E2AFE46D2F7D843008256477A3DFC /* NetworkActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityIndicatorView.swift; path = CopperKit/NetworkActivityIndicatorView.swift; sourceTree = "<group>"; };
+		C3DA41AEB566DFE8D6443931A6DE69B3 /* Loadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loadable.swift; path = CopperKit/Loadable.swift; sourceTree = "<group>"; };
+		C4CACB8C3E95DC939B97304083F1E387 /* Pods-unnamed dashboard app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard app-resources.sh"; sourceTree = "<group>"; };
+		C69036567188D7CD977C1ED004697284 /* C29RequestDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29RequestDataSource.swift; path = CopperKit/C29RequestDataSource.swift; sourceTree = "<group>"; };
+		C726BA3B5F4AA20C3558F5F117227C01 /* CopperKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CopperKit-dummy.m"; sourceTree = "<group>"; };
+		C746A7BBDA4DB2D7D57A9F458362701A /* Array+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Copper.swift"; path = "CopperKit/Array+Copper.swift"; sourceTree = "<group>"; };
+		CA75C2767EBCBB1DD5DD2B7548A08693 /* CopperAddressBookProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAddressBookProxy.swift; path = CopperKit/CopperAddressBookProxy.swift; sourceTree = "<group>"; };
+		CC678190AC290178C09472DD9D34A5CC /* Pods-unnamed dashboard appUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-unnamed dashboard appUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCA5672218B5A9280649C0F35C029DBF /* NBMetadataCoreMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreMapper.h; path = CopperKit/NBMetadataCoreMapper.h; sourceTree = "<group>"; };
+		CCA86BEE78B52543933ED3F91562FBB2 /* C29NetworkActivityRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29NetworkActivityRegistry.swift; path = CopperKit/C29NetworkActivityRegistry.swift; sourceTree = "<group>"; };
+		CD30FC2AA34AE686B5CB47F145197A7C /* Pods-unnamed dashboard app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-unnamed dashboard app-umbrella.h"; sourceTree = "<group>"; };
+		CD97426266D824F617B1C0F68566C572 /* NSURL+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Copper.swift"; path = "CopperKit/NSURL+Copper.swift"; sourceTree = "<group>"; };
+		CEA50F9675B3766550063F1E38A770D7 /* CopperAlertDigitEntryCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperAlertDigitEntryCell.swift; path = CopperKit/CopperAlertDigitEntryCell.swift; sourceTree = "<group>"; };
+		CEFBAAC71C63E49F92D35AA5E2C43B51 /* Mixpanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mixpanel.swift; path = CopperKit/Mixpanel.swift; sourceTree = "<group>"; };
+		D08C1E571DCB07993B1E338621A33669 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
+		D0DA73D0C4DD484071F5B0600C77DD27 /* NBMetadataCoreTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTest.h; path = CopperKit/NBMetadataCoreTest.h; sourceTree = "<group>"; };
+		D2E69DD60A16B93FB8176A1257891066 /* CountryPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CountryPicker.m; path = CopperKit/CountryPicker.m; sourceTree = "<group>"; };
+		D2FEE85510A8220B167359FED1786FAA /* C29UserInfoCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29UserInfoCoordinator.swift; path = CopperKit/C29UserInfoCoordinator.swift; sourceTree = "<group>"; };
+		D3CC9AFCAA28DA38F1A784939701A8C6 /* Pods-unnamed dashboard appTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard appTests-frameworks.sh"; sourceTree = "<group>"; };
+		D49AA21CB025FCDABE27B23C43A07835 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = CopperKit/JWT.swift; sourceTree = "<group>"; };
+		D4C82C14093D41A3345E230342E18E71 /* CopperPhoneRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperPhoneRecord.swift; path = CopperKit/CopperPhoneRecord.swift; sourceTree = "<group>"; };
+		D652C2C8D6789AEA2D7B955A9699BC30 /* ModalCardPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCardPresentationController.swift; path = CopperKit/ModalCardPresentationController.swift; sourceTree = "<group>"; };
+		D993CCAD4DAAB73417436D0CC72F9F15 /* UILabel+Copper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Copper.swift"; path = "CopperKit/UILabel+Copper.swift"; sourceTree = "<group>"; };
+		DE5397CEA9AA0D4C78B0D5402F27D46A /* NBMetadataCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCore.h; path = CopperKit/NBMetadataCore.h; sourceTree = "<group>"; };
+		DFC5FA66653246CC5D7BC3E81C776D12 /* C29Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Networking.swift; path = CopperKit/C29Networking.swift; sourceTree = "<group>"; };
+		E4E5B4F9633BC9946745F6512AA381A8 /* WebKit.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = WebKit.storyboard; path = CopperKit/WebKit.storyboard; sourceTree = "<group>"; };
+		E62FC23830D6A0D48F278C59A1ED3E6E /* C29Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Request.swift; path = CopperKit/C29Request.swift; sourceTree = "<group>"; };
+		E638F15F2895B80DFE629BCDA726B52A /* NBPhoneMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneMetaData.m; path = CopperKit/NBPhoneMetaData.m; sourceTree = "<group>"; };
+		E8078B44E0C9E88F393EB1DDDEBB6DB2 /* Pods-unnamed dashboard appUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-unnamed dashboard appUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CopperKit.xcconfig; sourceTree = "<group>"; };
+		EED3E9F9DBEADE8CB8B2DD08E5E642DF /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DD02F41C1AB61E729DC9CD50A4F50F /* NBPhoneMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneMetaData.h; path = CopperKit/NBPhoneMetaData.h; sourceTree = "<group>"; };
+		F5F73287F8680ABBF45FE6F402A629CE /* CopperRecordObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperRecordObject.swift; path = CopperKit/CopperRecordObject.swift; sourceTree = "<group>"; };
+		F7A63C1E1CC94A60F439091FF908A8C6 /* NBMetadataHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataHelper.h; path = CopperKit/NBMetadataHelper.h; sourceTree = "<group>"; };
+		F7C68992DBCB9FEBAC4FB2D30C82F122 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CopperKit/Images.xcassets; sourceTree = "<group>"; };
+		FAC3F5428CB8C522DCF3531E438BD5D0 /* CopperEmailRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopperEmailRecord.swift; path = CopperKit/CopperEmailRecord.swift; sourceTree = "<group>"; };
+		FB8C1134BA8308F7A9A3B6BE1521538F /* C29Scope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29Scope.swift; path = CopperKit/C29Scope.swift; sourceTree = "<group>"; };
+		FBD364F6D6176A3A4E99AA51DF5A09F4 /* C29AuthenticationAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = C29AuthenticationAlertController.swift; path = CopperKit/C29AuthenticationAlertController.swift; sourceTree = "<group>"; };
+		FC0E47C733390BF4237AF2E87EB4F4AC /* Saveable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Saveable.swift; path = CopperKit/Saveable.swift; sourceTree = "<group>"; };
+		FF5E07687F9EF0DD6810B79B5FB2FDC8 /* Pods-unnamed dashboard appUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-unnamed dashboard appUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177A0F1C6E8E3BA0AAC43AA2A1F9D875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A10AC81179724E911578FF6AA2B725 /* Foundation.framework in Frameworks */,
+				DEA8B56227E8BB8142B5F46868C7BBEC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E585956ED0A35A3A473CFA35F5E802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9855D7B79EDC186EE3C0DABC7E8D7DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839DB09C0BABE7B03E13E2AB37FB6480 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26B2520D925F9C2ABD2984ABE62870F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1398861427F503D24FC3DC453BA45430 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F870791F3F2CA8D302FE6D2D8EBF0627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453BEEFDD720A8175EC29404DB193256 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		319252115007F7141821E7C0F2B0E88F /* CopperKit */ = {
+			isa = PBXGroup;
+			children = (
+				C746A7BBDA4DB2D7D57A9F458362701A /* Array+Copper.swift */,
+				1D487DC2AB3A3F6B5AAFCDB775AAC5C1 /* C29Alert.swift */,
+				AD69F55A8402C07EAA1BAA7EDA6F99DF /* C29API.swift */,
+				12DDBBDC5EDD88CB8191945A2D024A7A /* C29Application.swift */,
+				FBD364F6D6176A3A4E99AA51DF5A09F4 /* C29AuthenticationAlertController.swift */,
+				5F90E0734BEF9ABFA3161A89A439CF6E /* C29BrowserLoginViewController.swift */,
+				114E824B27D3B55DC566586717E3CBB1 /* C29Bytes.swift */,
+				9D671FDC912A988655C8A590F442FC09 /* C29Config.swift */,
+				1E43DE68719D6BA63B99DF525863599E /* C29CopperworksApplication.swift */,
+				86ADEF45F2A1FB18967F15FBFE468E85 /* C29CopperworksApplicationCache.swift */,
+				2F82F9536045562D4647B03B353449E6 /* C29CopperworksApplicationDataSource.swift */,
+				045402BFAA78AB173846F224117FC652 /* C29IdentityDataSource.swift */,
+				7C0B0F4CF9090EF84C10CF8B470FF332 /* C29ImageAssets.swift */,
+				9C9EF831FDDF483EC735080D63D68D9C /* C29ImageCache.swift */,
+				9AAA8BBE616148DF7DAF461EF7A90A40 /* C29Logger.swift */,
+				CCA86BEE78B52543933ED3F91562FBB2 /* C29NetworkActivityRegistry.swift */,
+				DFC5FA66653246CC5D7BC3E81C776D12 /* C29Networking.swift */,
+				846E1DDE6C693A2727ABF379EA89E32B /* C29OAuth.swift */,
+				3F1B30E891566CAE9A8B6BBECCFB73E1 /* C29QRCode.swift */,
+				A37721AA521251C63AB41DAFDAFF5003 /* C29RecordCache.swift */,
+				AFC07F890F0CBECAF07C0371D42246FF /* C29Records.swift */,
+				E62FC23830D6A0D48F278C59A1ED3E6E /* C29Request.swift */,
+				C69036567188D7CD977C1ED004697284 /* C29RequestDataSource.swift */,
+				76553B183ABE1E1BF25EEA6EEC4EF860 /* C29RequestStack.swift */,
+				386367FA72727E2078EE00C2566B8049 /* C29RoundedView.swift */,
+				FB8C1134BA8308F7A9A3B6BE1521538F /* C29Scope.swift */,
+				9512B98CA126C3D6048A6654EE1EB010 /* C29SessionDataSource.swift */,
+				97E4D655609BAED4780EDEC074B5F878 /* C29Text.swift */,
+				440839D406CE005BAD502B0EE444DC5D /* C29TouchAndHoldButton.swift */,
+				09BE4F10834315A6DCA3FBFF7127A6EA /* C29User.swift */,
+				9C5F6CDBA5976C2327A11C7174A93457 /* C29UserDevice.swift */,
+				77E2C71FF49C5D0917EE0E9898FD296C /* C29UserInfo.swift */,
+				D2FEE85510A8220B167359FED1786FAA /* C29UserInfoCoordinator.swift */,
+				3755515C808B474C25745DF8AF6B7C4F /* C29UserInfoSafariViewController.swift */,
+				1A55BF4C057AF3AF2411A3BE7D472405 /* C29Utils.swift */,
+				76A56353F190B565A0D3F873F77EA412 /* C29Verification.swift */,
+				99D6696FB068B9F378D573ACC0237D37 /* ContactSource.swift */,
+				CA75C2767EBCBB1DD5DD2B7548A08693 /* CopperAddressBookProxy.swift */,
+				78F3138C3BB5DE3DAF26F62B03CEB584 /* CopperAddressRecord.swift */,
+				200BA3F7640645E2DDBB0971B193D78B /* CopperAlertActionButtonCell.swift */,
+				CEA50F9675B3766550063F1E38A770D7 /* CopperAlertDigitEntryCell.swift */,
+				5132FFC28F49FA92BBF1EB4AE1277D3D /* CopperAlertImageCell.swift */,
+				4EB7CD155BC6965E7B6EA58F08773DAA /* CopperAlertMessageCell.swift */,
+				2C2F654CCA403EF2F75FB260D55E6493 /* CopperAlertNumberPadCell.swift */,
+				AEEA222C4B56F7DE38F6836399D07C12 /* CopperAlertPhoneNumberEntryCell.swift */,
+				2AA8D7FCC85B6936D37DB4EF73E91D1B /* CopperAlertTableViewCell.swift */,
+				A1AD7DD921FF98DCA5B62DD2F242B561 /* CopperAlertTitleCell.swift */,
+				05C6F7354E23E9DF5A119C8F8EFB2FE2 /* CopperAlertTwoActionButtonCell.swift */,
+				3B0EBB3A5FA0B9D27FBFFEED8C1E8FC3 /* CopperAlertViewController.swift */,
+				938BC126C8F6BE13BDAF9799939ADE15 /* CopperAlertViewTableManager.swift */,
+				35068DC35431088FA405E2048DCEA5E0 /* CopperContact.swift */,
+				9C986EC7E3C4647C4396CBC8797F92C0 /* CopperContactsRecord.swift */,
+				5436E7391FC8914B6BB603C98299F988 /* CopperDateRecord.swift */,
+				FAC3F5428CB8C522DCF3531E438BD5D0 /* CopperEmailRecord.swift */,
+				BB8490F8A69841B42E5D0F77CD264178 /* CopperKit.h */,
+				0EB30F48565A6B1ADA19B3BF7D27E48A /* CopperKitEntryControl.swift */,
+				9F1C5A08FD32DA341175180126B50D6C /* CopperNameRecord.swift */,
+				D4C82C14093D41A3345E230342E18E71 /* CopperPhoneRecord.swift */,
+				7E199C6FFB8E0C1151525A37711DD1C9 /* CopperPictureRecord.swift */,
+				F5F73287F8680ABBF45FE6F402A629CE /* CopperRecordObject.swift */,
+				2136A2E7211CE1795FE57B17FBA5A0ED /* CopperSignatureRecord.swift */,
+				B64A1EBF79DFE3059A703454766BB2B3 /* CopperUsernameRecord.swift */,
+				3F5D58C1DBF3CE9084AF356A42003F89 /* CountryPicker.h */,
+				D2E69DD60A16B93FB8176A1257891066 /* CountryPicker.m */,
+				AAD28010090790336EB5E55914BFCCD1 /* Errors.swift */,
+				D49AA21CB025FCDABE27B23C43A07835 /* JWT.swift */,
+				C1BD8AE14FD47450C4562824A09C6EDC /* JWTDecode.swift */,
+				C3DA41AEB566DFE8D6443931A6DE69B3 /* Loadable.swift */,
+				CEFBAAC71C63E49F92D35AA5E2C43B51 /* Mixpanel.swift */,
+				A1B637C57407C18F04DF2C8D78AD7A49 /* ModalCardAnimatedTransitioning.swift */,
+				D652C2C8D6789AEA2D7B955A9699BC30 /* ModalCardPresentationController.swift */,
+				2496913E9D2DB76428CF18B3466A7AC7 /* ModalCardTransitioningDelegate.swift */,
+				981E2F71C1C4715F671BFDAABEB383CC /* NBAsYouTypeFormatter.h */,
+				5E445015C12BC116C8B824B223DB8422 /* NBAsYouTypeFormatter.m */,
+				DE5397CEA9AA0D4C78B0D5402F27D46A /* NBMetadataCore.h */,
+				8B3A62C2744695AB279EE5145881C084 /* NBMetadataCore.m */,
+				CCA5672218B5A9280649C0F35C029DBF /* NBMetadataCoreMapper.h */,
+				2EC09454D82043055E6147E1B22FC589 /* NBMetadataCoreMapper.m */,
+				D0DA73D0C4DD484071F5B0600C77DD27 /* NBMetadataCoreTest.h */,
+				17CDEAD8521D91CB41EF1ED6F9D84C36 /* NBMetadataCoreTest.m */,
+				7177C77CCA00073C74FC044AE7A794C7 /* NBMetadataCoreTestMapper.h */,
+				A89F200885B906031F23AF2A30073546 /* NBMetadataCoreTestMapper.m */,
+				F7A63C1E1CC94A60F439091FF908A8C6 /* NBMetadataHelper.h */,
+				90C98709A871E77EA141CFACE661C954 /* NBMetadataHelper.m */,
+				2CDCE9DBAE631CB566ED8DE9DA16F013 /* NBNumberFormat.h */,
+				26A72F389F2F31F413EEE6741764DF4E /* NBNumberFormat.m */,
+				F0DD02F41C1AB61E729DC9CD50A4F50F /* NBPhoneMetaData.h */,
+				E638F15F2895B80DFE629BCDA726B52A /* NBPhoneMetaData.m */,
+				18712132F4309482091B7B16F524917D /* NBPhoneMetaDataGenerator.h */,
+				B8A7EFF0AF5DFB57B40269EE6B277C3F /* NBPhoneMetaDataGenerator.m */,
+				3C3E3EA6A8F7763B730209767E495648 /* NBPhoneNumber.h */,
+				2C8553AE26F77D336CECCB75C62F32E5 /* NBPhoneNumber.m */,
+				BCFD6EA15267F897E600AE47383BC59C /* NBPhoneNumberDefines.h */,
+				A6451D48EF29D56AA1FFF250BB58B9EA /* NBPhoneNumberDesc.h */,
+				316DDC5CC09516B939580A88B9CC64EE /* NBPhoneNumberDesc.m */,
+				4949DCA8509163BEAE390B5B9BEA0ADB /* NBPhoneNumberUtil.h */,
+				4F313067FBDE89190F03B2294C8B08DC /* NBPhoneNumberUtil.m */,
+				C29E2AFE46D2F7D843008256477A3DFC /* NetworkActivityIndicatorView.swift */,
+				64DD7770D0773A009ED9E7457C2EA82C /* NSArray+NBAdditions.h */,
+				57E658BE3C6169310784C870A33C2EE1 /* NSArray+NBAdditions.m */,
+				CD97426266D824F617B1C0F68566C572 /* NSURL+Copper.swift */,
+				FC0E47C733390BF4237AF2E87EB4F4AC /* Saveable.swift */,
+				5C29AEB241C808676B592549700CE488 /* SFHFKeychainUtils.h */,
+				49506C5E475ACCF3241CBE3537A1C098 /* SFHFKeychainUtils.m */,
+				670786563AF35D060BD282C507EE302E /* String+Copper.swift */,
+				372A41A20610FD48C800E39DB56B614B /* UIColor+Copper.swift */,
+				77BF2362BD079D9CE8E61C753D4F2CF3 /* UIImage+Copper.swift */,
+				D993CCAD4DAAB73417436D0CC72F9F15 /* UILabel+Copper.swift */,
+				5D6A55753D496631C0868A442BED1AF4 /* UIView+Copper.swift */,
+				45F8414FE76A074D54EDF029ECE25891 /* WebKitViewController.swift */,
+				BF88DEB42C4A326FEFBCEBEF9C331EB5 /* Resources */,
+				69A65FF0B4957ED000AC4FA1BD85D14D /* Support Files */,
+			);
+			path = CopperKit;
+			sourceTree = "<group>";
+		};
+		34BE465CBAC5FF7F1408261C205B2F9E /* Pods-unnamed dashboard app */ = {
+			isa = PBXGroup;
+			children = (
+				86332667FB7D05CAD643F5A67896F89B /* Info.plist */,
+				BFDE211FD0BA34296692CFF83689802B /* Pods-unnamed dashboard app.modulemap */,
+				B0316F54D8F73937AC84EF3A16AC7DCC /* Pods-unnamed dashboard app-acknowledgements.markdown */,
+				B48F474FE110E803853C1029DF3FEBF5 /* Pods-unnamed dashboard app-acknowledgements.plist */,
+				0B6BB27E376A250CC97B872AF940890A /* Pods-unnamed dashboard app-dummy.m */,
+				2B15E0989A6F90426E4184AE5B756CEC /* Pods-unnamed dashboard app-frameworks.sh */,
+				C4CACB8C3E95DC939B97304083F1E387 /* Pods-unnamed dashboard app-resources.sh */,
+				CD30FC2AA34AE686B5CB47F145197A7C /* Pods-unnamed dashboard app-umbrella.h */,
+				90403F7B9A593E67D613E6111454B3E6 /* Pods-unnamed dashboard app.debug.xcconfig */,
+				D08C1E571DCB07993B1E338621A33669 /* Pods-unnamed dashboard app.release.xcconfig */,
+			);
+			name = "Pods-unnamed dashboard app";
+			path = "Target Support Files/Pods-unnamed dashboard app";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69A65FF0B4957ED000AC4FA1BD85D14D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				188C49F5DEEC0349904548A54C9E4CB5 /* CopperKit.modulemap */,
+				EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */,
+				C726BA3B5F4AA20C3558F5F117227C01 /* CopperKit-dummy.m */,
+				8F7462CC4579861E74228FE6C740A2DA /* CopperKit-prefix.pch */,
+				A29127D10009083BA158F98710D67F18 /* CopperKit-umbrella.h */,
+				A24F0A728D69D1E8ED55395D6875C833 /* Info.plist */,
+				85FC9433F8A79821A3FAF99BF96D1C7C /* ResourceBundle-CopperKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CopperKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DCD9CA579C3CE272D7D05ECCE7163DCE /* Pods */,
+				AD30A9584F573B5A837BBEA6FD06B143 /* Products */,
+				A37577EF308849490CEB078BBBB1E05F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		850142E570844DF502C4D3397A7366B0 /* Pods-unnamed dashboard appTests */ = {
+			isa = PBXGroup;
+			children = (
+				3034A6F32C4F26B0D9E05A35B612D1FC /* Info.plist */,
+				764ED7BE4134FA7B7CCA03D370D92FAD /* Pods-unnamed dashboard appTests.modulemap */,
+				4AE2FC2CECD1FF45E3EB616574AD45C0 /* Pods-unnamed dashboard appTests-acknowledgements.markdown */,
+				70D477C8B5261B556606245206A82861 /* Pods-unnamed dashboard appTests-acknowledgements.plist */,
+				44E3D2B18636088E9E28227BA50C84E4 /* Pods-unnamed dashboard appTests-dummy.m */,
+				D3CC9AFCAA28DA38F1A784939701A8C6 /* Pods-unnamed dashboard appTests-frameworks.sh */,
+				B3EAA74C80EF3A906216D290D4FAA694 /* Pods-unnamed dashboard appTests-resources.sh */,
+				16E3D6B65E781E497EBDEC1A9819F542 /* Pods-unnamed dashboard appTests-umbrella.h */,
+				195E269DB606E9D3B007186BE3A2451A /* Pods-unnamed dashboard appTests.debug.xcconfig */,
+				BEED453BD308FD9EE837555B75D33E8D /* Pods-unnamed dashboard appTests.release.xcconfig */,
+			);
+			name = "Pods-unnamed dashboard appTests";
+			path = "Target Support Files/Pods-unnamed dashboard appTests";
+			sourceTree = "<group>";
+		};
+		A37577EF308849490CEB078BBBB1E05F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34BE465CBAC5FF7F1408261C205B2F9E /* Pods-unnamed dashboard app */,
+				850142E570844DF502C4D3397A7366B0 /* Pods-unnamed dashboard appTests */,
+				F7EF6F4FF0AF08F69CFB53461A4E7A09 /* Pods-unnamed dashboard appUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD30A9584F573B5A837BBEA6FD06B143 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82CF6E1781DBDE53A73EDEC859A30515 /* CopperKit.bundle */,
+				8E6B21B4FBA54E14F634DE947AAFDAEA /* CopperKit.framework */,
+				684E5443FFC96652D834D7E138ADE3A4 /* Pods_unnamed_dashboard_app.framework */,
+				EED3E9F9DBEADE8CB8B2DD08E5E642DF /* Pods_unnamed_dashboard_appTests.framework */,
+				18A4D95FCEEFA5B0F95B5387813132CE /* Pods_unnamed_dashboard_appUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF88DEB42C4A326FEFBCEBEF9C331EB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6853A35D40B401F8A597A561DE17D986 /* CopperAlert.storyboard */,
+				F7C68992DBCB9FEBAC4FB2D30C82F122 /* Images.xcassets */,
+				B9917A97005C84D44DF8A27CB8AAC1C9 /* NetworkActivityIndicatorView.xib */,
+				E4E5B4F9633BC9946745F6512AA381A8 /* WebKit.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DCD9CA579C3CE272D7D05ECCE7163DCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				319252115007F7141821E7C0F2B0E88F /* CopperKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F7EF6F4FF0AF08F69CFB53461A4E7A09 /* Pods-unnamed dashboard appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A58A1B8A525C161DFEA7A4645BE3751B /* Info.plist */,
+				77AD6552E76E2E9C772F2B3410FD76E6 /* Pods-unnamed dashboard appUITests.modulemap */,
+				CC678190AC290178C09472DD9D34A5CC /* Pods-unnamed dashboard appUITests-acknowledgements.markdown */,
+				FF5E07687F9EF0DD6810B79B5FB2FDC8 /* Pods-unnamed dashboard appUITests-acknowledgements.plist */,
+				7DE63D71A9D6FA1CD807100EEE9245D7 /* Pods-unnamed dashboard appUITests-dummy.m */,
+				E8078B44E0C9E88F393EB1DDDEBB6DB2 /* Pods-unnamed dashboard appUITests-frameworks.sh */,
+				0BD3086474CBBC74020E3E685BE3B869 /* Pods-unnamed dashboard appUITests-resources.sh */,
+				7126592617C890227112F25CB37E40ED /* Pods-unnamed dashboard appUITests-umbrella.h */,
+				BA8C69CEA852F0473CEA6B7909B60B62 /* Pods-unnamed dashboard appUITests.debug.xcconfig */,
+				8885253B35B87F39880A1153D2D41799 /* Pods-unnamed dashboard appUITests.release.xcconfig */,
+			);
+			name = "Pods-unnamed dashboard appUITests";
+			path = "Target Support Files/Pods-unnamed dashboard appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		143677CAEF51AA7FB3A64CD9A20C1194 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851FAB5F26B7C1D74342F51522FBFA65 /* Pods-unnamed dashboard app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38EA6CACC73D7CBFBE917670D2E751D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897DC7234AD06AA928562157D298C80B /* Pods-unnamed dashboard appUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F655A27329CE7D00704D7AF02C017F77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F274203BF5C80D01BB02C49A0DBE4DC /* CopperKit-umbrella.h in Headers */,
+				2F95BB8BA965AF6F52472C2D79E79224 /* CopperKit.h in Headers */,
+				557A4D79F1266955FF65811E235DC331 /* CountryPicker.h in Headers */,
+				3E65C6C8269A2C8AC791F5D1B89EC45E /* NBAsYouTypeFormatter.h in Headers */,
+				EE5D8F7990D60AE3790BC8A0BAC34B29 /* NBMetadataCore.h in Headers */,
+				0E706D8817DE7EC3E810170DAFA03B37 /* NBMetadataCoreMapper.h in Headers */,
+				081801847A1F122F4595B5F17FE8DEBF /* NBMetadataCoreTest.h in Headers */,
+				891D82330D56FBAD6043839AC3507EC0 /* NBMetadataCoreTestMapper.h in Headers */,
+				CA3CD34E540E839A832CC7105B498918 /* NBMetadataHelper.h in Headers */,
+				0DD6C0B9EE03B10BED92C0F6FC38BF41 /* NBNumberFormat.h in Headers */,
+				B35678C93C3EB8E988D94D0E7C1D5854 /* NBPhoneMetaData.h in Headers */,
+				2D5A9D7AD5AF71E68C27FB33B5AD4993 /* NBPhoneMetaDataGenerator.h in Headers */,
+				7633AABB51BD593E8F2C0716F7A21B64 /* NBPhoneNumber.h in Headers */,
+				E02361FCAD69A951FD82F99B2223D342 /* NBPhoneNumberDefines.h in Headers */,
+				0775441376AEF308BA920A4F311AB580 /* NBPhoneNumberDesc.h in Headers */,
+				D5A59FF134EF3A715162D03AF2C792BE /* NBPhoneNumberUtil.h in Headers */,
+				356D2348BC734D9A5DEF9542F7DF9E90 /* NSArray+NBAdditions.h in Headers */,
+				CF6B4DBAD0B9B0C4BFD22A564FB1F8F5 /* SFHFKeychainUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7810F4D49BBE6B021BF382276280DAB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5078C4242812F89E5409F9223234CA96 /* Pods-unnamed dashboard appTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1FA6FB86D5E13E8DA285246CF4E7C30E /* Pods-unnamed dashboard appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC286374EB79F696F44597D8D3E22F1B /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard appUITests" */;
+			buildPhases = (
+				5009F742E68CBA58F80649ECA852E5DD /* Sources */,
+				F26B2520D925F9C2ABD2984ABE62870F /* Frameworks */,
+				38EA6CACC73D7CBFBE917670D2E751D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-unnamed dashboard appUITests";
+			productName = "Pods-unnamed dashboard appUITests";
+			productReference = 18A4D95FCEEFA5B0F95B5387813132CE /* Pods_unnamed_dashboard_appUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D80D217185DC99B56420B81C76F59D3 /* CopperKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B840106909D0EC8AFB0B42C40FE58A24 /* Build configuration list for PBXNativeTarget "CopperKit" */;
+			buildPhases = (
+				21670F451312DA6636FD2506DE68E693 /* Sources */,
+				177A0F1C6E8E3BA0AAC43AA2A1F9D875 /* Frameworks */,
+				4B3DE5AEBF51E8E68652FECF4C23760F /* Resources */,
+				F655A27329CE7D00704D7AF02C017F77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA90E66E512FEF7109D94A0E2FFEBEC /* PBXTargetDependency */,
+			);
+			name = CopperKit;
+			productName = CopperKit;
+			productReference = 8E6B21B4FBA54E14F634DE947AAFDAEA /* CopperKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C662D2229AD271442E1A95D26539C956 /* CopperKit-CopperKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD94AEBE04DAD1CAAF67A2CDA2127BA /* Build configuration list for PBXNativeTarget "CopperKit-CopperKit" */;
+			buildPhases = (
+				DAA4387F9D7CA4E45CCA54BFAF2F7C58 /* Sources */,
+				49E585956ED0A35A3A473CFA35F5E802 /* Frameworks */,
+				E6641D4DD016FFDD216B4986A1AE13AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CopperKit-CopperKit";
+			productName = "CopperKit-CopperKit";
+			productReference = 82CF6E1781DBDE53A73EDEC859A30515 /* CopperKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E3040DA79851800620D48E554C9D95BB /* Pods-unnamed dashboard appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD7A0FBAC8664815E38976C1A2F47D9 /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard appTests" */;
+			buildPhases = (
+				F4A1600B95CFB7D616D15ABE11A58825 /* Sources */,
+				F870791F3F2CA8D302FE6D2D8EBF0627 /* Frameworks */,
+				F7810F4D49BBE6B021BF382276280DAB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-unnamed dashboard appTests";
+			productName = "Pods-unnamed dashboard appTests";
+			productReference = EED3E9F9DBEADE8CB8B2DD08E5E642DF /* Pods_unnamed_dashboard_appTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E58C34DD9C99CA40841C23CF1433D5AF /* Pods-unnamed dashboard app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F3474F5A103078199CEB25B523371A /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard app" */;
+			buildPhases = (
+				038D993B0AAA46AE6E2E6783C276CB01 /* Sources */,
+				9855D7B79EDC186EE3C0DABC7E8D7DC4 /* Frameworks */,
+				143677CAEF51AA7FB3A64CD9A20C1194 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E9E7F070395FB6660D374A6E487786 /* PBXTargetDependency */,
+			);
+			name = "Pods-unnamed dashboard app";
+			productName = "Pods-unnamed dashboard app";
+			productReference = 684E5443FFC96652D834D7E138ADE3A4 /* Pods_unnamed_dashboard_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AD30A9584F573B5A837BBEA6FD06B143 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D80D217185DC99B56420B81C76F59D3 /* CopperKit */,
+				C662D2229AD271442E1A95D26539C956 /* CopperKit-CopperKit */,
+				E58C34DD9C99CA40841C23CF1433D5AF /* Pods-unnamed dashboard app */,
+				E3040DA79851800620D48E554C9D95BB /* Pods-unnamed dashboard appTests */,
+				1FA6FB86D5E13E8DA285246CF4E7C30E /* Pods-unnamed dashboard appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3DE5AEBF51E8E68652FECF4C23760F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DCBC9835C9EA36418D6BA542691A8F /* CopperKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6641D4DD016FFDD216B4986A1AE13AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE94790A1F7299A2E518E0887BD98055 /* CopperAlert.storyboard in Resources */,
+				1D54473559F8531EC1BB979D5FEF1DD5 /* Images.xcassets in Resources */,
+				81B858108B74EBF8ACF3BBE1748C3B11 /* NetworkActivityIndicatorView.xib in Resources */,
+				E60E339D4DC45210BA93A632AFCA3B23 /* WebKit.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038D993B0AAA46AE6E2E6783C276CB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC43DD592C9A5ACBE400DD3C9F367583 /* Pods-unnamed dashboard app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21670F451312DA6636FD2506DE68E693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC700B7AC5F00DE5CEF50C0BF30A10DC /* Array+Copper.swift in Sources */,
+				E8FEEE4A10F878AFBF79724FD1679145 /* C29Alert.swift in Sources */,
+				13F6E8766BC4FD6BA189B98BFF0C78FC /* C29API.swift in Sources */,
+				82F1EE68D2D7AEDF1A5828E3D0C38F01 /* C29Application.swift in Sources */,
+				C185B0F9783BB55B9301D85E214C018A /* C29AuthenticationAlertController.swift in Sources */,
+				6D15C25F914AADBBA357010A81757816 /* C29BrowserLoginViewController.swift in Sources */,
+				C9D8E85ED4FA9EB14297BA30A1F7B4C5 /* C29Bytes.swift in Sources */,
+				5940D4C53B7F5786D55594DD8319CD99 /* C29Config.swift in Sources */,
+				6677DFC762B983705675CF14035995A5 /* C29CopperworksApplication.swift in Sources */,
+				251ACD4448E8CE5F1A35263F962F98DA /* C29CopperworksApplicationCache.swift in Sources */,
+				8C4C5E6530DEC068D0F4CE22DF6E1158 /* C29CopperworksApplicationDataSource.swift in Sources */,
+				3E794FFB7A28D9C0337B7A8E667241F2 /* C29IdentityDataSource.swift in Sources */,
+				E16D63D5412E1DF2BAB9D725592F9DFE /* C29ImageAssets.swift in Sources */,
+				8CE80F73108F6FF9752DEF685750B981 /* C29ImageCache.swift in Sources */,
+				492F0C27EACC837B90765033E19E5D98 /* C29Logger.swift in Sources */,
+				45F753208CBC51766D2E449B4F8DBE12 /* C29NetworkActivityRegistry.swift in Sources */,
+				C3174EF60A11F718E44325AD90C176C9 /* C29Networking.swift in Sources */,
+				F23BD5DDD29E07C3AA2143BF9A261FD6 /* C29OAuth.swift in Sources */,
+				5BEC2FC110C8693A41252DB1F76A4983 /* C29QRCode.swift in Sources */,
+				9FF46B718D9674C8CADA4C638460C8B7 /* C29RecordCache.swift in Sources */,
+				FF80063B1E605424272D7956133357CA /* C29Records.swift in Sources */,
+				FB68B3E31D1E09816584E61C311F4ACB /* C29Request.swift in Sources */,
+				008C3A7CCF4D85AA65211A6253F26B37 /* C29RequestDataSource.swift in Sources */,
+				0E94E0C931AE02C63496A9C5B9AD806C /* C29RequestStack.swift in Sources */,
+				FED49473C1DE59B7AE49B9EA430989CC /* C29RoundedView.swift in Sources */,
+				4F0E7905A530514EB7FE67FCB2B0CA3A /* C29Scope.swift in Sources */,
+				5573B10A517A29570D1D288D553D8025 /* C29SessionDataSource.swift in Sources */,
+				379BF69357EC4559A8DF77C671E92913 /* C29Text.swift in Sources */,
+				8EB6AC2E8902B312AE147B26FD4B2A8E /* C29TouchAndHoldButton.swift in Sources */,
+				B52E84FF4AC8061DB5F878AC03A07708 /* C29User.swift in Sources */,
+				70EDB22E0B65989AAA3667B0ACEABF17 /* C29UserDevice.swift in Sources */,
+				0E11354EF4191553EE9D11D097E69648 /* C29UserInfo.swift in Sources */,
+				879483EB246BCEAFC6776F1682C9C554 /* C29UserInfoCoordinator.swift in Sources */,
+				AFAB770D284185DD01F54A73A23F2FD4 /* C29UserInfoSafariViewController.swift in Sources */,
+				C72A60A57E657B87DD3076AA6F2D59C3 /* C29Utils.swift in Sources */,
+				1308494361692DFCE37C5AFAD3AFA62A /* C29Verification.swift in Sources */,
+				F8BCAA39C13D756994FB1B83A7D71282 /* ContactSource.swift in Sources */,
+				E06F54E730F0796E59AD33127728D56B /* CopperAddressBookProxy.swift in Sources */,
+				E668847CEA4A1FACE69F8750A4C02722 /* CopperAddressRecord.swift in Sources */,
+				B889AABBF4D519CDB9A0087592EB5448 /* CopperAlertActionButtonCell.swift in Sources */,
+				DBB25E7CCD5429B8DE384E763E871181 /* CopperAlertDigitEntryCell.swift in Sources */,
+				7DEFE0C102D6CA773B823BBB21022B80 /* CopperAlertImageCell.swift in Sources */,
+				7DCC1E29D97003B784B5BDD080AECF66 /* CopperAlertMessageCell.swift in Sources */,
+				8ADECC05ACEDB71947E5DFACFEF79DB7 /* CopperAlertNumberPadCell.swift in Sources */,
+				3755071A26D26180204D6471CB98F591 /* CopperAlertPhoneNumberEntryCell.swift in Sources */,
+				0A5AFDDAC7DFD30E6B2C65FD034351C0 /* CopperAlertTableViewCell.swift in Sources */,
+				8E1856A3E283FEF3C916C08A07D0C262 /* CopperAlertTitleCell.swift in Sources */,
+				6C130AE0340410FE2CCB19C574F01DDA /* CopperAlertTwoActionButtonCell.swift in Sources */,
+				1F611ABD4D39375EDB5A105597B7F250 /* CopperAlertViewController.swift in Sources */,
+				C83151AD5755D429FE8E7A5D00BDE4C3 /* CopperAlertViewTableManager.swift in Sources */,
+				863D9227A3D8B201B6261880FA1D6C69 /* CopperContact.swift in Sources */,
+				C5E52B38952858EDCB28813DE9AE76C6 /* CopperContactsRecord.swift in Sources */,
+				3E326C555D46F1A8EF36961E6A461727 /* CopperDateRecord.swift in Sources */,
+				EBE9A3F93E8D6512D94F7E582A7B4BE0 /* CopperEmailRecord.swift in Sources */,
+				A89BD0FD74A66B333D1D34B50EF4D856 /* CopperKit-dummy.m in Sources */,
+				A2742EF1F65BCC1B01A373302C060353 /* CopperKitEntryControl.swift in Sources */,
+				E21FE3651ACADABA6D9CFEDF6E56703A /* CopperNameRecord.swift in Sources */,
+				588CA572BE95DFB84763901B564A143C /* CopperPhoneRecord.swift in Sources */,
+				B462313FC374A113CF9445DA23621332 /* CopperPictureRecord.swift in Sources */,
+				3BD5EA749EA077092496AF621EAAF978 /* CopperRecordObject.swift in Sources */,
+				2D598551C39A0A36FCF3791B4A235FCB /* CopperSignatureRecord.swift in Sources */,
+				3C0949D161E230AD75D9A782A20822E5 /* CopperUsernameRecord.swift in Sources */,
+				825F1046BA4B2533D392F940D81FD765 /* CountryPicker.m in Sources */,
+				84AE334BF322C2A8EF76B1042E208D89 /* Errors.swift in Sources */,
+				3FB1D90628E942F2C1374B348449AD1A /* JWT.swift in Sources */,
+				7F771AE285F8AA12BD931D27660B2A1A /* JWTDecode.swift in Sources */,
+				C309E724CEE0E25687E00189A067384B /* Loadable.swift in Sources */,
+				223CEE9A133283B0547A19629A152739 /* Mixpanel.swift in Sources */,
+				AF423E0A307CF0715388F487685624D3 /* ModalCardAnimatedTransitioning.swift in Sources */,
+				F312F95167B97E6F269347F09CBB9268 /* ModalCardPresentationController.swift in Sources */,
+				CE637EDAB269F0DF6245FA83398D88F8 /* ModalCardTransitioningDelegate.swift in Sources */,
+				4113C735B516102FC508633B644F5A4B /* NBAsYouTypeFormatter.m in Sources */,
+				1811D1A3AF7BC7257371E78A8564D82C /* NBMetadataCore.m in Sources */,
+				0F43D6F21E5832BB56F682C9DF748B9C /* NBMetadataCoreMapper.m in Sources */,
+				512C7BA1C26B3EAC49EBBE8D2745CA9C /* NBMetadataCoreTest.m in Sources */,
+				11D08CB0D46CB4B586BC8CB8701A6B80 /* NBMetadataCoreTestMapper.m in Sources */,
+				2742C28C7677BEDB1CBF68FCCB1586ED /* NBMetadataHelper.m in Sources */,
+				7E921B288970373588CBEB2968361608 /* NBNumberFormat.m in Sources */,
+				C94C8957430D3334E7CF29F076652818 /* NBPhoneMetaData.m in Sources */,
+				AA8717FBF56B8AC3A3DD636504C4ED8E /* NBPhoneMetaDataGenerator.m in Sources */,
+				8A757B162F614F6CE617978F9886BB11 /* NBPhoneNumber.m in Sources */,
+				35E0A6E28829D083D41C283BCAE9AD71 /* NBPhoneNumberDesc.m in Sources */,
+				1A515E439ABDACB4682056F22C48692C /* NBPhoneNumberUtil.m in Sources */,
+				5A249A75404A57E7E66A9D3520E02B91 /* NetworkActivityIndicatorView.swift in Sources */,
+				4AB4C06DF44C878452DB03E565F193BB /* NSArray+NBAdditions.m in Sources */,
+				44AF20C9C2E6B291110DB32B52C3835A /* NSURL+Copper.swift in Sources */,
+				2649767D94BC1C6327A457614211A215 /* Saveable.swift in Sources */,
+				97F7B0C0422ACE787C299A3624DAD420 /* SFHFKeychainUtils.m in Sources */,
+				B27BA303524993331E08D8D3CA7B0573 /* String+Copper.swift in Sources */,
+				B5BE04AB7B47B3F1BF56C55397B81AD3 /* UIColor+Copper.swift in Sources */,
+				3DCB78051EEA93D65F52E857A3CA8AD7 /* UIImage+Copper.swift in Sources */,
+				9312EE3A14A0AAB9268335454399F631 /* UILabel+Copper.swift in Sources */,
+				21CE5834519864A146B388A00C07FE63 /* UIView+Copper.swift in Sources */,
+				F6B67BB0495E91BA4094386B104B3457 /* WebKitViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5009F742E68CBA58F80649ECA852E5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657EE755C63CD12FB11131C3429158B6 /* Pods-unnamed dashboard appUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA4387F9D7CA4E45CCA54BFAF2F7C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A1600B95CFB7D616D15ABE11A58825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29DD8CCFB6D73BE9675F1BA81A2FADD /* Pods-unnamed dashboard appTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80E9E7F070395FB6660D374A6E487786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CopperKit;
+			target = 2D80D217185DC99B56420B81C76F59D3 /* CopperKit */;
+			targetProxy = 9836D1AE8B9D216A236A2E1C4BB8791B /* PBXContainerItemProxy */;
+		};
+		9CA90E66E512FEF7109D94A0E2FFEBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CopperKit-CopperKit";
+			target = C662D2229AD271442E1A95D26539C956 /* CopperKit-CopperKit */;
+			targetProxy = A341F833485203A874BE87FB884EE1FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		166487A29ED8A7E03CE93371A1FCE06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8885253B35B87F39880A1153D2D41799 /* Pods-unnamed dashboard appUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard appUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_appUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		255D6D229A2D502BC5FC0BB88D4F9E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CopperKit/CopperKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CopperKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CopperKit/CopperKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CopperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		526DF12C79170C1E02A52740663AB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CopperKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CopperKit/ResourceBundle-CopperKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = CopperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B926F9CFBBAB14380178FBD40AE7348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08C1E571DCB07993B1E338621A33669 /* Pods-unnamed dashboard app.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9382D825A3B5BBD34609E5780954FC44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CopperKit";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CopperKit/ResourceBundle-CopperKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = CopperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9B5B12268DBA56CE8A15CD99B810C684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEED453BD308FD9EE837555B75D33E8D /* Pods-unnamed dashboard appTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard appTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_appTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D374C70F00B3A4FA7344DD6E70F72B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8C69CEA852F0473CEA6B7909B60B62 /* Pods-unnamed dashboard appUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard appUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_appUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D532E56F03154A8E64C666C20C77A966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90403F7B9A593E67D613E6111454B3E6 /* Pods-unnamed dashboard app.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E363AB305289646FEEA0B61D70F1BACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC47E840E7EA00303501EF7DDE35481D /* CopperKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CopperKit/CopperKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CopperKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CopperKit/CopperKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CopperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0D083598A78AA1956DFD8361AC9E580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195E269DB606E9D3B007186BE3A2451A /* Pods-unnamed dashboard appTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-unnamed dashboard appTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_unnamed_dashboard_appTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F3474F5A103078199CEB25B523371A /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D532E56F03154A8E64C666C20C77A966 /* Debug */,
+				8B926F9CFBBAB14380178FBD40AE7348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B840106909D0EC8AFB0B42C40FE58A24 /* Build configuration list for PBXNativeTarget "CopperKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255D6D229A2D502BC5FC0BB88D4F9E18 /* Debug */,
+				E363AB305289646FEEA0B61D70F1BACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD7A0FBAC8664815E38976C1A2F47D9 /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D083598A78AA1956DFD8361AC9E580 /* Debug */,
+				9B5B12268DBA56CE8A15CD99B810C684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC286374EB79F696F44597D8D3E22F1B /* Build configuration list for PBXNativeTarget "Pods-unnamed dashboard appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D374C70F00B3A4FA7344DD6E70F72B7B /* Debug */,
+				166487A29ED8A7E03CE93371A1FCE06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD94AEBE04DAD1CAAF67A2CDA2127BA /* Build configuration list for PBXNativeTarget "CopperKit-CopperKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526DF12C79170C1E02A52740663AB227 /* Debug */,
+				9382D825A3B5BBD34609E5780954FC44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
