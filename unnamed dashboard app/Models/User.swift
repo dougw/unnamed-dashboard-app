@@ -11,5 +11,6 @@ import Foundation
 class User {
     var name = ""
     var phonenumber = Int()
-    var emailaddress = ""
+    var email = ""
+    var userID = ""
 }

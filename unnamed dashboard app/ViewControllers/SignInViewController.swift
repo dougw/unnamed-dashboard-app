@@ -17,7 +17,7 @@ class SignInViewController: UIViewController {
     // Reference to our CopperKit singleton
     var copper: C29Application?
     // Instance variable holding our desired scopes to allow changes, see showOptionsMenu()
-    var desiredScopes: [C29Scope]? = ViewController.DefaultScopes
+    var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
         super.viewDidLoad()
 //        topLogo.alpha = 0.0
@@ -44,16 +44,16 @@ class SignInViewController: UIViewController {
             }
         })
     }
-//    
-//    func setupViewWithUserInfo(userInfo: C29UserInfo) {
-//        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
-//        self.nameLabel.text = userInfo.fullName
-//        self.emailLabel.text = userInfo.emailAddress
-//        self.phoneLabel.text = userInfo.phoneNumber
-//        self.userIdLabel.text = userInfo.userId
-//        // flip our signout state
-////        self.signedInView.hidden = false
-////        self.signedOutView.hidden = true
-//    }
+  
+    func setupViewWithUserInfo(userInfo: C29UserInfo) {
+      var username  = userInfo.fullName
+        var email = userInfo.emailAddress
+       var phonenumber = userInfo.phoneNumber
+      var userID = userInfo.userId
+        // flip our signout state
+//        self.signedInView.hidden = false
+//        self.signedOutView.hidden = true
+    }
+    
 }
 
