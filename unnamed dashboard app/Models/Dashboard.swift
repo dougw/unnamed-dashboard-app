@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 class Dashboard{
+    var image: UIImage?
+    var title = ""
+    var content = ""
 }
