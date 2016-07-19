@@ -147,10 +147,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtA-B9-Nff">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtA-B9-Nff">
                                 <rect key="frame" x="205" y="60" width="170" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-sJ-ngl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Apple News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-sJ-ngl">
                                         <rect key="frame" x="32" y="26" width="92" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,40 +163,25 @@
                                     <constraint firstItem="3Vr-sJ-ngl" firstAttribute="top" secondItem="mtA-B9-Nff" secondAttribute="top" constant="26" id="WHe-iI-F0X"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elw-hJ-OOs">
-                                <rect key="frame" x="0.0" y="60" width="169" height="200"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Th-IQ-kEP">
-                                        <rect key="frame" x="0.0" y="18" width="128" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.39215686274509803" green="0.96470588235294119" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="3Th-IQ-kEP" firstAttribute="top" secondItem="elw-hJ-OOs" secondAttribute="top" constant="18" id="46k-eU-GT6"/>
-                                    <constraint firstAttribute="trailing" secondItem="3Th-IQ-kEP" secondAttribute="trailing" constant="41" id="E9k-CF-dVL"/>
-                                    <constraint firstItem="3Th-IQ-kEP" firstAttribute="leading" secondItem="elw-hJ-OOs" secondAttribute="leading" id="fuN-Qy-wlr"/>
-                                </constraints>
-                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-pt-QhQ">
+                                <rect key="frame" x="14" y="60" width="163" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="trailing" secondItem="mtA-B9-Nff" secondAttribute="trailing" id="80U-yB-w3H"/>
                             <constraint firstItem="SkQ-Ec-zoP" firstAttribute="centerY" secondItem="ruU-W2-gri" secondAttribute="centerY" id="8cd-fl-49w"/>
-                            <constraint firstItem="mtA-B9-Nff" firstAttribute="leading" secondItem="elw-hJ-OOs" secondAttribute="trailing" constant="36" id="CUC-DP-qTf"/>
-                            <constraint firstItem="SkQ-Ec-zoP" firstAttribute="top" secondItem="elw-hJ-OOs" secondAttribute="bottom" constant="8" symbolic="YES" id="Hvf-44-CWC"/>
                             <constraint firstAttribute="trailing" secondItem="6HR-Lv-HyZ" secondAttribute="trailing" id="JdA-jS-mnu"/>
                             <constraint firstItem="SkQ-Ec-zoP" firstAttribute="top" secondItem="mtA-B9-Nff" secondAttribute="bottom" constant="8" symbolic="YES" id="NcK-Mn-UeJ"/>
                             <constraint firstItem="SkQ-Ec-zoP" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leadingMargin" constant="8" id="Su2-u9-JfV"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="centerX" secondItem="SkQ-Ec-zoP" secondAttribute="centerX" id="VIG-cM-HoA"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leading" id="Z6w-8e-dCE"/>
-                            <constraint firstItem="6HR-Lv-HyZ" firstAttribute="leading" secondItem="elw-hJ-OOs" secondAttribute="leading" id="Zmc-hf-Wkj"/>
-                            <constraint firstItem="elw-hJ-OOs" firstAttribute="top" secondItem="mtA-B9-Nff" secondAttribute="top" id="jnr-Si-kRd"/>
                             <constraint firstItem="3A2-nM-nmn" firstAttribute="top" secondItem="SkQ-Ec-zoP" secondAttribute="bottom" constant="28" id="m10-80-qc7"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="top" secondItem="ruU-W2-gri" secondAttribute="top" id="qhS-lv-HbQ"/>
-                            <constraint firstItem="elw-hJ-OOs" firstAttribute="top" secondItem="6HR-Lv-HyZ" secondAttribute="bottom" constant="16" id="wK0-2f-Ixx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -243,21 +228,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjT-dn-mUs">
-                                <rect key="frame" x="0.0" y="399" width="375" height="26"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-RU-e6l">
-                                <rect key="frame" x="20" y="466" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="calendarView" destination="HJq-RU-e6l" id="8qV-Qw-kJU"/>
-                        <outlet property="menuView" destination="SjT-dn-mUs" id="D5q-pf-kZG"/>
                         <outlet property="output" destination="MQZ-EK-cJe" id="Mkn-YS-Gnp"/>
                     </connections>
                 </viewController>
