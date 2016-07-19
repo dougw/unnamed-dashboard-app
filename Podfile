@@ -6,8 +6,8 @@ target 'unnamed dashboard app' do
   use_frameworks!
      pod “CopperKit”
      pod 'GoogleAPIClient/Calendar', '~> 1.0.2'
-    pod 'GTMOAuth2', '~> 1.1.0'
-pod 'CVCalendar', '~> 1.2.9'
+     pod 'GTMOAuth2', '~> 1.1.0'
+     pod 'CVCalendar', '~> 1.2.9'
   # Pods for unnamed dashboard app
 
   target 'unnamed dashboard appTests' do

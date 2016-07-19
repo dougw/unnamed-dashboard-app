@@ -9,10 +9,20 @@ import Foundation
 import GoogleAPIClient
 import GTMOAuth2
 import UIKit
+import CVCalendar
 
 class CalendarViewController: UIViewController {
  @IBOutlet weak var output: UITextView!
+    //These next few lines(these 2 IBActions and the viewDidLayoutSubviews are for CVCalendar.
+    @IBOutlet weak var menuView: CVCalendarMenuView!
+    @IBOutlet weak var calendarView: CVCalendarView!
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        menuView.commitMenuViewUpdate()
+        calendarView.commitCalendarViewUpdate()
+    }
     private let kKeychainItemName = "Google Calendar API"
     private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
     

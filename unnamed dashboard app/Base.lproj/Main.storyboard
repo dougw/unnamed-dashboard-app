@@ -204,6 +204,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dashboardAPITableView" destination="SkQ-Ec-zoP" id="hvf-7n-uPD"/>
                     </connections>
@@ -242,16 +243,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjT-dn-mUs">
+                                <rect key="frame" x="0.0" y="399" width="375" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-RU-e6l">
+                                <rect key="frame" x="20" y="466" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="calendarView" destination="HJq-RU-e6l" id="8qV-Qw-kJU"/>
+                        <outlet property="menuView" destination="SjT-dn-mUs" id="D5q-pf-kZG"/>
                         <outlet property="output" destination="MQZ-EK-cJe" id="Mkn-YS-Gnp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcH-Tr-F4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="-1010"/>
+            <point key="canvasLocation" x="-87.5" y="-1010.5"/>
         </scene>
         <!--Connections Settings View Controller-->
         <scene sceneID="geH-ry-4sB">
@@ -262,7 +274,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bss-pm-VjN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2lo-kS-Hf0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Connections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-DT-Wbo">

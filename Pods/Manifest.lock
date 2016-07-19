@@ -1,5 +1,6 @@
 PODS:
   - CopperKit (3.1.2)
+  - CVCalendar (1.2.9)
   - GoogleAPIClient/Calendar (1.0.4):
     - GoogleAPIClient/Core
     - GTMSessionFetcher (~> 1.1)
@@ -15,15 +16,17 @@ PODS:
 
 DEPENDENCIES:
   - CopperKit
+  - CVCalendar (~> 1.2.9)
   - GoogleAPIClient/Calendar (~> 1.0.2)
   - GTMOAuth2 (~> 1.1.0)
 
 SPEC CHECKSUMS:
   CopperKit: 6bfb5ccb8ad7e4df94df11ef38dfee4eae0e9a6d
+  CVCalendar: 0799256e0bc3b43e83b7e86c0729ce9ff0624cb6
   GoogleAPIClient: 4dedb6af613eb7d171814c343f8a82ee5411e13b
   GTMOAuth2: bdb12f3e0d2110bfe585f6151230b883beb4d042
   GTMSessionFetcher: 174bc61d5238f81f9ddb807b0b0170420f67de85
 
-PODFILE CHECKSUM: 7ba5b38e1f3f4abd74e74a3de013d8a49410e82f
+PODFILE CHECKSUM: f4b81b6950d247ed08e90494aec510a12e0ed15c
 
 COCOAPODS: 1.0.1
