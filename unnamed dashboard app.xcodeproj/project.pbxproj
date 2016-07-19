@@ -24,6 +24,7 @@
 		FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CD1D3977C600500C1C /* Dashboard.swift */; };
 		FC3591D01D3977CD00500C1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CF1D3977CD00500C1C /* User.swift */; };
 		FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */; };
+		FC8781E01D3EA0A00095A3CD /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		FC3591CD1D3977C600500C1C /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		FC3591CF1D3977CD00500C1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				FC3591C01D3968D000500C1C /* ConnectionsSettingsViewController.swift */,
 				FC3591C11D3968D000500C1C /* DashboardViewController.swift */,
 				FC3591C21D3968D000500C1C /* SignInViewController.swift */,
+				FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8781E01D3EA0A00095A3CD /* CalendarViewController.swift in Sources */,
 				FC3591C71D3968D000500C1C /* ConnectAccountsViewController.swift in Sources */,
 				FC3591C81D3968D000500C1C /* ConnectionsSettingsViewController.swift in Sources */,
 				FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */,

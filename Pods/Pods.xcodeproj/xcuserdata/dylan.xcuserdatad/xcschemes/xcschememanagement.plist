@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMOAuth2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAPIClient.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-unnamed dashboard app.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>228A8785B1C6C6BFE8E1C8D261204DE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2D80D217185DC99B56420B81C76F59D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39EFD830E6F82181B9D6F38B0A15FFFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D468777BEC2DE5127A16239373FFD11F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E3040DA79851800620D48E554C9D95BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E58C34DD9C99CA40841C23CF1433D5AF</key>
+		<key>F222F70BA4CAC20C094DCE977D86BDC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

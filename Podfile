@@ -4,7 +4,10 @@
 target 'unnamed dashboard app' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-	pod “CopperKit”
+     pod “CopperKit”
+     pod 'GoogleAPIClient/Calendar', '~> 1.0.2'
+    pod 'GTMOAuth2', '~> 1.1.0'
+pod 'CVCalendar', '~> 1.2.9'
   # Pods for unnamed dashboard app
 
   target 'unnamed dashboard appTests' do

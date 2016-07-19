@@ -32,6 +32,8 @@ class SignInViewController: UIViewController {
     // Instance variable holding our desired scopes to allow changes, see showOptionsMenu()
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
+        copper?.closeSession()
+        resetView()
         super.viewDidLoad()
 //        topLogo.alpha = 0.0
 //        UIView.animateWithDuration(3.0) {
@@ -83,6 +85,9 @@ class SignInViewController: UIViewController {
         // flip our state to the signed out state
         self.signedInView.hidden = true
         self.signedOutView.hidden = false
+    }
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+       
     }
 
     @IBAction func signoutButtonPressed(sender: AnyObject) {
