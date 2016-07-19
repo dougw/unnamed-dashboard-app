@@ -11,7 +11,7 @@ import CopperKit
 import UIKit
 //import RealmSwift
 class SignInViewController: UIViewController {
-    
+
     // Signed Out view IB Variables
     @IBOutlet weak var signedOutView: UIView!
     @IBOutlet weak var signinButton: UIButton!
@@ -25,6 +25,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var userIdLabel: UILabel!
+//    @IBOutlet weak var continueButton: UIButton!
      static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
     var copper: C29Application?
@@ -83,12 +84,12 @@ class SignInViewController: UIViewController {
         self.signedInView.hidden = true
         self.signedOutView.hidden = false
     }
-    
+
     @IBAction func signoutButtonPressed(sender: AnyObject) {
         copper?.closeSession()
         resetView()
     }
-    
+
     @IBAction func showOptionsMenu() {
         let alertController = UIAlertController(title: "CopperKit Settings", message: nil, preferredStyle: .ActionSheet)
         let defaultScopesAction = UIAlertAction(title: "Default scopes", style: .Default) { (action) in
