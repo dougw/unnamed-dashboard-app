@@ -19,11 +19,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var calendarLabel: UILabel!
     @IBOutlet weak var newsTextView: UITextView!
     
-    var url = "https://newsapi.org/v1/articles?source=googlenews&sortBy=top&apiKey=76bf0e6c09c846fcae1484659167aa91"
-    Alamofire.request(.GET, url).responseJSON { (req, res, json) -> Void in
-    let swiftyJsonVar = JSON(json.value!)
-    print(swiftyJsonVar)
-    }
+
    
 
     
@@ -45,6 +41,12 @@ class DashboardViewController: UIViewController {
         output.editable = false
         output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+//        
+//        newsTextView.frame = view.bounds
+      newsTextView.editable = false
+//        newsTextView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+//        newsTextView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+        
         
         view.addSubview(output);
         
@@ -55,6 +57,28 @@ class DashboardViewController: UIViewController {
             service.authorizer = auth
         }
         
+        let url = "https://newsapi.org/v1/articles"
+    let params = [ "source" : "googlenews" ,
+                           "sortBy" : "top" ,
+                           "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
+        Alamofire.request(.GET, url, parameters: params).responseJSON { response in
+            switch response.result {
+            case .Success(let data):
+                 let json = JSON(data)
+                 let myarticles = json["articles"].arrayValue
+                 
+                 var titlesString = " "
+                 
+                 for article in myarticles {
+                    let title = article["title"].stringValue
+                    titlesString = titlesString + title
+                 }
+                 self.newsTextView.text = ("\(titlesString )")
+            case .Failure(let error):
+                print("Could not connect \(error)")
+            }
+        }
+    
     }
     
     // When the view appears, ensure that the Google Calendar API service is authorized
