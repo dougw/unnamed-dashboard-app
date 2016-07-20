@@ -10,6 +10,7 @@
 		918E9B4F938CDB5B3B7DD471 /* Pods_unnamed_dashboard_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */; };
 		D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */; };
 		DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */; };
+		FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */ = {isa = PBXBuildFile; fileRef = FC03D76C1D3FB4B900866DD5 /* googlecal.png */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
 		FC3591921D39687F00500C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3591901D39687F00500C1C /* Main.storyboard */; };
 		FC3591941D39687F00500C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3591931D39687F00500C1C /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CD1D3977C600500C1C /* Dashboard.swift */; };
 		FC3591D01D3977CD00500C1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CF1D3977CD00500C1C /* User.swift */; };
 		FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */; };
-		FC8781E01D3EA0A00095A3CD /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 		8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
 		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* unnamed dashboard app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unnamed dashboard app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC35918A1D39687F00500C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3591911D39687F00500C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		FC3591CD1D3977C600500C1C /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		FC3591CF1D3977CD00500C1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
-		FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +129,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC03D76E1D3FB4C800866DD5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FC03D76C1D3FB4B900866DD5 /* googlecal.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		FC35917E1D39687F00500C1C = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +162,7 @@
 		FC3591891D39687F00500C1C /* unnamed dashboard app */ = {
 			isa = PBXGroup;
 			children = (
+				FC03D76E1D3FB4C800866DD5 /* images */,
 				FC3591BA1D3968D000500C1C /* Assets.xcassets */,
 				FC3591BB1D3968D000500C1C /* Helpers */,
 				FC3591BC1D3968D000500C1C /* Models */,
@@ -211,7 +220,6 @@
 				FC3591C01D3968D000500C1C /* ConnectionsSettingsViewController.swift */,
 				FC3591C11D3968D000500C1C /* DashboardViewController.swift */,
 				FC3591C21D3968D000500C1C /* SignInViewController.swift */,
-				FC8781DF1D3EA0A00095A3CD /* CalendarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -345,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3591971D39687F00500C1C /* LaunchScreen.storyboard in Resources */,
+				FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,
 			);
@@ -494,7 +503,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8781E01D3EA0A00095A3CD /* CalendarViewController.swift in Sources */,
 				FC3591C71D3968D000500C1C /* ConnectAccountsViewController.swift in Sources */,
 				FC3591C81D3968D000500C1C /* ConnectionsSettingsViewController.swift in Sources */,
 				FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */,
