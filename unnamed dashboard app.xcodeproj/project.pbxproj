@@ -11,6 +11,7 @@
 		D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */; };
 		DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */; };
 		FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */ = {isa = PBXBuildFile; fileRef = FC03D76C1D3FB4B900866DD5 /* googlecal.png */; };
+		FC03D7701D40005500866DD5 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03D76F1D40005500866DD5 /* Package.swift */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
 		FC3591921D39687F00500C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3591901D39687F00500C1C /* Main.storyboard */; };
 		FC3591941D39687F00500C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3591931D39687F00500C1C /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
 		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
+		FC03D76F1D40005500866DD5 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* unnamed dashboard app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unnamed dashboard app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC35918A1D39687F00500C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3591911D39687F00500C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				FC3591931D39687F00500C1C /* Assets.xcassets */,
 				FC3591951D39687F00500C1C /* LaunchScreen.storyboard */,
 				FC3591981D39687F00500C1C /* Info.plist */,
+				FC03D76F1D40005500866DD5 /* Package.swift */,
 			);
 			path = "unnamed dashboard app";
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */,
 				FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */,
 				FC3591D01D3977CD00500C1C /* User.swift in Sources */,
+				FC03D7701D40005500866DD5 /* Package.swift in Sources */,
 				FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */,
 				FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */,
 				FC3591CC1D3977BC00500C1C /* API.swift in Sources */,

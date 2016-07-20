@@ -1,6 +1,6 @@
 PODS:
+  - Alamofire (3.4.1)
   - CopperKit (3.1.2)
-  - CVCalendar (1.2.9)
   - GoogleAPIClient/Calendar (1.0.4):
     - GoogleAPIClient/Core
     - GTMSessionFetcher (~> 1.1)
@@ -13,20 +13,23 @@ PODS:
   - GTMSessionFetcher/Core (1.1.4)
   - GTMSessionFetcher/Full (1.1.4):
     - GTMSessionFetcher/Core (= 1.1.4)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.4)
   - CopperKit
-  - CVCalendar (~> 1.2.9)
   - GoogleAPIClient/Calendar (~> 1.0.2)
   - GTMOAuth2 (~> 1.1.0)
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   CopperKit: 6bfb5ccb8ad7e4df94df11ef38dfee4eae0e9a6d
-  CVCalendar: 0799256e0bc3b43e83b7e86c0729ce9ff0624cb6
   GoogleAPIClient: 4dedb6af613eb7d171814c343f8a82ee5411e13b
   GTMOAuth2: bdb12f3e0d2110bfe585f6151230b883beb4d042
   GTMSessionFetcher: 174bc61d5238f81f9ddb807b0b0170420f67de85
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: f4b81b6950d247ed08e90494aec510a12e0ed15c
+PODFILE CHECKSUM: ef4e98a1cae0d48b537836f9c5e3fa0bf8a59d9a
 
 COCOAPODS: 1.0.1

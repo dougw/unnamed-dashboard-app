@@ -7,7 +7,9 @@ target 'unnamed dashboard app' do
      pod “CopperKit”
      pod 'GoogleAPIClient/Calendar', '~> 1.0.2'
      pod 'GTMOAuth2', '~> 1.1.0'
-     pod 'CVCalendar', '~> 1.2.9'
+     pod 'Alamofire', '~> 3.4'
+       pod 'SwiftyJSON'
+
   # Pods for unnamed dashboard app
 
   target 'unnamed dashboard appTests' do

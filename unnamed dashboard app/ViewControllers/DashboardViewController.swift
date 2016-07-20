@@ -10,13 +10,22 @@ import Foundation
 import UIKit
 import GoogleAPIClient
 import GTMOAuth2
+import Alamofire
+import SwiftyJSON
 
 class DashboardViewController: UIViewController {
      @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
+    @IBOutlet weak var newsTextView: UITextView!
     
-    
+    var url = "https://newsapi.org/v1/articles?source=googlenews&sortBy=top&apiKey=76bf0e6c09c846fcae1484659167aa91"
+    Alamofire.request(.GET, url).responseJSON { (req, res, json) -> Void in
+    let swiftyJsonVar = JSON(json.value!)
+    print(swiftyJsonVar)
+    }
+   
+
     
     private let kKeychainItemName = "Google Calendar API"
     private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
@@ -180,6 +189,4 @@ class DashboardViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-   }
+}
