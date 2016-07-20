@@ -49,26 +49,31 @@ class DashboardViewController: UIViewController {
     
     // When the view appears, ensure that the Google Calendar API service is authorized
     // and perform API calls
-    
-  
+    @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
+        
+        if let authorizer = service.authorizer,
+            canAuth = authorizer.canAuthorize where canAuth {
+            connectCalendarButton.hidden = true
+            fetchEvents()
+            
+        } else {
+            presentViewController(
+                createAuthController(),
+                animated: true,
+                completion: nil
+            )
+        }
+    }
     
     override func viewDidAppear(animated: Bool) {
-          @IBAction func ButtonPressed( sender: AnyObject? ) {
-                    if let authorizer = service.authorizer,
-                canAuth = authorizer.canAuthorize where canAuth {
-                connectCalendarButton.hidden = false
-                fetchEvents()
-                
-            } else {
-                presentViewController(
-                    createAuthController(),
-                    animated: true,
-                    completion: nil
-                )
-            }
-        }
-    
+        
+            fetchEvents()
+            
     }
+    
+    
+    
+    
       
   
     // Construct a query and get a list of upcoming events from the user calendar

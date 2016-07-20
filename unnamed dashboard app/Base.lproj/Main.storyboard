@@ -155,8 +155,7 @@
                                 <rect key="frame" x="53" y="326" width="124" height="30"/>
                                 <state key="normal" title="Connect Calendar"/>
                                 <connections>
-                                    <action selector="ButtonPressed:" destination="cxI-6k-1s9" eventType="touchUpInside" id="jbk-0R-APd"/>
-                                    <action selector="connectCalendarButtonTapped:" destination="cxI-6k-1s9" eventType="touchUpInside" id="4id-mK-bCB"/>
+                                    <action selector="connectCalendarButtonPressed:" destination="cxI-6k-1s9" eventType="touchUpInside" id="tCa-KF-q7O"/>
                                 </connections>
                             </button>
                         </subviews>
