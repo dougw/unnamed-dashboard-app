@@ -128,7 +128,7 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtA-B9-Nff">
                                 <rect key="frame" x="205" y="60" width="170" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-sJ-ngl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Apple News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-sJ-ngl">
                                         <rect key="frame" x="32" y="26" width="92" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,38 +143,44 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQZ-EK-cJe">
-                                <rect key="frame" x="15" y="60" width="176" height="200"/>
+                                <rect key="frame" x="15" y="85" width="176" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="tWP-44-zSp"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-2p-aQG">
-                                <rect key="frame" x="53" y="326" width="124" height="30"/>
+                                <rect key="frame" x="41" y="44" width="124" height="30"/>
                                 <state key="normal" title="Connect Calendar"/>
                                 <connections>
                                     <action selector="connectCalendarButtonPressed:" destination="cxI-6k-1s9" eventType="touchUpInside" id="tCa-KF-q7O"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-pm-fzG">
+                                <rect key="frame" x="63" y="65" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="top" secondItem="6HR-Lv-HyZ" secondAttribute="bottom" constant="16" id="2rD-uf-Hi1"/>
-                            <constraint firstItem="mtA-B9-Nff" firstAttribute="leading" secondItem="MQZ-EK-cJe" secondAttribute="trailing" constant="14" id="5c8-tW-HUq"/>
-                            <constraint firstItem="cFY-2p-aQG" firstAttribute="top" secondItem="MQZ-EK-cJe" secondAttribute="bottom" constant="66" id="FPT-DV-ySs"/>
+                            <constraint firstItem="3A2-nM-nmn" firstAttribute="top" secondItem="MQZ-EK-cJe" secondAttribute="bottom" constant="382" id="3GH-YI-v9L"/>
+                            <constraint firstItem="A4r-pm-fzG" firstAttribute="top" secondItem="6HR-Lv-HyZ" secondAttribute="bottom" constant="21" id="3Ur-As-V86"/>
+                            <constraint firstItem="mtA-B9-Nff" firstAttribute="leading" secondItem="MQZ-EK-cJe" secondAttribute="trailing" constant="14" id="6vn-Wh-G2l"/>
+                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="top" secondItem="cFY-2p-aQG" secondAttribute="bottom" constant="11" id="G82-y5-U4q"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="top" secondItem="ruU-W2-gri" secondAttribute="top" id="MTd-MY-88r"/>
+                            <constraint firstItem="cFY-2p-aQG" firstAttribute="top" secondItem="6HR-Lv-HyZ" secondAttribute="bottom" id="Y3y-Y1-hTA"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="trailing" secondItem="mtA-B9-Nff" secondAttribute="trailing" id="cxZ-0T-UjO"/>
-                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="top" secondItem="mtA-B9-Nff" secondAttribute="top" id="fuX-bM-VDI"/>
-                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leadingMargin" constant="-1" id="hYc-3s-Jvb"/>
+                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="centerX" secondItem="cFY-2p-aQG" secondAttribute="centerX" id="ide-x0-eyZ"/>
                             <constraint firstAttribute="trailing" secondItem="6HR-Lv-HyZ" secondAttribute="trailing" id="m3V-H4-Ws7"/>
+                            <constraint firstItem="mtA-B9-Nff" firstAttribute="leading" secondItem="A4r-pm-fzG" secondAttribute="trailing" constant="73" id="px1-7a-cCY"/>
+                            <constraint firstItem="MQZ-EK-cJe" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leadingMargin" constant="-1" id="vR1-kW-Rif"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leading" id="vVf-Pw-QHV"/>
-                            <constraint firstItem="cFY-2p-aQG" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leadingMargin" constant="37" id="wTb-o7-lAo"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="calendarLabel" destination="A4r-pm-fzG" id="3dc-mk-yvx"/>
                         <outlet property="connectCalendarButton" destination="cFY-2p-aQG" id="dc7-qX-6sA"/>
                         <outlet property="output" destination="MQZ-EK-cJe" id="6Do-vc-c8t"/>
                     </connections>

@@ -14,6 +14,7 @@ import GTMOAuth2
 class DashboardViewController: UIViewController {
      @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
+    @IBOutlet weak var calendarLabel: UILabel!
     
     
     
@@ -54,6 +55,7 @@ class DashboardViewController: UIViewController {
         if let authorizer = service.authorizer,
             canAuth = authorizer.canAuthorize where canAuth {
             connectCalendarButton.hidden = true
+            calendarLabel.hidden = false
             fetchEvents()
             
         } else {
@@ -62,19 +64,25 @@ class DashboardViewController: UIViewController {
                 animated: true,
                 completion: nil
             )
+                 calendarLabel.hidden = true
         }
     }
     
     override func viewDidAppear(animated: Bool) {
-        
+        if let authorizer = service.authorizer,
+            canAuth = authorizer.canAuthorize where canAuth {
             fetchEvents()
-            
+             calendarLabel.hidden = false
+        }
+        else{
+            calendarLabel.hidden = true
+        }
     }
     
     
     
     
-      
+    
   
     // Construct a query and get a list of upcoming events from the user calendar
     func fetchEvents() {
