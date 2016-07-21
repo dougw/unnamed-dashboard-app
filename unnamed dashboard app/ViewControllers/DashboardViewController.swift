@@ -15,15 +15,12 @@ import SwiftyJSON
 import ChameleonFramework
 
 class DashboardViewController: UIViewController {
+    // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
      @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
     @IBOutlet weak var newsTextView: UITextView!
-    
-
-   
-
-    
+    //These are necessary for the Google Calendar API( name and Client ID from the Google Developer Console).
     private let kKeychainItemName = "Google Calendar API"
     private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
     
@@ -37,24 +34,23 @@ class DashboardViewController: UIViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
+        //All of this output stuff just sets size and features to the output for the Google Calendar API.
         output.frame = view.bounds
         output.editable = false
         output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+        // The let colors and view.backgroundColor are all for a gradient, which requires ChameleonFramework.
         let colors:[UIColor] = [
             UIColor.flatPinkColor(),
             UIColor.flatSkyBlueColor()
         ]
         view.backgroundColor = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-//        
-//        newsTextView.frame = view.bounds
+//        Makes sure that the newsTextView isn't editable.
       newsTextView.editable = false
-//        newsTextView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-//        newsTextView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         
         
         view.addSubview(output);
-        
+        //Calls on name and client ID for Google Cal again
         if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
             kKeychainItemName,
             clientID: kClientID,
@@ -62,10 +58,12 @@ class DashboardViewController: UIViewController {
             service.authorizer = auth
         }
         
+        //Parsing for newsAPI to get stories. There are many choices for the source parameter(bloomberg, google news, the list goes on an on at newsapi.org) and there are 3 options for sortBy(top, latest, featured).
         let url = "https://newsapi.org/v1/articles"
     let params = [ "source" : "googlenews" ,
                            "sortBy" : "top" ,
                            "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
+        //Alamofire is used to parse the data and a for statement grabs the titles and put its in the newsTextView
         Alamofire.request(.GET, url, parameters: params).responseJSON { response in
             switch response.result {
             case .Success(let data):
@@ -78,16 +76,17 @@ class DashboardViewController: UIViewController {
                     let title = article["title"].stringValue
                     titlesString = titlesString + title + "                          "
                  }
+                 //The titles are displayed on success
                  self.newsTextView.text = ("\(titlesString )\n\n")
             case .Failure(let error):
+                //An error printed on failure
                 print("Could not connect \(error)")
             }
         }
     
     }
     
-    // When the view appears, ensure that the Google Calendar API service is authorized
-    // and perform API calls
+    // If the user hasn't logged into Google yet, the connectCalendarButton will prompt the sign in and after-so display the events. If not, the button is hidden and the events are displayed.
     @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
         
         if let authorizer = service.authorizer,
@@ -105,7 +104,7 @@ class DashboardViewController: UIViewController {
                  calendarLabel.hidden = true
         }
     }
-    
+    //This just makes sure that the label that says calendar is hidden if the user isn't logged in to Google.
     override func viewDidAppear(animated: Bool) {
         if let authorizer = service.authorizer,
             canAuth = authorizer.canAuthorize where canAuth {
@@ -118,10 +117,6 @@ class DashboardViewController: UIViewController {
     }
     
     
-    
-    
-    
-  
     // Construct a query and get a list of upcoming events from the user calendar
     func fetchEvents() {
         let query = GTLQueryCalendar.queryForEventsListWithCalendarId("primary")
