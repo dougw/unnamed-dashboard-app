@@ -42,8 +42,8 @@ class DashboardViewController: UIViewController {
         output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         let colors:[UIColor] = [
-            UIColor.flatPinkColorDark(),
-            UIColor.flatBlueColor()
+            UIColor.flatPinkColor(),
+            UIColor.flatSkyBlueColor()
         ]
         view.backgroundColor = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
 //        
