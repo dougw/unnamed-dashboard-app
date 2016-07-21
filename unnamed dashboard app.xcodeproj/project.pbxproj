@@ -78,6 +78,7 @@
 		FC3591CD1D3977C600500C1C /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		FC3591CF1D3977CD00500C1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		FCBE77F91D410A85000DF775 /* unnamed dashboard app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "unnamed dashboard app.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +165,7 @@
 		FC3591891D39687F00500C1C /* unnamed dashboard app */ = {
 			isa = PBXGroup;
 			children = (
+				FCBE77F91D410A85000DF775 /* unnamed dashboard app.entitlements */,
 				FC03D76E1D3FB4C800866DD5 /* images */,
 				FC3591BA1D3968D000500C1C /* Assets.xcassets */,
 				FC3591BB1D3968D000500C1C /* Helpers */,
@@ -318,7 +320,12 @@
 				TargetAttributes = {
 					FC3591861D39687F00500C1C = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = CG8RAYC636;
+						DevelopmentTeam = JTL74VZ4WQ;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					FC35919C1D39688000500C1C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -660,6 +667,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "unnamed dashboard app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-app";
@@ -675,6 +686,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "unnamed dashboard app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-app";

@@ -8,7 +8,9 @@ target 'unnamed dashboard app' do
      pod 'GoogleAPIClient/Calendar', '~> 1.0.2'
      pod 'GTMOAuth2', '~> 1.1.0'
      pod 'Alamofire', '~> 3.4'
-       pod 'SwiftyJSON'
+     pod 'SwiftyJSON'
+pod 'ChameleonFramework/Swift'
+
 
   # Pods for unnamed dashboard app
 

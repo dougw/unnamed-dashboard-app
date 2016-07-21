@@ -12,6 +12,7 @@ import GoogleAPIClient
 import GTMOAuth2
 import Alamofire
 import SwiftyJSON
+import ChameleonFramework
 
 class DashboardViewController: UIViewController {
      @IBOutlet weak var output: UITextView!
@@ -36,11 +37,15 @@ class DashboardViewController: UIViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         output.frame = view.bounds
         output.editable = false
         output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+        let colors:[UIColor] = [
+            UIColor.flatPinkColorDark(),
+            UIColor.flatBlueColor()
+        ]
+        view.backgroundColor = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
 //        
 //        newsTextView.frame = view.bounds
       newsTextView.editable = false
@@ -71,9 +76,9 @@ class DashboardViewController: UIViewController {
                  
                  for article in myarticles {
                     let title = article["title"].stringValue
-                    titlesString = titlesString + title
+                    titlesString = titlesString + title + "                          "
                  }
-                 self.newsTextView.text = ("\(titlesString )")
+                 self.newsTextView.text = ("\(titlesString )\n\n")
             case .Failure(let error):
                 print("Could not connect \(error)")
             }

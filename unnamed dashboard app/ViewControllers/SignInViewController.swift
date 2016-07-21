@@ -11,7 +11,7 @@ import CopperKit
 import UIKit
 //import RealmSwift
 class SignInViewController: UIViewController {
-
+    
     // Signed Out view IB Variables
     @IBOutlet weak var signedOutView: UIView!
     @IBOutlet weak var signinButton: UIButton!
@@ -25,8 +25,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var userIdLabel: UILabel!
-//    @IBOutlet weak var continueButton: UIButton!
-     static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
+    //    @IBOutlet weak var continueButton: UIButton!
+    static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
     var copper: C29Application?
     // Instance variable holding our desired scopes to allow changes, see showOptionsMenu()
@@ -35,19 +35,19 @@ class SignInViewController: UIViewController {
         copper?.closeSession()
         resetView()
         super.viewDidLoad()
-//        topLogo.alpha = 0.0
-//        UIView.animateWithDuration(3.0) {
-//          self.topLogo.alpha = 1.0
-       }
+        //        topLogo.alpha = 0.0
+        //        UIView.animateWithDuration(3.0) {
+        //          self.topLogo.alpha = 1.0
+    }
     // get a reference to our CopperKit application instance
     // get a reference to our CopperKit application instance
     @IBAction func signinButtonPressed(sender: AnyObject){
-    copper = C29Application.sharedInstance
-    // Required: configure it with our app's token
-    copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
-    // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
-    copper!.scopes = desiredScopes
-    // OK, let's make our call
+        copper = C29Application.sharedInstance
+        // Required: configure it with our app's token
+        copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
+        // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
+        copper!.scopes = desiredScopes
+        // OK, let's make our call
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
             case let .Success(userInfo):
@@ -61,7 +61,7 @@ class SignInViewController: UIViewController {
             }
         })
     }
-  
+    
     func setupViewWithUserInfo(userInfo: C29UserInfo) {
         self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
         self.nameLabel.text = userInfo.fullName
@@ -86,15 +86,15 @@ class SignInViewController: UIViewController {
         self.signedInView.hidden = true
         self.signedOutView.hidden = false
     }
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-       
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        
     }
-
+    
     @IBAction func signoutButtonPressed(sender: AnyObject) {
         copper?.closeSession()
         resetView()
     }
-
+    
     @IBAction func showOptionsMenu() {
         let alertController = UIAlertController(title: "CopperKit Settings", message: nil, preferredStyle: .ActionSheet)
         let defaultScopesAction = UIAlertAction(title: "Default scopes", style: .Default) { (action) in
@@ -124,4 +124,5 @@ class SignInViewController: UIViewController {
     }
     
 }
+
 

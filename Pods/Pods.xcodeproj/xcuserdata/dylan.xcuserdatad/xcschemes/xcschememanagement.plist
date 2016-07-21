@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CopperKit-CopperKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,7 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E935EA64BB9185CB5419BD57121C5DF</key>
+		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D8FD280E744EDE11C47D9CB8ECDF7F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F8CE463706DA5184E5F2B89A92E4B70</key>
+		<key>C662D2229AD271442E1A95D26539C956</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C662D2229AD271442E1A95D26539C956</key>
+		<key>D13E9645556EC60E71964D7324B155BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
