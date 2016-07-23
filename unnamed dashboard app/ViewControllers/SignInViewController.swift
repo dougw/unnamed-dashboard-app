@@ -22,9 +22,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signoutButton: UIButton!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var userIdLabel: UILabel!
     //    @IBOutlet weak var continueButton: UIButton!
     static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
@@ -64,10 +62,8 @@ class SignInViewController: UIViewController {
     
     func setupViewWithUserInfo(userInfo: C29UserInfo) {
         self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
-        self.nameLabel.text = userInfo.fullName
-        self.emailLabel.text = userInfo.emailAddress
+        self.nameLabel.text = ("Hello, \(userInfo.fullName)!\n")
         self.phoneLabel.text = userInfo.phoneNumber
-        self.userIdLabel.text = userInfo.userId
         // flip our signout state
         self.signedInView.hidden = false
         self.signedOutView.hidden = true
@@ -79,9 +75,7 @@ class SignInViewController: UIViewController {
         // reset our signed in state
         self.avatarImageView.image = nil
         self.nameLabel.text = ""
-        self.emailLabel.text = ""
         self.phoneLabel.text = ""
-        self.userIdLabel.text = ""
         // flip our state to the signed out state
         self.signedInView.hidden = true
         self.signedOutView.hidden = false

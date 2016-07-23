@@ -44,7 +44,14 @@ class DashboardViewController: UIViewController {
             UIColor.flatPinkColor(),
             UIColor.flatSkyBlueColor()
         ]
-        view.backgroundColor = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
+        let colorsForTextView: [UIColor] = [
+            UIColor.flatPinkColor()
+        ]
+        var background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
+         var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
+        view.backgroundColor = background
+        newsTextView.backgroundColor = backgroundOther
+        output.backgroundColor = backgroundOther
 //        Makes sure that the newsTextView isn't editable.
       newsTextView.editable = false
         
