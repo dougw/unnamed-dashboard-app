@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CalendarView-CalendarView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CalendarView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ChameleonFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftMoment.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,6 +77,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0696345919E20E8264BF509C1EAB2CCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1FA6FB86D5E13E8DA285246CF4E7C30E</key>
 		<dict>
 			<key>primary</key>
@@ -82,12 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<key>41638D9B170F774D9F650F63B192526A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D8FD280E744EDE11C47D9CB8ECDF7F7</key>
+		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +117,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C662D2229AD271442E1A95D26539C956</key>
+		<key>A21DCB995841FE970CCB507D94F822D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D13E9645556EC60E71964D7324B155BE</key>
+		<key>A249CF9CC83EF996380469C8249B2013</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE5A27150C9B40C89D47B2D3DE4418A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C662D2229AD271442E1A95D26539C956</key>
 		<dict>
 			<key>primary</key>
 			<true/>

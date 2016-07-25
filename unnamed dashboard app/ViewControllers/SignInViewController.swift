@@ -15,8 +15,6 @@ class SignInViewController: UIViewController {
     // Signed Out view IB Variables
     @IBOutlet weak var signedOutView: UIView!
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var optionsButton: UIButton!
-    @IBOutlet weak var versionLabel: UILabel!
     // Signed In view IB Variables
     @IBOutlet weak var signedInView: UIView!
     @IBOutlet weak var signoutButton: UIButton!
@@ -33,6 +31,9 @@ class SignInViewController: UIViewController {
         copper?.closeSession()
         resetView()
         super.viewDidLoad()
+        // font
+        self.signinButton.titleLabel!.font = UIFont(name: "DinAlternate-Bold", size: 35)!
+        //font end
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
         //          self.topLogo.alpha = 1.0
@@ -71,7 +72,6 @@ class SignInViewController: UIViewController {
     
     func resetView() {
         // set our version string
-        self.versionLabel.text = "CopperKit Version \(CopperKitVersion)"
         // reset our signed in state
         self.avatarImageView.image = nil
         self.nameLabel.text = ""
@@ -87,34 +87,6 @@ class SignInViewController: UIViewController {
     @IBAction func signoutButtonPressed(sender: AnyObject) {
         copper?.closeSession()
         resetView()
-    }
-    
-    @IBAction func showOptionsMenu() {
-        let alertController = UIAlertController(title: "CopperKit Settings", message: nil, preferredStyle: .ActionSheet)
-        let defaultScopesAction = UIAlertAction(title: "Default scopes", style: .Default) { (action) in
-            self.desiredScopes = SignInViewController.DefaultScopes
-        }
-        alertController.addAction(defaultScopesAction)
-        let verificationOnlyAction = UIAlertAction(title: "Verification only, no scopes? \(self.desiredScopes == nil)", style: .Default) { (action) in
-            // toggle between defualt and verification only
-            self.desiredScopes = self.desiredScopes == nil ? SignInViewController.DefaultScopes : nil
-        }
-        alertController.addAction(verificationOnlyAction)
-        let sfSafariViewController = UIAlertAction(title: "Use SFSafariViewController? (\(self.copper?.safariViewIfAvailable ?? true))", style: .Default) { (action) in
-            guard let current = self.copper?.safariViewIfAvailable else {
-                self.copper?.safariViewIfAvailable = true
-                return
-            }
-            self.copper?.safariViewIfAvailable = !current
-        }
-        alertController.addAction(sfSafariViewController)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            // no op
-        }
-        alertController.addAction(cancelAction)
-        self.presentViewController(alertController, animated: true) {
-            // no op
-        }
     }
     
 }

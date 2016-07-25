@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC3591861D39687F00500C1C"
-               BuildableName = "unnamed dashboard app.app"
-               BlueprintName = "unnamed dashboard app"
-               ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+               BuildableName = "WebDeck.app"
+               BlueprintName = "WebDeck"
+               ReferencedContainer = "container:WebDeck.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC35919C1D39688000500C1C"
-               BuildableName = "unnamed dashboard appTests.xctest"
-               BlueprintName = "unnamed dashboard appTests"
-               ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+               BuildableName = "WebDeck.xctest"
+               BlueprintName = "WebDeckTests"
+               ReferencedContainer = "container:WebDeck.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC3591A71D39688000500C1C"
-               BuildableName = "unnamed dashboard appUITests.xctest"
-               BlueprintName = "unnamed dashboard appUITests"
-               ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+               BuildableName = "WebDeck.xctest"
+               BlueprintName = "WebDeckUITests"
+               ReferencedContainer = "container:WebDeck.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC3591861D39687F00500C1C"
-            BuildableName = "unnamed dashboard app.app"
-            BlueprintName = "unnamed dashboard app"
-            ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+            BuildableName = "WebDeck.app"
+            BlueprintName = "WebDeck"
+            ReferencedContainer = "container:WebDeck.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC3591861D39687F00500C1C"
-            BuildableName = "unnamed dashboard app.app"
-            BlueprintName = "unnamed dashboard app"
-            ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+            BuildableName = "WebDeck.app"
+            BlueprintName = "WebDeck"
+            ReferencedContainer = "container:WebDeck.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC3591861D39687F00500C1C"
-            BuildableName = "unnamed dashboard app.app"
-            BlueprintName = "unnamed dashboard app"
-            ReferencedContainer = "container:unnamed dashboard app.xcodeproj">
+            BuildableName = "WebDeck.app"
+            BlueprintName = "WebDeck"
+            ReferencedContainer = "container:WebDeck.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

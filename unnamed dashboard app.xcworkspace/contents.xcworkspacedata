@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:unnamed dashboard app.xcodeproj">
+      location = "group:/Users/dylan/Desktop/iOS Dev/unnamed dashboard app/WebDeck.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

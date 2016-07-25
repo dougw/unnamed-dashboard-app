@@ -16,6 +16,10 @@ import ChameleonFramework
 
 class DashboardViewController: UIViewController {
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
+    @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var lifestyleButton: UIButton!
+    @IBOutlet weak var socialButton: UIButton!
+    @IBOutlet weak var utilitiesButton: UIButton!
      @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
@@ -34,6 +38,7 @@ class DashboardViewController: UIViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
         output.frame = view.bounds
         output.editable = false
@@ -41,11 +46,11 @@ class DashboardViewController: UIViewController {
         output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         // The let colors and view.backgroundColor are all for a gradient, which requires ChameleonFramework.
         let colors:[UIColor] = [
-            UIColor.flatPinkColor(),
+            UIColor.flatWatermelonColor(),
             UIColor.flatSkyBlueColor()
         ]
         let colorsForTextView: [UIColor] = [
-            UIColor.flatPinkColor()
+            UIColor.flatWatermelonColor()
         ]
         var background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
          var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
@@ -90,9 +95,19 @@ class DashboardViewController: UIViewController {
                 print("Could not connect \(error)")
             }
         }
-    
+     //fonts 
+        self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+
+
+
+
+        //end fonts
     }
     
+ 
     // If the user hasn't logged into Google yet, the connectCalendarButton will prompt the sign in and after-so display the events. If not, the button is hidden and the events are displayed.
     @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
         

@@ -26,6 +26,15 @@
 		FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CD1D3977C600500C1C /* Dashboard.swift */; };
 		FC3591D01D3977CD00500C1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CF1D3977CD00500C1C /* User.swift */; };
 		FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */; };
+		FC57AFE71D465E9B002D3573 /* DIN Alternate Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE51D465E1F002D3573 /* DIN Alternate Bold.ttf */; };
+		FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */; };
+		FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */; };
+		FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEA1D466E5F002D3573 /* Montserrat-ExtraBold.otf */; };
+		FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEB1D466E5F002D3573 /* Montserrat-Hairline.otf */; };
+		FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEC1D466E5F002D3573 /* Montserrat-Light.otf */; };
+		FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */; };
+		FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */; };
+		FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +66,16 @@
 		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
 		FC03D76F1D40005500866DD5 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		FC3591871D39687F00500C1C /* unnamed dashboard app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unnamed dashboard app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3591871D39687F00500C1C /* WebDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC35918A1D39687F00500C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3591911D39687F00500C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3591931D39687F00500C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3591961D39687F00500C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3591981D39687F00500C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC35919D1D39688000500C1C /* unnamed dashboard appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unnamed dashboard appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC35919D1D39688000500C1C /* WebDeck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3591A11D39688000500C1C /* unnamed_dashboard_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unnamed_dashboard_appTests.swift; sourceTree = "<group>"; };
 		FC3591A31D39688000500C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3591A81D39688000500C1C /* unnamed dashboard appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unnamed dashboard appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3591A81D39688000500C1C /* WebDeck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3591AC1D39688000500C1C /* unnamed_dashboard_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unnamed_dashboard_appUITests.swift; sourceTree = "<group>"; };
 		FC3591AE1D39688000500C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3591BA1D3968D000500C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +87,15 @@
 		FC3591CD1D3977C600500C1C /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		FC3591CF1D3977CD00500C1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
-		FCBE77F91D410A85000DF775 /* unnamed dashboard app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "unnamed dashboard app.entitlements"; sourceTree = "<group>"; };
+		FC57AFE51D465E1F002D3573 /* DIN Alternate Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Alternate Bold.ttf"; sourceTree = "<group>"; };
+		FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		FC57AFEA1D466E5F002D3573 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		FC57AFEB1D466E5F002D3573 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		FC57AFEC1D466E5F002D3573 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +160,7 @@
 		FC35917E1D39687F00500C1C = {
 			isa = PBXGroup;
 			children = (
-				FC3591891D39687F00500C1C /* unnamed dashboard app */,
+				FC3591891D39687F00500C1C /* WebDeck */,
 				FC3591A01D39688000500C1C /* unnamed dashboard appTests */,
 				FC3591AB1D39688000500C1C /* unnamed dashboard appUITests */,
 				FC3591881D39687F00500C1C /* Products */,
@@ -155,17 +172,17 @@
 		FC3591881D39687F00500C1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC3591871D39687F00500C1C /* unnamed dashboard app.app */,
-				FC35919D1D39688000500C1C /* unnamed dashboard appTests.xctest */,
-				FC3591A81D39688000500C1C /* unnamed dashboard appUITests.xctest */,
+				FC3591871D39687F00500C1C /* WebDeck.app */,
+				FC35919D1D39688000500C1C /* WebDeck.xctest */,
+				FC3591A81D39688000500C1C /* WebDeck.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC3591891D39687F00500C1C /* unnamed dashboard app */ = {
+		FC3591891D39687F00500C1C /* WebDeck */ = {
 			isa = PBXGroup;
 			children = (
-				FCBE77F91D410A85000DF775 /* unnamed dashboard app.entitlements */,
+				FC57AFE61D465E7D002D3573 /* Resources */,
 				FC03D76E1D3FB4C800866DD5 /* images */,
 				FC3591BA1D3968D000500C1C /* Assets.xcassets */,
 				FC3591BB1D3968D000500C1C /* Helpers */,
@@ -179,6 +196,7 @@
 				FC3591981D39687F00500C1C /* Info.plist */,
 				FC03D76F1D40005500866DD5 /* Package.swift */,
 			);
+			name = WebDeck;
 			path = "unnamed dashboard app";
 			sourceTree = "<group>";
 		};
@@ -244,12 +262,28 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		FC57AFE61D465E7D002D3573 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */,
+				FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */,
+				FC57AFEA1D466E5F002D3573 /* Montserrat-ExtraBold.otf */,
+				FC57AFEB1D466E5F002D3573 /* Montserrat-Hairline.otf */,
+				FC57AFEC1D466E5F002D3573 /* Montserrat-Light.otf */,
+				FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */,
+				FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */,
+				FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */,
+				FC57AFE51D465E1F002D3573 /* DIN Alternate Bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC3591861D39687F00500C1C /* unnamed dashboard app */ = {
+		FC3591861D39687F00500C1C /* WebDeck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC3591B11D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard app" */;
+			buildConfigurationList = FC3591B11D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeck" */;
 			buildPhases = (
 				52471BB84D689D5670FFBAD5 /* [CP] Check Pods Manifest.lock */,
 				FC3591831D39687F00500C1C /* Sources */,
@@ -262,14 +296,14 @@
 			);
 			dependencies = (
 			);
-			name = "unnamed dashboard app";
+			name = WebDeck;
 			productName = "unnamed dashboard app";
-			productReference = FC3591871D39687F00500C1C /* unnamed dashboard app.app */;
+			productReference = FC3591871D39687F00500C1C /* WebDeck.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FC35919C1D39688000500C1C /* unnamed dashboard appTests */ = {
+		FC35919C1D39688000500C1C /* WebDeckTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC3591B41D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard appTests" */;
+			buildConfigurationList = FC3591B41D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeckTests" */;
 			buildPhases = (
 				ABB5E6DFBC49EA9410E580A0 /* [CP] Check Pods Manifest.lock */,
 				FC3591991D39688000500C1C /* Sources */,
@@ -283,14 +317,14 @@
 			dependencies = (
 				FC35919F1D39688000500C1C /* PBXTargetDependency */,
 			);
-			name = "unnamed dashboard appTests";
+			name = WebDeckTests;
 			productName = "unnamed dashboard appTests";
-			productReference = FC35919D1D39688000500C1C /* unnamed dashboard appTests.xctest */;
+			productReference = FC35919D1D39688000500C1C /* WebDeck.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FC3591A71D39688000500C1C /* unnamed dashboard appUITests */ = {
+		FC3591A71D39688000500C1C /* WebDeckUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC3591B71D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard appUITests" */;
+			buildConfigurationList = FC3591B71D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeckUITests" */;
 			buildPhases = (
 				EBC4AB63F14E3359B4907842 /* [CP] Check Pods Manifest.lock */,
 				FC3591A41D39688000500C1C /* Sources */,
@@ -303,9 +337,9 @@
 			dependencies = (
 				FC3591AA1D39688000500C1C /* PBXTargetDependency */,
 			);
-			name = "unnamed dashboard appUITests";
+			name = WebDeckUITests;
 			productName = "unnamed dashboard appUITests";
-			productReference = FC3591A81D39688000500C1C /* unnamed dashboard appUITests.xctest */;
+			productReference = FC3591A81D39688000500C1C /* WebDeck.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -337,7 +371,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC3591821D39687F00500C1C /* Build configuration list for PBXProject "unnamed dashboard app" */;
+			buildConfigurationList = FC3591821D39687F00500C1C /* Build configuration list for PBXProject "WebDeck" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -350,9 +384,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC3591861D39687F00500C1C /* unnamed dashboard app */,
-				FC35919C1D39688000500C1C /* unnamed dashboard appTests */,
-				FC3591A71D39688000500C1C /* unnamed dashboard appUITests */,
+				FC3591861D39687F00500C1C /* WebDeck */,
+				FC35919C1D39688000500C1C /* WebDeckTests */,
+				FC3591A71D39688000500C1C /* WebDeckUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,6 +396,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */,
+				FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */,
+				FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */,
+				FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */,
+				FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */,
+				FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */,
+				FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */,
+				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
+				FC57AFE71D465E9B002D3573 /* DIN Alternate Bold.ttf in Resources */,
 				FC3591971D39687F00500C1C /* LaunchScreen.storyboard in Resources */,
 				FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
@@ -547,12 +590,12 @@
 /* Begin PBXTargetDependency section */
 		FC35919F1D39688000500C1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC3591861D39687F00500C1C /* unnamed dashboard app */;
+			target = FC3591861D39687F00500C1C /* WebDeck */;
 			targetProxy = FC35919E1D39688000500C1C /* PBXContainerItemProxy */;
 		};
 		FC3591AA1D39688000500C1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC3591861D39687F00500C1C /* unnamed dashboard app */;
+			target = FC3591861D39687F00500C1C /* WebDeck */;
 			targetProxy = FC3591A91D39688000500C1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -674,7 +717,7 @@
 				INFOPLIST_FILE = "unnamed dashboard app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDeck;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -693,7 +736,7 @@
 				INFOPLIST_FILE = "unnamed dashboard app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDeck;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -706,8 +749,8 @@
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-appTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unnamed dashboard app.app/unnamed dashboard app";
+				PRODUCT_NAME = WebDeck;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDeck.app/WebDeck";
 			};
 			name = Debug;
 		};
@@ -719,8 +762,8 @@
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-appTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unnamed dashboard app.app/unnamed dashboard app";
+				PRODUCT_NAME = WebDeck;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDeck.app/WebDeck";
 			};
 			name = Release;
 		};
@@ -731,7 +774,7 @@
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDeck;
 				TEST_TARGET_NAME = "unnamed dashboard app";
 				USES_XCTRUNNER = YES;
 			};
@@ -744,7 +787,7 @@
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dylansteck.unnamed-dashboard-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WebDeck;
 				TEST_TARGET_NAME = "unnamed dashboard app";
 				USES_XCTRUNNER = YES;
 			};
@@ -753,7 +796,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC3591821D39687F00500C1C /* Build configuration list for PBXProject "unnamed dashboard app" */ = {
+		FC3591821D39687F00500C1C /* Build configuration list for PBXProject "WebDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC3591AF1D39688000500C1C /* Debug */,
@@ -762,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC3591B11D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard app" */ = {
+		FC3591B11D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC3591B21D39688000500C1C /* Debug */,
@@ -771,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC3591B41D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard appTests" */ = {
+		FC3591B41D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeckTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC3591B51D39688000500C1C /* Debug */,
@@ -780,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC3591B71D39688000500C1C /* Build configuration list for PBXNativeTarget "unnamed dashboard appUITests" */ = {
+		FC3591B71D39688000500C1C /* Build configuration list for PBXNativeTarget "WebDeckUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC3591B81D39688000500C1C /* Debug */,

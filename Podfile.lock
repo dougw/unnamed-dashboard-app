@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (3.4.1)
+  - CalendarView (1.1.2):
+    - SwiftMoment (~> 0.1)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -16,10 +18,12 @@ PODS:
   - GTMSessionFetcher/Core (1.1.4)
   - GTMSessionFetcher/Full (1.1.4):
     - GTMSessionFetcher/Core (= 1.1.4)
+  - SwiftMoment (0.5.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - CalendarView
   - ChameleonFramework/Swift
   - CopperKit
   - GoogleAPIClient/Calendar (~> 1.0.2)
@@ -28,13 +32,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  CalendarView: 35d51b70586213604edec22a585d105273f6e191
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CopperKit: 6bfb5ccb8ad7e4df94df11ef38dfee4eae0e9a6d
   GoogleAPIClient: 4dedb6af613eb7d171814c343f8a82ee5411e13b
   GTMOAuth2: bdb12f3e0d2110bfe585f6151230b883beb4d042
   GTMSessionFetcher: 174bc61d5238f81f9ddb807b0b0170420f67de85
+  SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 2d08cf5c36dfe5f0b425f51386a45921d7c8c507
+PODFILE CHECKSUM: ce4c37fedfd0a04a69c237a9a297cfe06bf0d0b9
 
 COCOAPODS: 1.0.1

@@ -9,6 +9,7 @@ target 'unnamed dashboard app' do
      pod 'GTMOAuth2', '~> 1.1.0'
      pod 'Alamofire', '~> 3.4'
      pod 'SwiftyJSON'
+     pod "CalendarView"
 pod 'ChameleonFramework/Swift'
 
 
