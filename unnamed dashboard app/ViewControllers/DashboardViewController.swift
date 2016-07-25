@@ -95,16 +95,16 @@ class DashboardViewController: UIViewController {
                 print("Could not connect \(error)")
             }
         }
-     //fonts 
+     //fonts  and styling
         self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
         self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
         self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
         self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+//         self.topButton.titleLabel!.textColor = UIColor.flatWatermelonColor()
 
 
 
-
-        //end fonts
+        //end fonts and styling
     }
     
  

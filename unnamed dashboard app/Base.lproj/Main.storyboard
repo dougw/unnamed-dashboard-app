@@ -23,10 +23,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="iyp-E5-9Xz">
-                                        <barButtonItem key="leftBarButtonItem" title="Connections" id="V0v-CV-WR4"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="V0v-CV-WR4">
+                                            <connections>
+                                                <segue destination="CKx-W7-J8T" kind="show" id="XvM-3r-Mle"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="uIm-YA-0cL">
                                             <connections>
-                                                <segue destination="b7A-aG-bKf" kind="show" id="J7U-P7-hWf"/>
+                                                <segue destination="b7A-aG-bKf" kind="show" id="FRD-7L-CRF"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -76,7 +80,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-Tv-KRe">
                                 <rect key="frame" x="17" y="47" width="60" height="30"/>
                                 <state key="normal" title="Top">
-                                    <color key="titleColor" red="0.42328511807988312" green="0.54027901600685202" blue="0.64784007352941186" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.51372549019607838" green="0.6588235294117647" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,18 +91,27 @@
                                 <state key="normal" title="Utilities">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Hbz-g2-Ky1" kind="show" id="Yr8-aL-znI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dui-DX-iTA">
-                                <rect key="frame" x="298" y="47" width="60" height="30"/>
+                                <rect key="frame" x="286" y="47" width="72" height="30"/>
                                 <state key="normal" title="Lifestyle">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KrI-68-LAE" kind="show" id="vST-bY-lxo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njX-yV-Loc">
-                                <rect key="frame" x="104" y="47" width="60" height="30"/>
+                                <rect key="frame" x="102" y="47" width="60" height="30"/>
                                 <state key="normal" title="Social">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9TO-UT-scF" kind="show" id="o4C-MI-N0P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,6 +151,288 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xF-HX-qYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-770.5" y="-976.5"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="Wz1-6s-s4g">
+            <objects>
+                <viewController id="9TO-UT-scF" customClass="SocialViewController" customModule="WebDeck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QzH-k9-5S7"/>
+                        <viewControllerLayoutGuide type="bottom" id="aoN-VW-IkS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v39-TR-hSD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4A-Zl-GfD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="heJ-Bj-7f1">
+                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="qSB-uf-ncG">
+                                            <connections>
+                                                <segue destination="CKx-W7-J8T" kind="show" id="nKh-UE-ZyB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Wu2-g0-SNF">
+                                            <connections>
+                                                <segue destination="b7A-aG-bKf" kind="show" id="KIq-Cl-DEf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nue-SH-XEc">
+                                <rect key="frame" x="0.0" y="74" width="375" height="3"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.66666666669999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy3-vs-gMU">
+                                <rect key="frame" x="13" y="48" width="60" height="30"/>
+                                <state key="normal" title="Top">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.51372549020000002" green="0.6588235294" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cxI-6k-1s9" kind="show" id="IXf-7U-Sqa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUe-pe-Btq">
+                                <rect key="frame" x="202" y="48" width="60" height="30"/>
+                                <state key="normal" title="Utilities">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hbz-g2-Ky1" kind="show" id="zam-kQ-1Du"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGa-OJ-gwm">
+                                <rect key="frame" x="286" y="48" width="72" height="30"/>
+                                <state key="normal" title="Lifestyle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KrI-68-LAE" kind="show" id="WAJ-u8-dXC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXp-PJ-gel">
+                                <rect key="frame" x="101" y="48" width="60" height="30"/>
+                                <state key="normal" title="Social">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lifestyleButton" destination="fGa-OJ-gwm" id="Rfd-oc-zrM"/>
+                        <outlet property="socialButton" destination="mXp-PJ-gel" id="XgP-vq-wi3"/>
+                        <outlet property="topButton" destination="jy3-vs-gMU" id="K1P-Zm-27f"/>
+                        <outlet property="utilitiesButton" destination="YUe-pe-Btq" id="Vrq-a4-Axu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcR-JV-qzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385.5" y="-976.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l0y-xf-Uqp">
+            <objects>
+                <viewController id="CKx-W7-J8T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zGd-8d-hlZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDy-MH-nR0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EG3-iA-gdl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phs-ZO-Ax9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="eEY-ZN-4ju">
+                                        <barButtonItem key="leftBarButtonItem" title="Dashboard" id="4xq-O1-q85"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="PyV-D8-OwL"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRg-3c-Vku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-813.5" y="-109.5"/>
+        </scene>
+        <!--Utilities View Controller-->
+        <scene sceneID="tF5-wr-F6s">
+            <objects>
+                <viewController id="Hbz-g2-Ky1" customClass="UtilitiesViewController" customModule="WebDeck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfR-6I-No0"/>
+                        <viewControllerLayoutGuide type="bottom" id="6a5-o8-wH9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pei-R9-V9B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrc-gb-pXp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="7QJ-py-Y9m">
+                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="Fvq-iK-zOZ">
+                                            <connections>
+                                                <segue destination="CKx-W7-J8T" kind="show" id="y3M-VC-0ah"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="jDW-3c-Exf">
+                                            <connections>
+                                                <segue destination="b7A-aG-bKf" kind="show" id="CQY-Pj-ceu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ove-cj-UAu">
+                                <rect key="frame" x="0.0" y="74" width="375" height="3"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.66666666669999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqW-Z2-3G1">
+                                <rect key="frame" x="13" y="47" width="60" height="30"/>
+                                <state key="normal" title="Top">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.51372549020000002" green="0.6588235294" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cxI-6k-1s9" kind="show" id="LEj-RM-94c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcV-yl-hft">
+                                <rect key="frame" x="203" y="47" width="60" height="30"/>
+                                <state key="normal" title="Utilities">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXH-Hk-4in">
+                                <rect key="frame" x="283" y="47" width="72" height="30"/>
+                                <state key="normal" title="Lifestyle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KrI-68-LAE" kind="show" id="s9A-hk-De3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsJ-dh-CFP">
+                                <rect key="frame" x="102" y="47" width="60" height="30"/>
+                                <state key="normal" title="Social">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9TO-UT-scF" kind="show" id="CbT-jq-77i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lifestyleButton" destination="UXH-Hk-4in" id="heC-ES-m8d"/>
+                        <outlet property="socialButton" destination="WsJ-dh-CFP" id="Dvh-LN-3Re"/>
+                        <outlet property="topButton" destination="eqW-Z2-3G1" id="IJl-5N-s8r"/>
+                        <outlet property="utilitiesButton" destination="OcV-yl-hft" id="taa-SV-uB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2o-lx-5mP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385.5" y="-109.5"/>
+        </scene>
+        <!--Lifestyle View Controller-->
+        <scene sceneID="ULQ-Zv-5YP">
+            <objects>
+                <viewController id="KrI-68-LAE" customClass="LifestyleViewController" customModule="WebDeck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LwZ-9W-5JM"/>
+                        <viewControllerLayoutGuide type="bottom" id="FBs-WB-bxC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1v-Pd-MuV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Zi-c8k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="Tc1-X0-A9H">
+                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="tMF-71-c4o">
+                                            <connections>
+                                                <segue destination="CKx-W7-J8T" kind="show" id="e5U-nc-C86"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Ezy-G9-TRw">
+                                            <connections>
+                                                <segue destination="b7A-aG-bKf" kind="show" id="r91-t0-q8b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-aB-gpX">
+                                <rect key="frame" x="0.0" y="78" width="375" height="3"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.66666666669999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-GZ-IrO">
+                                <rect key="frame" x="13" y="51" width="60" height="30"/>
+                                <state key="normal" title="Top">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.51372549020000002" green="0.6588235294" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cxI-6k-1s9" kind="show" id="VQe-tq-Wc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwo-DE-lJv">
+                                <rect key="frame" x="203" y="51" width="60" height="30"/>
+                                <state key="normal" title="Utilities">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hbz-g2-Ky1" kind="show" id="h3d-Gn-BSs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Z-Qe-kia">
+                                <rect key="frame" x="283" y="51" width="72" height="30"/>
+                                <state key="normal" title="Lifestyle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-J2-TVQ">
+                                <rect key="frame" x="102" y="51" width="60" height="30"/>
+                                <state key="normal" title="Social">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9TO-UT-scF" kind="show" id="1cU-8E-RJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lifestyleButton" destination="d2Z-Qe-kia" id="fYV-oI-neJ"/>
+                        <outlet property="socialButton" destination="Qyb-J2-TVQ" id="pvn-Wg-9de"/>
+                        <outlet property="topButton" destination="X1p-GZ-IrO" id="afU-SC-6tf"/>
+                        <outlet property="utilitiesButton" destination="fwo-DE-lJv" id="6r0-Mn-wCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNW-bh-h5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385.5" y="624.5"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="4Ko-VL-y7v">
@@ -294,4 +589,12 @@
             <point key="canvasLocation" x="-1283.5" y="-976.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="r91-t0-q8b"/>
+        <segue reference="s9A-hk-De3"/>
+        <segue reference="Yr8-aL-znI"/>
+        <segue reference="LEj-RM-94c"/>
+        <segue reference="y3M-VC-0ah"/>
+        <segue reference="CbT-jq-77i"/>
+    </inferredMetricsTieBreakers>
 </document>
