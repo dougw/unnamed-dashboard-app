@@ -29,7 +29,7 @@ class SignInViewController: UIViewController {
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
         copper?.closeSession()
-        resetView()
+      resetView()
         super.viewDidLoad()
         // font
         self.signinButton.titleLabel!.font = UIFont(name: "DinAlternate-Bold", size: 35)!
@@ -88,7 +88,6 @@ class SignInViewController: UIViewController {
         copper?.closeSession()
         resetView()
     }
-    
 }
 
 

@@ -13,10 +13,12 @@ import GTMOAuth2
 import Alamofire
 import SwiftyJSON
 import ChameleonFramework
+import CopperKit
 
 class DashboardViewController: UIViewController {
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
     @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lifestyleButton: UIButton!
     @IBOutlet weak var socialButton: UIButton!
     @IBOutlet weak var utilitiesButton: UIButton!
@@ -38,7 +40,6 @@ class DashboardViewController: UIViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
         output.frame = view.bounds
         output.editable = false
@@ -105,6 +106,8 @@ class DashboardViewController: UIViewController {
 
 
         //end fonts and styling
+        
+
     }
     
  
@@ -136,6 +139,7 @@ class DashboardViewController: UIViewController {
         else{
             calendarLabel.hidden = true
         }
+        
     }
     
     

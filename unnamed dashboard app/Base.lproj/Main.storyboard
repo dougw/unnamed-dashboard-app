@@ -78,7 +78,7 @@
                                 <color key="backgroundColor" red="0.52156862745098043" green="0.66666666666666663" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-Tv-KRe">
-                                <rect key="frame" x="17" y="47" width="60" height="30"/>
+                                <rect key="frame" x="0.0" y="47" width="60" height="30"/>
                                 <state key="normal" title="Top">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -87,7 +87,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-Ot-mdk">
-                                <rect key="frame" x="202" y="47" width="60" height="30"/>
+                                <rect key="frame" x="163" y="47" width="60" height="30"/>
                                 <state key="normal" title="Utilities">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dui-DX-iTA">
-                                <rect key="frame" x="286" y="47" width="72" height="30"/>
+                                <rect key="frame" x="243" y="47" width="72" height="30"/>
                                 <state key="normal" title="Lifestyle">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -104,8 +104,14 @@
                                     <segue destination="KrI-68-LAE" kind="show" id="vST-bY-lxo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saq-v9-sbV">
+                                <rect key="frame" x="150" y="92" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njX-yV-Loc">
-                                <rect key="frame" x="102" y="47" width="60" height="30"/>
+                                <rect key="frame" x="73" y="47" width="60" height="30"/>
                                 <state key="normal" title="Social">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -141,6 +147,7 @@
                         <outlet property="calendarLabel" destination="A4r-pm-fzG" id="3dc-mk-yvx"/>
                         <outlet property="connectCalendarButton" destination="cFY-2p-aQG" id="dc7-qX-6sA"/>
                         <outlet property="lifestyleButton" destination="Dui-DX-iTA" id="cqZ-2C-e41"/>
+                        <outlet property="nameLabel" destination="Saq-v9-sbV" id="Yms-an-mI6"/>
                         <outlet property="newsTextView" destination="Lf0-KL-eJr" id="V6p-Fy-gBX"/>
                         <outlet property="output" destination="MQZ-EK-cJe" id="6Do-vc-c8t"/>
                         <outlet property="socialButton" destination="njX-yV-Loc" id="QCI-bU-Dvh"/>
@@ -252,8 +259,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="eEY-ZN-4ju">
-                                        <barButtonItem key="leftBarButtonItem" title="Dashboard" id="4xq-O1-q85"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="PyV-D8-OwL"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Dashboard" id="4xq-O1-q85">
+                                            <connections>
+                                                <segue destination="cxI-6k-1s9" kind="show" id="CDY-ZO-MCO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="PyV-D8-OwL">
+                                            <connections>
+                                                <segue destination="b7A-aG-bKf" kind="show" id="z9h-dw-h5I"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -590,11 +605,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r91-t0-q8b"/>
-        <segue reference="s9A-hk-De3"/>
+        <segue reference="FRD-7L-CRF"/>
+        <segue reference="VQe-tq-Wc1"/>
+        <segue reference="vST-bY-lxo"/>
+        <segue reference="o4C-MI-N0P"/>
+        <segue reference="XvM-3r-Mle"/>
         <segue reference="Yr8-aL-znI"/>
-        <segue reference="LEj-RM-94c"/>
-        <segue reference="y3M-VC-0ah"/>
-        <segue reference="CbT-jq-77i"/>
     </inferredMetricsTieBreakers>
 </document>
