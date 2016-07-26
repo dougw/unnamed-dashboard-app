@@ -28,11 +28,12 @@ class SignInViewController: UIViewController {
     static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
     var copper: C29Application?
-    // Instance variable holding our desired scopes to allow changes, see showOptionsMenu()
+    var currentControllerDylan = DashboardViewController()
+
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
         copper?.closeSession()
-        resetView()
+//        resetView()
         super.viewDidLoad()
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
@@ -49,9 +50,11 @@ class SignInViewController: UIViewController {
         // OK, let's make our call
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
-            case let .Success(userInfo):
-                self.setupViewWithUserInfo(userInfo)
-                
+            case .Success://(userInfo):
+//            self.presentViewController( self.currentControllerDylan, animated: true, completion: nil)
+                self.performSegueWithIdentifier("signInSegue", sender: self)
+//                self.setupViewWithUserInfo(userInfo)
+              print("lol")
                 
             case .UserCancelled:
                 print("The user cancelled.")
@@ -61,33 +64,31 @@ class SignInViewController: UIViewController {
         })
     }
     
-    func setupViewWithUserInfo(userInfo: C29UserInfo) {
-        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
-        self.nameLabel.text = ("Hello, \(userInfo.fullName)!\n")
-        self.phoneLabel.text = userInfo.phoneNumber
-        // flip our signout state
-        self.signedInView.hidden = false
-        self.signedOutView.hidden = true
-    }
+//    func setupViewWithUserInfo(userInfo: C29UserInfo) {
+//        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
+//        self.nameLabel.text = ("Hello, \(userInfo.fullName)!\n")
+//        self.phoneLabel.text = userInfo.phoneNumber
+//        // flip our signout state
+//        self.signedInView.hidden = false
+//        self.signedOutView.hidden = true
+//    }
     
-    func resetView() {
-        // set our version string
-        // reset our signed in state
-        self.avatarImageView.image = nil
-        self.nameLabel.text = ""
-        self.phoneLabel.text = ""
-        // flip our state to the signed out state
-        self.signedInView.hidden = true
-        self.signedOutView.hidden = false
-    }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        
-    }
+//    func resetView() {
+//        // set our version string
+//        // reset our signed in state
+//        self.avatarImageView.image = nil
+//        self.nameLabel.text = ""
+//        self.phoneLabel.text = ""
+//        // flip our state to the signed out state
+//        self.signedInView.hidden = true
+//        self.signedOutView.hidden = false
+//    }
+//   
     
-    @IBAction func signoutButtonPressed(sender: AnyObject) {
-        copper?.closeSession()
-        resetView()
-    }
+//    @IBAction func signoutButtonPressed(sender: AnyObject) {
+//        copper?.closeSession()
+////        resetView()
+//    }
 }
 
 

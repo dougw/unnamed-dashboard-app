@@ -41,10 +41,10 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
-        output.frame = view.bounds
-        output.editable = false
-        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+//        self.output.frame = view.bounds
+        self.output.editable = false
+        self.output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+        self.output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         // The let colors and view.backgroundColor are all for a gradient, which requires ChameleonFramework.
         let colors:[UIColor] = [
             UIColor.flatWatermelonColor(),
@@ -106,11 +106,14 @@ class DashboardViewController: UIViewController {
 
 
         //end fonts and styling
+  
+
         
 
     }
     
  
+    
     // If the user hasn't logged into Google yet, the connectCalendarButton will prompt the sign in and after-so display the events. If not, the button is hidden and the events are displayed.
     @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
         
@@ -239,4 +242,4 @@ class DashboardViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
+    }
