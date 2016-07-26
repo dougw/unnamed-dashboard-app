@@ -15,6 +15,8 @@ class SignInViewController: UIViewController {
     // Signed Out view IB Variables
     @IBOutlet weak var signedOutView: UIView!
     @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var optionsButton: UIButton!
+    @IBOutlet weak var versionLabel: UILabel!
     // Signed In view IB Variables
     @IBOutlet weak var signedInView: UIView!
     @IBOutlet weak var signoutButton: UIButton!
@@ -29,18 +31,15 @@ class SignInViewController: UIViewController {
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
         copper?.closeSession()
-      resetView()
+        resetView()
         super.viewDidLoad()
-        // font
-        self.signinButton.titleLabel!.font = UIFont(name: "DinAlternate-Bold", size: 35)!
-        //font end
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
         //          self.topLogo.alpha = 1.0
     }
     // get a reference to our CopperKit application instance
     // get a reference to our CopperKit application instance
-    @IBAction func signinButtonPressed(sender: AnyObject){
+    @IBAction func signinButtonPressed(sender: AnyObject, segue: UIStoryboardSegue){
         copper = C29Application.sharedInstance
         // Required: configure it with our app's token
         copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")

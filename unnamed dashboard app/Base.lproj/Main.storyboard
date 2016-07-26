@@ -605,11 +605,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FRD-7L-CRF"/>
-        <segue reference="VQe-tq-Wc1"/>
         <segue reference="vST-bY-lxo"/>
-        <segue reference="o4C-MI-N0P"/>
-        <segue reference="XvM-3r-Mle"/>
+        <segue reference="VQe-tq-Wc1"/>
+        <segue reference="FRD-7L-CRF"/>
         <segue reference="Yr8-aL-znI"/>
+        <segue reference="XvM-3r-Mle"/>
+        <segue reference="o4C-MI-N0P"/>
     </inferredMetricsTieBreakers>
 </document>
