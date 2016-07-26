@@ -6,6 +6,7 @@
 //  Copyright © 2016 Dylan Steck. All rights reserved.
 //
 
+
 import Foundation
 import CopperKit
 import UIKit
@@ -39,7 +40,7 @@ class SignInViewController: UIViewController {
     }
     // get a reference to our CopperKit application instance
     // get a reference to our CopperKit application instance
-    @IBAction func signinButtonPressed(sender: AnyObject, segue: UIStoryboardSegue){
+    @IBAction func signinButtonPressed(sender: AnyObject){
         copper = C29Application.sharedInstance
         // Required: configure it with our app's token
         copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
