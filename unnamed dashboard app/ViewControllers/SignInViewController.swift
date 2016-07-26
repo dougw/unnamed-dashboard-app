@@ -28,7 +28,7 @@ class SignInViewController: UIViewController {
     static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
     var copper: C29Application?
-    var currentControllerDylan = DashboardViewController()
+    var fullName: String?
 
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     override func viewDidLoad(){
@@ -50,7 +50,8 @@ class SignInViewController: UIViewController {
         // OK, let's make our call
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
-             case .Success://(userInfo):
+            case let .Success(userInfo):
+                self.fullName =  userInfo.fullName
                self.performSegueWithIdentifier("segueIdentifier", sender: self)
            
 //                self.setupViewWithUserInfo(userInfo)
@@ -64,18 +65,25 @@ class SignInViewController: UIViewController {
         })
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueIdentifier" {
+//            DashboardViewController.nameLabel = fullName
+            let destinationVC = segue.destinationViewController as! DashboardViewController
+            destinationVC.name = fullName
+            
+        }
+        //
+        
+    }
+    
    
     
 }
-//    func setupViewWithUserInfo(userInfo: C29UserInfo) {
-//        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
-//        self.nameLabel.text = ("Hello, \(userInfo.fullName)!\n")
-//        self.phoneLabel.text = userInfo.phoneNumber
-//        // flip our signout state
-//        self.signedInView.hidden = false
-//        self.signedOutView.hidden = true
-//    }
-    
+
+//  func setupViewWithUserInfo(userInfo: C29UserInfo) {
+//
+//}
+
 //    func resetView() {
 //        // set our version string
 //        // reset our signed in state

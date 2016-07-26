@@ -36,6 +36,9 @@ class DashboardViewController: UIViewController {
     
     private let service = GTLServiceCalendar()
     
+    var name: String?
+    
+    
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
@@ -241,5 +244,10 @@ class DashboardViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        nameLabel.text = "Hello, \(name)!"
     }
     }
