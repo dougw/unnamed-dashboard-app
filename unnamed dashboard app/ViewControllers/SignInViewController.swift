@@ -50,9 +50,9 @@ class SignInViewController: UIViewController {
         // OK, let's make our call
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
-            case .Success://(userInfo):
-//            self.presentViewController( self.currentControllerDylan, animated: true, completion: nil)
-                self.performSegueWithIdentifier("signInSegue", sender: self)
+             case .Success://(userInfo):
+               self.performSegueWithIdentifier("segueIdentifier", sender: self)
+           
 //                self.setupViewWithUserInfo(userInfo)
               print("lol")
                 
@@ -64,6 +64,9 @@ class SignInViewController: UIViewController {
         })
     }
     
+   
+    
+}
 //    func setupViewWithUserInfo(userInfo: C29UserInfo) {
 //        self.avatarImageView.image = userInfo.picture // userInfo.pictureURL is available, too
 //        self.nameLabel.text = ("Hello, \(userInfo.fullName)!\n")
@@ -89,6 +92,5 @@ class SignInViewController: UIViewController {
 //        copper?.closeSession()
 ////        resetView()
 //    }
-}
 
 

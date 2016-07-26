@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xF-HX-qYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-770.5" y="-976.5"/>
+            <point key="canvasLocation" x="-642.5" y="-1088.5"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="Wz1-6s-s4g">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcR-JV-qzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385.5" y="-976.5"/>
+            <point key="canvasLocation" x="-19.5" y="-1058.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="l0y-xf-Uqp">
@@ -485,7 +485,7 @@
                     <connections>
                         <outlet property="signedOutView" destination="LBf-fE-T4p" id="dLd-FK-715"/>
                         <outlet property="signinButton" destination="V7P-Ue-sbx" id="W4u-gl-8sj"/>
-                        <segue destination="cxI-6k-1s9" kind="showDetail" identifier="signInSegue" action="showViewController:sender:" id="0ax-t9-aMc"/>
+                        <segue destination="cxI-6k-1s9" kind="modal" identifier="segueIdentifier" id="2yZ-Rr-JiJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWb-9W-Mch" sceneMemberID="firstResponder"/>
@@ -495,8 +495,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="XvM-3r-Mle"/>
-        <segue reference="0ax-t9-aMc"/>
-        <segue reference="KIq-Cl-DEf"/>
+        <segue reference="2yZ-Rr-JiJ"/>
+        <segue reference="FRD-7L-CRF"/>
         <segue reference="o4C-MI-N0P"/>
         <segue reference="Yr8-aL-znI"/>
         <segue reference="vST-bY-lxo"/>
