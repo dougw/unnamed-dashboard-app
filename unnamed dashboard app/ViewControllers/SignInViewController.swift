@@ -5,36 +5,35 @@
 //  Created by Dylan Steck on 7/15/16.
 //  Copyright © 2016 Dylan Steck. All rights reserved.
 //
-
-
 import Foundation
 import CopperKit
 import UIKit
-//import RealmSwift
+import ChameleonFramework
 class SignInViewController: UIViewController {
-    
-    // Signed Out view IB Variables
-    @IBOutlet weak var signedOutView: UIView!
+    //IBOutlets: the descLabel is the one that says: Life should be open. Let's start now. The signInButton is the Sign In button.
+    @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var optionsButton: UIButton!
-    @IBOutlet weak var versionLabel: UILabel!
-    // Signed In view IB Variables
-    @IBOutlet weak var signedInView: UIView!
-    @IBOutlet weak var signoutButton: UIButton!
-    @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
-    //    @IBOutlet weak var continueButton: UIButton!
+    //    The scopes we want from Copper
     static let DefaultScopes: [C29Scope] = [.Name, .Email, .Phone]
     // Reference to our CopperKit singleton
     var copper: C29Application?
+    //Calling on fullName as a string to make sure we can pass the name to the DashboardViewController.
     var fullName: String?
-
+    //Setting which scopes we want, using the DefaultScopes static let up above.
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
+    
     override func viewDidLoad(){
         copper?.closeSession()
 //        resetView()
         super.viewDidLoad()
+        let colors:[UIColor] = [
+            UIColor.flatWatermelonColor(),
+            UIColor.flatSkyBlueColor()
+        ]
+        let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
+        view.backgroundColor = background
+        self.descLabel.font = UIFont(name: "PlayfairDisplay-Regular", size: 15)!
+        self.signinButton.titleLabel!.font = UIFont(name: "DIN Alternate Bold", size: 15)!
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
         //          self.topLogo.alpha = 1.0
@@ -67,7 +66,6 @@ class SignInViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueIdentifier" {
-//            DashboardViewController.nameLabel = fullName
             let destinationVC = segue.destinationViewController as! DashboardViewController
             destinationVC.name = fullName
             

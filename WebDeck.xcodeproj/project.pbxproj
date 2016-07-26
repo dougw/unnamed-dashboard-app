@@ -36,6 +36,7 @@
 		FC57AFF91D4692F2002D3573 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFF81D4692F1002D3573 /* SocialViewController.swift */; };
 		FC57AFFB1D46933F002D3573 /* UtilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */; };
 		FC57AFFD1D46934A002D3573 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */; };
+		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		FC57AFF81D4692F1002D3573 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesViewController.swift; sourceTree = "<group>"; };
 		FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
+		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				FC57AFEC1D466E5F002D3573 /* Montserrat-Light.otf */,
 				FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */,
 				FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */,
+				FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */,
 				FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */,
 				FC57AFE51D465E1F002D3573 /* DIN Alternate Bold.ttf */,
 			);
@@ -399,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */,
 				FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */,
 				FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */,
 				FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */,

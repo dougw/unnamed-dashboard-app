@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Dashboard View Controller-->
@@ -460,30 +461,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBf-fE-T4p">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-Ue-sbx">
-                                <rect key="frame" x="135" y="307" width="123" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-Ue-sbx">
+                                <rect key="frame" x="130" y="306" width="115" height="56"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="35"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
                                     <action selector="signinButtonPressed:" destination="b7A-aG-bKf" eventType="touchUpInside" id="Cg5-LF-Tql"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life should be open. Let's start now." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-PC-UQC">
+                                <rect key="frame" x="50" y="223" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LBf-fE-T4p" firstAttribute="width" secondItem="2PF-Dq-LXq" secondAttribute="width" id="OSU-XI-iEZ"/>
-                            <constraint firstItem="LBf-fE-T4p" firstAttribute="height" secondItem="2PF-Dq-LXq" secondAttribute="height" id="RiU-7o-PAI"/>
-                            <constraint firstItem="LBf-fE-T4p" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" id="i1e-ig-NGx"/>
-                            <constraint firstItem="LBf-fE-T4p" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="v4T-1X-D2G"/>
+                            <constraint firstItem="pNh-PC-UQC" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="Oep-dy-eOu"/>
+                            <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="Q5f-03-ZJE"/>
+                            <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" id="yJ7-gD-dVe"/>
+                            <constraint firstItem="pNh-PC-UQC" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" multiplier="0.7" id="zn1-nm-38P"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="signedOutView" destination="LBf-fE-T4p" id="dLd-FK-715"/>
+                        <outlet property="descLabel" destination="pNh-PC-UQC" id="dsh-6v-RLm"/>
                         <outlet property="signinButton" destination="V7P-Ue-sbx" id="W4u-gl-8sj"/>
                         <segue destination="cxI-6k-1s9" kind="modal" identifier="segueIdentifier" id="2yZ-Rr-JiJ"/>
                     </connections>
@@ -496,7 +499,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="XvM-3r-Mle"/>
         <segue reference="2yZ-Rr-JiJ"/>
-        <segue reference="FRD-7L-CRF"/>
+        <segue reference="z9h-dw-h5I"/>
         <segue reference="o4C-MI-N0P"/>
         <segue reference="Yr8-aL-znI"/>
         <segue reference="vST-bY-lxo"/>
