@@ -44,7 +44,7 @@
 		<string>Montserrat-ExtraBold.otf</string>
 		<string>Montserrat-Bold.otf</string>
 		<string>Montserrat-Black.otf</string>
-		<string>DIN Alternate Bold.ttf</string>
+		<string>DINAlternateBold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

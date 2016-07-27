@@ -24,7 +24,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad(){
         copper?.closeSession()
-//        resetView()
+        //        resetView()
         super.viewDidLoad()
         let colors:[UIColor] = [
             UIColor.flatWatermelonColor(),
@@ -32,7 +32,11 @@ class SignInViewController: UIViewController {
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
-        self.signinButton.titleLabel!.font = UIFont(name: "DIN Alternate Bold", size: 15)!
+        var label = UILabel(frame: CGRectMake(100, 70, 200, 200))
+        label.text = "Life should be open. Let's start now."
+        label.font = UIFont(name: "DINAlternateBold", size: 15)
+        self.view.addSubview(label)
+        
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
         //          self.topLogo.alpha = 1.0
@@ -50,10 +54,10 @@ class SignInViewController: UIViewController {
             switch result {
             case let .Success(userInfo):
                 self.fullName =  userInfo.fullName
-               self.performSegueWithIdentifier("segueIdentifier", sender: self)
-           
-//                self.setupViewWithUserInfo(userInfo)
-              print("lol")
+                self.performSegueWithIdentifier("segueIdentifier", sender: self)
+                
+                //                self.setupViewWithUserInfo(userInfo)
+                print("lol")
                 
             case .UserCancelled:
                 print("The user cancelled.")
@@ -73,7 +77,7 @@ class SignInViewController: UIViewController {
         
     }
     
-   
+    
     
 }
 
@@ -91,11 +95,9 @@ class SignInViewController: UIViewController {
 //        self.signedInView.hidden = true
 //        self.signedOutView.hidden = false
 //    }
-//   
-    
+//
+
 //    @IBAction func signoutButtonPressed(sender: AnyObject) {
 //        copper?.closeSession()
 ////        resetView()
 //    }
-
-

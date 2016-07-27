@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Dashboard View Controller-->
@@ -469,24 +468,15 @@
                                     <action selector="signinButtonPressed:" destination="b7A-aG-bKf" eventType="touchUpInside" id="Cg5-LF-Tql"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life should be open. Let's start now." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-PC-UQC">
-                                <rect key="frame" x="50" y="223" width="276" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pNh-PC-UQC" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="Oep-dy-eOu"/>
                             <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="Q5f-03-ZJE"/>
                             <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" id="yJ7-gD-dVe"/>
-                            <constraint firstItem="pNh-PC-UQC" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" multiplier="0.7" id="zn1-nm-38P"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="descLabel" destination="pNh-PC-UQC" id="dsh-6v-RLm"/>
                         <outlet property="signinButton" destination="V7P-Ue-sbx" id="W4u-gl-8sj"/>
                         <segue destination="cxI-6k-1s9" kind="modal" identifier="segueIdentifier" id="2yZ-Rr-JiJ"/>
                     </connections>
