@@ -32,7 +32,6 @@ class SignInViewController: UIViewController {
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
-        self.descLabel.font = UIFont(name: "PlayfairDisplay-Regular", size: 15)!
         self.signinButton.titleLabel!.font = UIFont(name: "DIN Alternate Bold", size: 15)!
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
