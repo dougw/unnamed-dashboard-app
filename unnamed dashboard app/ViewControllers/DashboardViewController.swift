@@ -15,7 +15,7 @@ import SwiftyJSON
 import ChameleonFramework
 import CopperKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController{
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
@@ -26,6 +26,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
     @IBOutlet weak var newsTextView: UITextView!
+    @IBOutlet weak var tableView: UITableView!
     //These are necessary for the Google Calendar API( name and Client ID from the Google Developer Console).
     private let kKeychainItemName = "Google Calendar API"
     private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
@@ -41,6 +42,7 @@ class DashboardViewController: UIViewController {
     
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
@@ -63,7 +65,9 @@ class DashboardViewController: UIViewController {
         output.backgroundColor = backgroundOther
 //        Makes sure that the newsTextView isn't editable.
       newsTextView.editable = false
-        
+
+    
+
         
         view.addSubview(output);
         //Calls on name and client ID for Google Cal again
@@ -75,36 +79,15 @@ class DashboardViewController: UIViewController {
         }
         
         //Parsing for newsAPI to get stories. There are many choices for the source parameter(bloomberg, google news, the list goes on an on at newsapi.org) and there are 3 options for sortBy(top, latest, featured).
-        let url = "https://newsapi.org/v1/articles"
-    let params = [ "source" : "googlenews" ,
-                           "sortBy" : "top" ,
-                           "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
+      
         //Alamofire is used to parse the data and a for statement grabs the titles and put its in the newsTextView
-        Alamofire.request(.GET, url, parameters: params).responseJSON { response in
-            switch response.result {
-            case .Success(let data):
-                 let json = JSON(data)
-                 let myarticles = json["articles"].arrayValue
-                 
-                 var titlesString = " "
-                 
-                 for article in myarticles {
-                    let title = article["title"].stringValue
-                    titlesString = titlesString + title + "                          "
-                 }
-                 //The titles are displayed on success
-                 self.newsTextView.text = ("\(titlesString )\n\n")
-            case .Failure(let error):
-                //An error printed on failure
-                print("Could not connect \(error)")
-            }
-        }
+        
      //fonts  and styling
-        self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-        self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-        self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-        self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-//         self.topButton.titleLabel!.textColor = UIColor.flatWatermelonColor()
+//        self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+//        self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+//        self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+//        self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+////         self.topButton.titleLabel!.textColor = UIColor.flatWatermelonColor()
 
 
 
@@ -250,4 +233,47 @@ class DashboardViewController: UIViewController {
         super.viewWillAppear(animated)
         nameLabel.text = "Hello, \(name)!"
     }
+        var titlesString = ""
+        }
+extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let url = "https://newsapi.org/v1/articles"
+        let params = [ "source" : "googlenews" ,
+                       "sortBy" : "top" ,
+                       "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
+        var myArticles = [JSON]()
+        var titlesString = " "
+        Alamofire.request(.GET, url, parameters: params).responseJSON { response in
+            switch response.result {
+            case .Success(let data):
+                let json = JSON(data)
+                myArticles = json["articles"].arrayValue
+                
+                //                var titlesString = " "
+                
+                for article in myArticles {
+                    let title = article["title"].stringValue
+                    titlesString = titlesString + title
+                }
+                //The titles are displayed on success
+                self.newsTextView.text = ("\(titlesString )\n\n")
+            case .Failure(let error):
+                //An error printed on failure
+                print("Could not connect \(error)")
+            }
+        }
+        return myArticles.count
     }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        cell.textLabel?.text = titlesString[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+
+}

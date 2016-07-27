@@ -36,6 +36,7 @@
 		FC57AFF91D4692F2002D3573 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFF81D4692F1002D3573 /* SocialViewController.swift */; };
 		FC57AFFB1D46933F002D3573 /* UtilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */; };
 		FC57AFFD1D46934A002D3573 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */; };
+		FCF83D611D4947290001D151 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF83D601D4947290001D151 /* NewsTableViewCell.swift */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		FC57AFF81D4692F1002D3573 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesViewController.swift; sourceTree = "<group>"; };
 		FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
+		FCF83D601D4947290001D151 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +250,7 @@
 				FC57AFF81D4692F1002D3573 /* SocialViewController.swift */,
 				FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */,
 				FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */,
+				FCF83D601D4947290001D151 /* NewsTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				FC57AFFD1D46934A002D3573 /* LifestyleViewController.swift in Sources */,
 				FC3591C81D3968D000500C1C /* ConnectionsSettingsViewController.swift in Sources */,
 				FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */,
+				FCF83D611D4947290001D151 /* NewsTableViewCell.swift in Sources */,
 				FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */,
 				FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */,
 				FC3591D01D3977CD00500C1C /* User.swift in Sources */,
