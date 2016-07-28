@@ -54,11 +54,11 @@ class DashboardViewController: UIViewController{
         self.output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         // The let colors and view.backgroundColor are all for a gradient, which requires ChameleonFramework.
         let colors:[UIColor] = [
-            UIColor.flatWatermelonColor(),
-            UIColor.flatSkyBlueColor()
+            UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0),
+            UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
         let colorsForTextView: [UIColor] = [
-            UIColor.flatWatermelonColor()
+            UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0)
         ]
         var background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
          var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
@@ -258,7 +258,7 @@ class DashboardViewController: UIViewController{
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        nameLabel.text = "Hello, \(name)!"
+        nameLabel.text = "Hello, \(name!)!"
     }
     
 

@@ -27,14 +27,14 @@ class SignInViewController: UIViewController {
         //        resetView()
         super.viewDidLoad()
         let colors:[UIColor] = [
-            UIColor.flatWatermelonColor(),
-            UIColor.flatSkyBlueColor()
+            UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0),
+           UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
-        var label = UILabel(frame: CGRectMake(100, 70, 200, 200))
+        var label = UILabel(frame: CGRectMake(20, 70, 300, 300))
         label.text = "Life should be open. Let's start now."
-        label.font = UIFont(name: "DINAlternateBold", size: 15)
+        label.font = UIFont(name: "Montserrat-Regular", size: 15)
         self.view.addSubview(label)
         
         //        topLogo.alpha = 0.0
@@ -46,7 +46,7 @@ class SignInViewController: UIViewController {
     @IBAction func signinButtonPressed(sender: AnyObject){
         copper = C29Application.sharedInstance
         // Required: configure it with our app's token
-        copper!.configureForApplication("578921F60246F042B3084ADD9B91E1FB4B916CEB")
+        copper!.configureForApplication("579A489835846340FC4C4B41A8FD48B5893B470C")
         // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
         copper!.scopes = desiredScopes
         // OK, let's make our call
