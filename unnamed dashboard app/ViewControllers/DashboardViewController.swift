@@ -17,6 +17,8 @@ import CopperKit
 
 class DashboardViewController: UIViewController{
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
+    var myArticles = [JSON]() ?? []
+    var titlesString = [String]()
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lifestyleButton: UIButton!
@@ -129,6 +131,32 @@ class DashboardViewController: UIViewController{
             calendarLabel.hidden = true
         }
         
+        let url = "https://newsapi.org/v1/articles"
+        let params = [ "source" : "googlenews" ,
+                       "sortBy" : "top" ,
+                       "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
+        myArticles = [JSON]()
+        Alamofire.request(.GET, url, parameters: params).responseJSON { response in
+            switch response.result {
+            case .Success(let data):
+                let json = JSON(data)
+                self.myArticles = json["articles"].arrayValue
+                
+                for article in self.myArticles {
+                    let title = article["title"].stringValue
+                    self.titlesString.append(title)
+                    
+                }
+                self.tableView.reloadData()
+                //The titles are displayed on success
+                self.newsTextView.text = ("\(self.titlesString)\n\n")
+            case .Failure(let error):
+                //An error printed on failure
+                print("Could not connect \(error)")
+            }
+        }
+
+        
     }
     
     
@@ -233,42 +261,20 @@ class DashboardViewController: UIViewController{
         super.viewWillAppear(animated)
         nameLabel.text = "Hello, \(name)!"
     }
-        var titlesString = ""
-        }
+    
+
+}
+
 extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let url = "https://newsapi.org/v1/articles"
-        let params = [ "source" : "googlenews" ,
-                       "sortBy" : "top" ,
-                       "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
-        var myArticles = [JSON]()
-        var titlesString = " "
-        Alamofire.request(.GET, url, parameters: params).responseJSON { response in
-            switch response.result {
-            case .Success(let data):
-                let json = JSON(data)
-                myArticles = json["articles"].arrayValue
-                
-                //                var titlesString = " "
-                
-                for article in myArticles {
-                    let title = article["title"].stringValue
-                    titlesString = titlesString + title
-                }
-                //The titles are displayed on success
-                self.newsTextView.text = ("\(titlesString )\n\n")
-            case .Failure(let error):
-                //An error printed on failure
-                print("Could not connect \(error)")
-            }
-        }
+
         return myArticles.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = titlesString[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
+        cell.tableViewLabel?.text = titlesString[indexPath.row]
         return cell
     }
     
