@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Dashboard View Controller-->
@@ -77,7 +78,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-lP-y9b">
-                                                    <rect key="frame" x="8" y="-6" width="367" height="94"/>
+                                                    <rect key="frame" x="8" y="-61" width="367" height="149"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="205" id="ZFM-R5-Hff"/>
                                                     </constraints>
@@ -116,6 +117,13 @@
                                     <action selector="connectCalendarButtonPressed:" destination="cxI-6k-1s9" eventType="touchUpInside" id="tCa-KF-q7O"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CH2-6I-vD0">
+                                <rect key="frame" x="256" y="82" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="d50-Cz-uwz" kind="show" id="Cu6-Le-zWj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -152,6 +160,38 @@
             </objects>
             <point key="canvasLocation" x="-642.5" y="-1088.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vri-Tz-UdM">
+            <objects>
+                <viewController id="d50-Cz-uwz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xwF-xe-4l5"/>
+                        <viewControllerLayoutGuide type="bottom" id="jfX-5g-dUO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aL3-YI-UPC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KpQ-Ht-JKA">
+                                <rect key="frame" x="187" y="431" width="240" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2A8-Lv-dIc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT1-rI-o2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="-1232"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="4Ko-VL-y7v">
             <objects>
@@ -172,15 +212,24 @@
                                     <action selector="signinButtonPressed:" destination="b7A-aG-bKf" eventType="touchUpInside" id="Cg5-LF-Tql"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Life should be open. Let's start now. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJu-iS-6PF">
+                                <rect key="frame" x="52" y="191" width="265" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OJu-iS-6PF" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" multiplier="0.6" id="K9r-PE-vKd"/>
                             <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="Q5f-03-ZJE"/>
+                            <constraint firstItem="OJu-iS-6PF" firstAttribute="centerX" secondItem="2PF-Dq-LXq" secondAttribute="centerX" id="bot-fD-BUp"/>
                             <constraint firstItem="V7P-Ue-sbx" firstAttribute="centerY" secondItem="2PF-Dq-LXq" secondAttribute="centerY" id="yJ7-gD-dVe"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="descLabel" destination="OJu-iS-6PF" id="im2-lC-8fI"/>
                         <outlet property="signinButton" destination="V7P-Ue-sbx" id="W4u-gl-8sj"/>
                         <segue destination="cxI-6k-1s9" kind="modal" identifier="segueIdentifier" id="2yZ-Rr-JiJ"/>
                     </connections>

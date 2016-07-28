@@ -32,10 +32,10 @@ class SignInViewController: UIViewController {
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
-        var label = UILabel(frame: CGRectMake(20, 70, 300, 300))
-        label.text = "Life should be open. Let's start now."
-        label.font = UIFont(name: "Montserrat-Regular", size: 15)
-        self.view.addSubview(label)
+//        var label = UILabel(frame: CGRectMake(20, 70, 300, 300))
+//        label.text = "Life should be open. Let's start now."
+        descLabel.font = UIFont(name: "Montserrat-Regular", size: 15)
+//        self.view.addSubview(label)
         
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {

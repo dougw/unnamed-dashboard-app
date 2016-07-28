@@ -359,7 +359,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Dylan Steck";
+				ORGANIZATIONNAME = WebDeck;
 				TargetAttributes = {
 					FC3591861D39687F00500C1C = {
 						CreatedOnToolsVersion = 7.2.1;
