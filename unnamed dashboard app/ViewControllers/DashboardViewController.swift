@@ -27,7 +27,7 @@ class DashboardViewController: UIViewController{
      @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
-    @IBOutlet weak var newsTextView: UITextView!
+//    @IBOutlet weak var newsTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
     //These are necessary for the Google Calendar API( name and Client ID from the Google Developer Console).
     private let kKeychainItemName = "Google Calendar API"
@@ -63,10 +63,9 @@ class DashboardViewController: UIViewController{
         var background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
          var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
         view.backgroundColor = background
-        newsTextView.backgroundColor = backgroundOther
         output.backgroundColor = backgroundOther
 //        Makes sure that the newsTextView isn't editable.
-      newsTextView.editable = false
+//      newsTextView.editable = false
 
     
 
@@ -149,7 +148,7 @@ class DashboardViewController: UIViewController{
                 }
                 self.tableView.reloadData()
                 //The titles are displayed on success
-                self.newsTextView.text = ("\(self.titlesString)\n\n")
+//                self.newsTextView.text = ("\(self.titlesString)\n\n")
             case .Failure(let error):
                 //An error printed on failure
                 print("Could not connect \(error)")
