@@ -11,7 +11,8 @@
 		D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */; };
 		DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */; };
 		FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */ = {isa = PBXBuildFile; fileRef = FC03D76C1D3FB4B900866DD5 /* googlecal.png */; };
-		FC26B65B1D4BA18600B84B25 /* cnnlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B65A1D4BA18600B84B25 /* cnnlogo.png */; };
+		FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B65C1D4BE64500B84B25 /* helloworld.png */; };
+		FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
 		FC3591921D39687F00500C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3591901D39687F00500C1C /* Main.storyboard */; };
 		FC3591941D39687F00500C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3591931D39687F00500C1C /* Assets.xcassets */; };
@@ -69,7 +70,8 @@
 		8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
 		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
-		FC26B65A1D4BA18600B84B25 /* cnnlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cnnlogo.png; sourceTree = "<group>"; };
+		FC26B65C1D4BE64500B84B25 /* helloworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helloworld.png; sourceTree = "<group>"; };
+		FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_news_copyrighted.png; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* WebDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC35918A1D39687F00500C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3591911D39687F00500C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -275,7 +277,8 @@
 		FC57AFE61D465E7D002D3573 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FC26B65A1D4BA18600B84B25 /* cnnlogo.png */,
+				FC26B65C1D4BE64500B84B25 /* helloworld.png */,
+				FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */,
 				FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */,
 				FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */,
 				FC57AFEA1D466E5F002D3573 /* Montserrat-ExtraBold.otf */,
@@ -416,12 +419,13 @@
 				FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */,
 				FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */,
 				FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */,
-				FC26B65B1D4BA18600B84B25 /* cnnlogo.png in Resources */,
+				FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */,
 				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
 				FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */,
 				FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,
+				FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
