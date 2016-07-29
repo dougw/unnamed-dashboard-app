@@ -23,7 +23,7 @@ class SignInViewController: UIViewController {
     var desiredScopes: [C29Scope]? = SignInViewController.DefaultScopes
     
     override func viewDidLoad(){
-        copper?.closeSession()
+//        copper?.closeSession()
         //        resetView()
         super.viewDidLoad()
         let colors:[UIColor] = [
