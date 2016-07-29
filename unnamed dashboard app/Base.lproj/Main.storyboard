@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kx5-CN-b8p">
-                                <rect key="frame" x="0.0" y="272" width="414" height="219"/>
+                                <rect key="frame" x="0.0" y="272" width="414" height="254"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="95" id="C6D-e5-qrb" customClass="NewsTableViewCell" customModule="WebDeck" customModuleProvider="target">
@@ -73,7 +73,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-lP-y9b">
-                                                    <rect key="frame" x="14" y="-28" width="367" height="149"/>
+                                                    <rect key="frame" x="14" y="-28" width="367" height="140"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="205" id="ZFM-R5-Hff"/>
                                                         <constraint firstAttribute="width" constant="367" id="cR9-iG-qtH"/>
@@ -94,6 +94,7 @@
                                                 <constraint firstItem="vDn-lP-y9b" firstAttribute="leading" secondItem="j9W-y5-s8b" secondAttribute="leadingMargin" constant="6" id="bcy-QQ-98z"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="vDn-lP-y9b" secondAttribute="bottom" constant="-29" id="hSN-Em-d5q"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vDn-lP-y9b" secondAttribute="trailing" constant="-10" id="jDR-n5-arW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vDn-lP-y9b" secondAttribute="bottom" constant="-26" id="oqu-xi-4Z2"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vDn-lP-y9b" secondAttribute="trailing" constant="31" id="pgs-lm-7zy"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -112,19 +113,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cFY-2p-aQG" firstAttribute="centerY" secondItem="ruU-W2-gri" secondAttribute="centerY" multiplier="0.3" id="1bo-dx-122"/>
+                            <constraint firstItem="3A2-nM-nmn" firstAttribute="top" secondItem="Kx5-CN-b8p" secondAttribute="bottom" constant="210" id="2tp-mE-B67"/>
                             <constraint firstItem="A4r-pm-fzG" firstAttribute="centerX" secondItem="ruU-W2-gri" secondAttribute="centerX" id="4c6-Jh-6NU"/>
                             <constraint firstItem="MQZ-EK-cJe" firstAttribute="trailing" secondItem="6HR-Lv-HyZ" secondAttribute="trailing" id="5B5-Hi-DCq"/>
+                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="trailing" secondItem="MQZ-EK-cJe" secondAttribute="trailing" id="68U-jB-6qK"/>
                             <constraint firstItem="MQZ-EK-cJe" firstAttribute="top" secondItem="A4r-pm-fzG" secondAttribute="bottom" constant="2" id="7aM-Kr-6EI"/>
                             <constraint firstItem="Saq-v9-sbV" firstAttribute="centerX" secondItem="ruU-W2-gri" secondAttribute="centerX" id="80k-JP-gPU"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="top" secondItem="ruU-W2-gri" secondAttribute="top" id="9uF-Po-gkL"/>
-                            <constraint firstItem="3A2-nM-nmn" firstAttribute="top" secondItem="Kx5-CN-b8p" secondAttribute="bottom" constant="245" id="D2Y-zQ-o0K"/>
+                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="top" secondItem="MQZ-EK-cJe" secondAttribute="bottom" constant="41" id="CUh-lO-cc5"/>
                             <constraint firstItem="cFY-2p-aQG" firstAttribute="centerX" secondItem="ruU-W2-gri" secondAttribute="centerX" id="Eql-IS-afk"/>
-                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="trailing" secondItem="MQZ-EK-cJe" secondAttribute="trailing" id="L5v-Id-WWF"/>
                             <constraint firstAttribute="trailing" secondItem="6HR-Lv-HyZ" secondAttribute="trailing" id="W5X-tA-cDF"/>
-                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="top" secondItem="MQZ-EK-cJe" secondAttribute="bottom" constant="41" id="Xfi-ty-f11"/>
                             <constraint firstItem="Saq-v9-sbV" firstAttribute="centerY" secondItem="ruU-W2-gri" secondAttribute="centerY" multiplier="0.2" id="YJZ-Ra-sHY"/>
+                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="leading" secondItem="MQZ-EK-cJe" secondAttribute="leading" id="dl8-xu-ZDq"/>
                             <constraint firstItem="MQZ-EK-cJe" firstAttribute="leading" secondItem="6HR-Lv-HyZ" secondAttribute="leading" id="duP-Dt-Q98"/>
-                            <constraint firstItem="Kx5-CN-b8p" firstAttribute="leading" secondItem="MQZ-EK-cJe" secondAttribute="leading" id="hDj-ff-H9x"/>
                             <constraint firstItem="6HR-Lv-HyZ" firstAttribute="leading" secondItem="ruU-W2-gri" secondAttribute="leading" id="rgE-0E-fB0"/>
                             <constraint firstItem="A4r-pm-fzG" firstAttribute="centerY" secondItem="ruU-W2-gri" secondAttribute="centerY" multiplier="0.3" id="zhw-WF-rIB"/>
                         </constraints>
