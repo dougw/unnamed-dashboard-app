@@ -24,10 +24,10 @@ class DashboardViewController: UIViewController{
     @IBOutlet weak var lifestyleButton: UIButton!
     @IBOutlet weak var socialButton: UIButton!
     @IBOutlet weak var utilitiesButton: UIButton!
-     @IBOutlet weak var output: UITextView!
+    @IBOutlet weak var output: UITextView!
     @IBOutlet weak var connectCalendarButton: UIButton!
     @IBOutlet weak var calendarLabel: UILabel!
-//    @IBOutlet weak var newsTextView: UITextView!
+    //    @IBOutlet weak var newsTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
     //These are necessary for the Google Calendar API( name and Client ID from the Google Developer Console).
     private let kKeychainItemName = "Google Calendar API"
@@ -44,11 +44,11 @@ class DashboardViewController: UIViewController{
     
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
-//        self.output.frame = view.bounds
+        //        self.output.frame = view.bounds
         self.output.editable = false
         self.output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         self.output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
@@ -61,14 +61,14 @@ class DashboardViewController: UIViewController{
             UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0)
         ]
         var background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-         var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
+        var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
         view.backgroundColor = background
         output.backgroundColor = backgroundOther
-//        Makes sure that the newsTextView isn't editable.
-//      newsTextView.editable = false
-
-    
-
+        //        Makes sure that the newsTextView isn't editable.
+        //      newsTextView.editable = false
+        
+        
+        
         
         view.addSubview(output);
         //Calls on name and client ID for Google Cal again
@@ -80,26 +80,26 @@ class DashboardViewController: UIViewController{
         }
         
         //Parsing for newsAPI to get stories. There are many choices for the source parameter(bloomberg, google news, the list goes on an on at newsapi.org) and there are 3 options for sortBy(top, latest, featured).
-      
+        
         //Alamofire is used to parse the data and a for statement grabs the titles and put its in the newsTextView
         
-     //fonts  and styling
-//        self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-//        self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-//        self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-//        self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
-////         self.topButton.titleLabel!.textColor = UIColor.flatWatermelonColor()
-
-
-
-        //end fonts and styling
-  
-
+        //fonts  and styling
+        //        self.topButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        //        self.lifestyleButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        //        self.socialButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        //        self.utilitiesButton.titleLabel!.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        ////         self.topButton.titleLabel!.textColor = UIColor.flatWatermelonColor()
         
-
+        
+        
+        //end fonts and styling
+        
+        
+        
+        
     }
     
- 
+    
     
     // If the user hasn't logged into Google yet, the connectCalendarButton will prompt the sign in and after-so display the events. If not, the button is hidden and the events are displayed.
     @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
@@ -116,7 +116,7 @@ class DashboardViewController: UIViewController{
                 animated: true,
                 completion: nil
             )
-                 calendarLabel.hidden = true
+            calendarLabel.hidden = true
         }
     }
     //This just makes sure that the label that says calendar is hidden if the user isn't logged in to Google.
@@ -124,7 +124,7 @@ class DashboardViewController: UIViewController{
         if let authorizer = service.authorizer,
             canAuth = authorizer.canAuthorize where canAuth {
             fetchEvents()
-             calendarLabel.hidden = false
+            calendarLabel.hidden = false
         }
         else{
             calendarLabel.hidden = true
@@ -148,13 +148,13 @@ class DashboardViewController: UIViewController{
                 }
                 self.tableView.reloadData()
                 //The titles are displayed on success
-//                self.newsTextView.text = ("\(self.titlesString)\n\n")
+            //                self.newsTextView.text = ("\(self.titlesString)\n\n")
             case .Failure(let error):
                 //An error printed on failure
                 print("Could not connect \(error)")
             }
         }
-
+        
         
     }
     
@@ -261,13 +261,13 @@ class DashboardViewController: UIViewController{
         nameLabel.text = "Hello, \(name!)!"
     }
     
-
+    
 }
 
 extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         return myArticles.count
     }
     
@@ -280,5 +280,5 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-
+    
 }

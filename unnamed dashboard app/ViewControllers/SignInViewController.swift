@@ -26,15 +26,18 @@ class SignInViewController: UIViewController {
 //        copper?.closeSession()
         //        resetView()
         super.viewDidLoad()
-        let colors:[UIColor] = [
-            UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0),
-           UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
-        ]
-        let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-        view.backgroundColor = background
+//        let colors:[UIColor] = [
+////            UIColor(red:0.96, green:0.78, blue:0.81, alpha:1.0),
+////           UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
+//            flatPowderBlue
+//        ]
+//        let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
+//        view.backgroundColor = background
+         view.backgroundColor = FlatPowderBlue()
 //        var label = UILabel(frame: CGRectMake(20, 70, 300, 300))
 //        label.text = "Life should be open. Let's start now."
-        descLabel.font = UIFont(name: "Montserrat-Regular", size: 15)
+        descLabel.font = UIFont(name: "Montserrat-Light", size: 15)
+        signinButton.titleLabel!.font =  UIFont(name: "Montserrat-Regular", size: 30)
 //        self.view.addSubview(label)
         
         //        topLogo.alpha = 0.0
