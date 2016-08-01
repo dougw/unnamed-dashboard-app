@@ -13,6 +13,7 @@ target 'WebDeck' do
      pod 'Fabric'
      pod 'TwitterKit'
      pod 'TwitterCore'
+     pod 'TTEventKit', '~> 0.0'
 
 
   # Pods for WebDeck

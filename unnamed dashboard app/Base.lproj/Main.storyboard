@@ -171,6 +171,9 @@
                                                     <rect key="frame" x="29" y="8" width="130" height="31"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <state key="normal" title="Connect Calendar"/>
+                                                    <connections>
+                                                        <action selector="connectCalendarButtonPressed:" destination="4Sz-Em-Isz" eventType="touchUpInside" id="KAA-Ou-yMD"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-pm-fzG">
                                                     <rect key="frame" x="197" y="14" width="55" height="20"/>

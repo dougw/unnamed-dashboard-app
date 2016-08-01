@@ -1,0 +1,6 @@
+framework module TTEventKit {
+  umbrella header "TTEventKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
