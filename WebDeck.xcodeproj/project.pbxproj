@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B74E02D967E62380D92E631 /* Pods_WebDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */; };
-		6C73852A7034EC658E49F7CB /* Pods_WebDeckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */; };
-		82DD8D130C828234A3A6CF69 /* Pods_WebDeckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */; };
-		918E9B4F938CDB5B3B7DD471 /* Pods_unnamed_dashboard_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */; };
-		D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */; };
-		DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */; };
+		45F99FE026674EB58CB41CF2 /* Pods_WebDeckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646598D477B7DC9F3EA3FA4E /* Pods_WebDeckUITests.framework */; };
+		C0779D0A5E0C34AD0D39F23A /* Pods_WebDeckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */; };
+		F1D83B5C816C9AE2CEDA94B5 /* Pods_WebDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */; };
 		FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */ = {isa = PBXBuildFile; fileRef = FC03D76C1D3FB4B900866DD5 /* googlecal.png */; };
+		FC181E1C1D4FBDA900019994 /* webdecklong.png in Resources */ = {isa = PBXBuildFile; fileRef = FC181E1B1D4FBDA900019994 /* webdecklong.png */; };
+		FC1A1F021D4FCEB4001CB9AF /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */; };
+		FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */; };
 		FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B65C1D4BE64500B84B25 /* helloworld.png */; };
 		FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
@@ -58,25 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A296C7DF8AE0A05A787C7DC /* Pods-unnamed dashboard appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2CB3D9C4401468CE856ED744 /* Pods-unnamed dashboard app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.debug.xcconfig"; sourceTree = "<group>"; };
-		3789C51E3408EFE8CA14D27B /* Pods-unnamed dashboard appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.release.xcconfig"; sourceTree = "<group>"; };
-		421B07C0E29B45A18149A9EA /* Pods-unnamed dashboard appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.release.xcconfig"; sourceTree = "<group>"; };
-		475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		58CBFCEB04ED3DA3249A75EF /* Pods-unnamed dashboard appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
-		9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.release.xcconfig"; sourceTree = "<group>"; };
-		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
-		C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.debug.xcconfig"; sourceTree = "<group>"; };
-		F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EAE1708EEACBC7BE1B566C /* Pods-WebDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.debug.xcconfig"; sourceTree = "<group>"; };
+		646598D477B7DC9F3EA3FA4E /* Pods_WebDeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7366DD7FD446A15001653129 /* Pods-WebDeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.release.xcconfig"; sourceTree = "<group>"; };
+		89A4C467E6EC638A0A2ADCB2 /* Pods-WebDeckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89D504F3E5ABADACAE9B6707 /* Pods-WebDeckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4F46A9221659445E0585745 /* Pods-WebDeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
+		D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
+		FC181E1B1D4FBDA900019994 /* webdecklong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webdecklong.png; sourceTree = "<group>"; };
+		FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPageController.swift; sourceTree = "<group>"; };
 		FC26B65C1D4BE64500B84B25 /* helloworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helloworld.png; sourceTree = "<group>"; };
 		FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_news_copyrighted.png; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* WebDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +99,7 @@
 		FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF83D601D4947290001D151 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				918E9B4F938CDB5B3B7DD471 /* Pods_unnamed_dashboard_app.framework in Frameworks */,
-				1B74E02D967E62380D92E631 /* Pods_WebDeck.framework in Frameworks */,
+				F1D83B5C816C9AE2CEDA94B5 /* Pods_WebDeck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */,
-				82DD8D130C828234A3A6CF69 /* Pods_WebDeckTests.framework in Frameworks */,
+				C0779D0A5E0C34AD0D39F23A /* Pods_WebDeckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,42 +125,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */,
-				6C73852A7034EC658E49F7CB /* Pods_WebDeckUITests.framework in Frameworks */,
+				45F99FE026674EB58CB41CF2 /* Pods_WebDeckUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C36E69F3C019061596D63304 /* Pods */ = {
+		A4D26A5B504DB0CA2FC07A21 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2CB3D9C4401468CE856ED744 /* Pods-unnamed dashboard app.debug.xcconfig */,
-				8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */,
-				58CBFCEB04ED3DA3249A75EF /* Pods-unnamed dashboard appTests.debug.xcconfig */,
-				3789C51E3408EFE8CA14D27B /* Pods-unnamed dashboard appTests.release.xcconfig */,
-				2A296C7DF8AE0A05A787C7DC /* Pods-unnamed dashboard appUITests.debug.xcconfig */,
-				421B07C0E29B45A18149A9EA /* Pods-unnamed dashboard appUITests.release.xcconfig */,
-				DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */,
-				BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */,
-				C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */,
-				9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */,
-				475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */,
-				9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */,
+				21EAE1708EEACBC7BE1B566C /* Pods-WebDeck.debug.xcconfig */,
+				D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */,
+				C4F46A9221659445E0585745 /* Pods-WebDeckTests.debug.xcconfig */,
+				7366DD7FD446A15001653129 /* Pods-WebDeckTests.release.xcconfig */,
+				89A4C467E6EC638A0A2ADCB2 /* Pods-WebDeckUITests.debug.xcconfig */,
+				89D504F3E5ABADACAE9B6707 /* Pods-WebDeckUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F1A29D03CFA4902F24400323 /* Frameworks */ = {
+		C410FA2970B5EE1FE01C87A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */,
-				A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */,
-				8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */,
-				22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */,
-				82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */,
-				F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */,
+				FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */,
+				D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */,
+				646598D477B7DC9F3EA3FA4E /* Pods_WebDeckUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,6 +158,7 @@
 		FC03D76E1D3FB4C800866DD5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FC181E1B1D4FBDA900019994 /* webdecklong.png */,
 				FC03D76C1D3FB4B900866DD5 /* googlecal.png */,
 			);
 			name = images;
@@ -188,8 +171,8 @@
 				FC3591A01D39688000500C1C /* unnamed dashboard appTests */,
 				FC3591AB1D39688000500C1C /* unnamed dashboard appUITests */,
 				FC3591881D39687F00500C1C /* Products */,
-				C36E69F3C019061596D63304 /* Pods */,
-				F1A29D03CFA4902F24400323 /* Frameworks */,
+				A4D26A5B504DB0CA2FC07A21 /* Pods */,
+				C410FA2970B5EE1FE01C87A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +247,8 @@
 				FC3591C11D3968D000500C1C /* DashboardViewController.swift */,
 				FC3591C21D3968D000500C1C /* SignInViewController.swift */,
 				FCF83D601D4947290001D151 /* NewsTableViewCell.swift */,
+				FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */,
+				FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -428,6 +413,7 @@
 				FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */,
 				FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */,
 				FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */,
+				FC181E1C1D4FBDA900019994 /* webdecklong.png in Resources */,
 				FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */,
 				FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */,
 				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
@@ -602,7 +588,9 @@
 				FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */,
 				FC3591D01D3977CD00500C1C /* User.swift in Sources */,
 				FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */,
+				FC1A1F021D4FCEB4001CB9AF /* DashboardTableViewCell.swift in Sources */,
 				FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */,
+				FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */,
 				FC3591CC1D3977BC00500C1C /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +723,7 @@
 		};
 		FC3591B21D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */;
+			baseConfigurationReference = 21EAE1708EEACBC7BE1B566C /* Pods-WebDeck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -754,7 +742,7 @@
 		};
 		FC3591B31D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */;
+			baseConfigurationReference = D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -773,7 +761,7 @@
 		};
 		FC3591B51D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */;
+			baseConfigurationReference = C4F46A9221659445E0585745 /* Pods-WebDeckTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
@@ -786,7 +774,7 @@
 		};
 		FC3591B61D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */;
+			baseConfigurationReference = 7366DD7FD446A15001653129 /* Pods-WebDeckTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
@@ -799,7 +787,7 @@
 		};
 		FC3591B81D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */;
+			baseConfigurationReference = 89A4C467E6EC638A0A2ADCB2 /* Pods-WebDeckUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -812,7 +800,7 @@
 		};
 		FC3591B91D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */;
+			baseConfigurationReference = 89D504F3E5ABADACAE9B6707 /* Pods-WebDeckUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

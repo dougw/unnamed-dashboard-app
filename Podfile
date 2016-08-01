@@ -15,7 +15,7 @@ target 'WebDeck' do
      pod 'TwitterCore'
 
 
-  # Pods for unnamed dashboard app
+  # Pods for WebDeck
 
   target 'WebDeckTests' do
     inherit! :search_paths

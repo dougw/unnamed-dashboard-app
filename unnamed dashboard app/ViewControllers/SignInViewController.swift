@@ -58,7 +58,7 @@ class SignInViewController: UIViewController {
             switch result {
             case let .Success(userInfo):
                 self.fullName =  userInfo.fullName
-                self.performSegueWithIdentifier("segueIdentifier", sender: self)
+                self.performSegueWithIdentifier("hello", sender: self)
                 
                 //                self.setupViewWithUserInfo(userInfo)
                 print("lol")
@@ -72,7 +72,7 @@ class SignInViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueIdentifier" {
+        if segue.identifier == "hello" {
             let destinationVC = segue.destinationViewController as! DashboardViewController
             destinationVC.name = fullName
             
