@@ -138,10 +138,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Oj7-nd-1td"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6ci-8n-SAA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPX-eD-gWI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPX-eD-gWI">
                                 <rect key="frame" x="0.0" y="124" width="414" height="612"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -158,29 +158,6 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQZ-EK-cJe">
-                                                    <rect key="frame" x="8" y="34" width="385" height="109"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="109" id="Uuw-sh-OPF"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-2p-aQG">
-                                                    <rect key="frame" x="29" y="8" width="130" height="31"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                    <state key="normal" title="Connect Calendar"/>
-                                                    <connections>
-                                                        <action selector="connectCalendarButtonPressed:" destination="4Sz-Em-Isz" eventType="touchUpInside" id="KAA-Ou-yMD"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-pm-fzG">
-                                                    <rect key="frame" x="197" y="14" width="55" height="20"/>
-                                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hpO-vO-kLm" firstAttribute="top" secondItem="Pg0-YJ-jdC" secondAttribute="top" id="GHq-Oy-dgw"/>
@@ -188,10 +165,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="calendarLabel" destination="A4r-pm-fzG" id="KYB-PG-5Wr"/>
                                             <outlet property="calendarTableViewLabel" destination="hpO-vO-kLm" id="TZr-te-4fS"/>
-                                            <outlet property="connectCalendarButton" destination="cFY-2p-aQG" id="t22-9B-WBc"/>
-                                            <outlet property="output" destination="MQZ-EK-cJe" id="qKF-zY-aNK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -202,7 +176,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webdecklong.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-rT-hAq">
                                 <rect key="frame" x="75" y="39" width="247" height="57"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-gV-MNE">
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-gV-MNE">
                                 <rect key="frame" x="0.0" y="-5" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="LcN-lg-eFk">

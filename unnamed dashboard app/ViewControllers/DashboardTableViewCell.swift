@@ -10,10 +10,7 @@
 import UIKit
 
 class DashboardTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var calendarLabel: UILabel!
-    @IBOutlet weak var connectCalendarButton: UIButton!
-    @IBOutlet weak var output: UITextView!
+
     @IBOutlet weak var calendarTableViewLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
