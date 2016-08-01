@@ -1,6 +1,0 @@
-framework module Pods_unnamed_dashboard_app {
-  umbrella header "Pods-unnamed dashboard app-umbrella.h"
-
-  export *
-  module * { export * }
-}

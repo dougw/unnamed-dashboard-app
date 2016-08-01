@@ -1,0 +1,6 @@
+framework module Pods_WebDeck {
+  umbrella header "Pods-WebDeck-umbrella.h"
+
+  export *
+  module * { export * }
+}

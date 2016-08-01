@@ -14,6 +14,7 @@ import Alamofire
 import SwiftyJSON
 import ChameleonFramework
 import CopperKit
+import TwitterKit
 
 class DashboardViewController: UIViewController{
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
@@ -47,6 +48,15 @@ class DashboardViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Twitter start
+        // Add a button to the center of the view to show the timeline
+        let button = UIButton(type: .System)
+        button.setTitle("Show Timeline", forState: .Normal)
+        button.sizeToFit()
+        button.center = view.center
+        button.addTarget(self, action: #selector(showTimeline), forControlEvents: [.TouchUpInside])
+        view.addSubview(button)
+        //Twitter end
         //All of this output stuff just sets size and features to the output for the Google Calendar API.
         //        self.output.frame = view.bounds
         self.output.editable = false
@@ -260,7 +270,24 @@ class DashboardViewController: UIViewController{
         super.viewWillAppear(animated)
         nameLabel.text = "Hello, \(name!)!"
     }
-    
+    //Twitter
+    func showTimeline() {
+        // Create an API client and data source to fetch Tweets for the timeline
+        let client = TWTRAPIClient()
+        let dataSource = TWTRUserTimelineDataSource(screenName: "dylsteck", APIClient: client)
+        // Create the timeline view controller
+        let timelineViewControlller = TWTRTimelineViewController(dataSource: dataSource)
+        // Create done button to dismiss the view controller
+        let button = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(dismissTimeline))
+        timelineViewControlller.navigationItem.leftBarButtonItem = button
+        // Create a navigation controller to hold the
+        let navigationController = UINavigationController(rootViewController: timelineViewControlller)
+        showDetailViewController(navigationController, sender: self)
+    }
+    func dismissTimeline() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    //End twitter
     
 }
 
@@ -281,4 +308,5 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
         
     }
     
+
 }

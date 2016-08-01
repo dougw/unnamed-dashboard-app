@@ -9,6 +9,7 @@ import Foundation
 import CopperKit
 import UIKit
 import ChameleonFramework
+
 class SignInViewController: UIViewController {
     //IBOutlets: the descLabel is the one that says: Life should be open. Let's start now. The signInButton is the Sign In button.
     @IBOutlet weak var descLabel: UILabel!

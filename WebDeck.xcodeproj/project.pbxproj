@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B74E02D967E62380D92E631 /* Pods_WebDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */; };
+		6C73852A7034EC658E49F7CB /* Pods_WebDeckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */; };
+		82DD8D130C828234A3A6CF69 /* Pods_WebDeckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */; };
 		918E9B4F938CDB5B3B7DD471 /* Pods_unnamed_dashboard_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */; };
 		D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */; };
 		DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */; };
@@ -18,8 +21,6 @@
 		FC3591941D39687F00500C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3591931D39687F00500C1C /* Assets.xcassets */; };
 		FC3591A21D39688000500C1C /* unnamed_dashboard_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591A11D39688000500C1C /* unnamed_dashboard_appTests.swift */; };
 		FC3591AD1D39688000500C1C /* unnamed_dashboard_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591AC1D39688000500C1C /* unnamed_dashboard_appUITests.swift */; };
-		FC3591C71D3968D000500C1C /* ConnectAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591BF1D3968D000500C1C /* ConnectAccountsViewController.swift */; };
-		FC3591C81D3968D000500C1C /* ConnectionsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591C01D3968D000500C1C /* ConnectionsSettingsViewController.swift */; };
 		FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591C11D3968D000500C1C /* DashboardViewController.swift */; };
 		FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591C21D3968D000500C1C /* SignInViewController.swift */; };
 		FC3591CC1D3977BC00500C1C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CB1D3977BC00500C1C /* API.swift */; };
@@ -35,9 +36,6 @@
 		FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */; };
 		FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */; };
 		FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */; };
-		FC57AFF91D4692F2002D3573 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFF81D4692F1002D3573 /* SocialViewController.swift */; };
-		FC57AFFB1D46933F002D3573 /* UtilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */; };
-		FC57AFFD1D46934A002D3573 /* LifestyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */; };
 		FCF83D611D4947290001D151 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF83D601D4947290001D151 /* NewsTableViewCell.swift */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
@@ -61,14 +59,23 @@
 
 /* Begin PBXFileReference section */
 		01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A296C7DF8AE0A05A787C7DC /* Pods-unnamed dashboard appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CB3D9C4401468CE856ED744 /* Pods-unnamed dashboard app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.debug.xcconfig"; sourceTree = "<group>"; };
 		3789C51E3408EFE8CA14D27B /* Pods-unnamed dashboard appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.release.xcconfig"; sourceTree = "<group>"; };
 		421B07C0E29B45A18149A9EA /* Pods-unnamed dashboard appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58CBFCEB04ED3DA3249A75EF /* Pods-unnamed dashboard appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unnamed dashboard app.release.xcconfig"; path = "Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app.release.xcconfig"; sourceTree = "<group>"; };
+		9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.release.xcconfig"; sourceTree = "<group>"; };
 		A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unnamed_dashboard_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
+		C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.debug.xcconfig"; sourceTree = "<group>"; };
+		F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
 		FC26B65C1D4BE64500B84B25 /* helloworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helloworld.png; sourceTree = "<group>"; };
 		FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_news_copyrighted.png; sourceTree = "<group>"; };
@@ -84,8 +91,6 @@
 		FC3591AC1D39688000500C1C /* unnamed_dashboard_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unnamed_dashboard_appUITests.swift; sourceTree = "<group>"; };
 		FC3591AE1D39688000500C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3591BA1D3968D000500C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC3591BF1D3968D000500C1C /* ConnectAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectAccountsViewController.swift; sourceTree = "<group>"; };
-		FC3591C01D3968D000500C1C /* ConnectionsSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionsSettingsViewController.swift; sourceTree = "<group>"; };
 		FC3591C11D3968D000500C1C /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		FC3591C21D3968D000500C1C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FC3591CB1D3977BC00500C1C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -101,9 +106,6 @@
 		FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
-		FC57AFF81D4692F1002D3573 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
-		FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesViewController.swift; sourceTree = "<group>"; };
-		FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleViewController.swift; sourceTree = "<group>"; };
 		FCF83D601D4947290001D151 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				918E9B4F938CDB5B3B7DD471 /* Pods_unnamed_dashboard_app.framework in Frameworks */,
+				1B74E02D967E62380D92E631 /* Pods_WebDeck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9962DB006CC6436600039A /* Pods_unnamed_dashboard_appTests.framework in Frameworks */,
+				82DD8D130C828234A3A6CF69 /* Pods_WebDeckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8EA80725D7AA23796347BEE /* Pods_unnamed_dashboard_appUITests.framework in Frameworks */,
+				6C73852A7034EC658E49F7CB /* Pods_WebDeckUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +150,12 @@
 				3789C51E3408EFE8CA14D27B /* Pods-unnamed dashboard appTests.release.xcconfig */,
 				2A296C7DF8AE0A05A787C7DC /* Pods-unnamed dashboard appUITests.debug.xcconfig */,
 				421B07C0E29B45A18149A9EA /* Pods-unnamed dashboard appUITests.release.xcconfig */,
+				DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */,
+				BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */,
+				C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */,
+				9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */,
+				475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */,
+				9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,6 +166,9 @@
 				01239798B140D19587C423C5 /* Pods_unnamed_dashboard_app.framework */,
 				A27EA080D54A600EF800F57F /* Pods_unnamed_dashboard_appTests.framework */,
 				8C540767D47983DEEDDF82EC /* Pods_unnamed_dashboard_appUITests.framework */,
+				22D75896F5EEB60D5B2815EA /* Pods_WebDeck.framework */,
+				82C27E63E9917FB741AFCD57 /* Pods_WebDeckTests.framework */,
+				F9B6BA7BFDA19E2EF7B0E0DE /* Pods_WebDeckUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,13 +261,8 @@
 		FC3591BD1D3968D000500C1C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC3591BF1D3968D000500C1C /* ConnectAccountsViewController.swift */,
-				FC3591C01D3968D000500C1C /* ConnectionsSettingsViewController.swift */,
 				FC3591C11D3968D000500C1C /* DashboardViewController.swift */,
 				FC3591C21D3968D000500C1C /* SignInViewController.swift */,
-				FC57AFF81D4692F1002D3573 /* SocialViewController.swift */,
-				FC57AFFA1D46933F002D3573 /* UtilitiesViewController.swift */,
-				FC57AFFC1D46934A002D3573 /* LifestyleViewController.swift */,
 				FCF83D601D4947290001D151 /* NewsTableViewCell.swift */,
 			);
 			path = ViewControllers;
@@ -306,6 +315,7 @@
 				FC3591851D39687F00500C1C /* Resources */,
 				48C84BE1CC27DF2B8E75239E /* [CP] Embed Pods Frameworks */,
 				330839C77533782B4BC54DD4 /* [CP] Copy Pods Resources */,
+				FC181E181D4F85D300019994 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -458,7 +468,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		330839C77533782B4BC54DD4 /* [CP] Copy Pods Resources */ = {
@@ -473,7 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48C84BE1CC27DF2B8E75239E /* [CP] Embed Pods Frameworks */ = {
@@ -488,7 +498,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unnamed dashboard app/Pods-unnamed dashboard app-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		52471BB84D689D5670FFBAD5 /* [CP] Check Pods Manifest.lock */ = {
@@ -518,7 +528,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unnamed dashboard appTests/Pods-unnamed dashboard appTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABB5E6DFBC49EA9410E580A0 /* [CP] Check Pods Manifest.lock */ = {
@@ -548,7 +558,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unnamed dashboard appUITests/Pods-unnamed dashboard appUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeckUITests/Pods-WebDeckUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBC4AB63F14E3359B4907842 /* [CP] Check Pods Manifest.lock */ = {
@@ -566,6 +576,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		FC181E181D4F85D300019994 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" be38b5cc74fdfdf5317aee1167c9e96eae7763c5 a5d283250e87d8306551aca9c2f348a77b6c063e1673d86f5ed1050c53b3274d";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -573,19 +596,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3591C71D3968D000500C1C /* ConnectAccountsViewController.swift in Sources */,
-				FC57AFFD1D46934A002D3573 /* LifestyleViewController.swift in Sources */,
-				FC3591C81D3968D000500C1C /* ConnectionsSettingsViewController.swift in Sources */,
 				FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */,
 				FCF83D611D4947290001D151 /* NewsTableViewCell.swift in Sources */,
 				FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */,
 				FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */,
 				FC3591D01D3977CD00500C1C /* User.swift in Sources */,
-				FC57AFFB1D46933F002D3573 /* UtilitiesViewController.swift in Sources */,
 				FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */,
 				FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */,
 				FC3591CC1D3977BC00500C1C /* API.swift in Sources */,
-				FC57AFF91D4692F2002D3573 /* SocialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,7 +735,7 @@
 		};
 		FC3591B21D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB3D9C4401468CE856ED744 /* Pods-unnamed dashboard app.debug.xcconfig */;
+			baseConfigurationReference = DB9FD5FE059ECED3ED5B26E1 /* Pods-WebDeck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -736,7 +754,7 @@
 		};
 		FC3591B31D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E1F8F5E70E39A2713E8DFD5 /* Pods-unnamed dashboard app.release.xcconfig */;
+			baseConfigurationReference = BAD2ADCE35E01ACC2165974A /* Pods-WebDeck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -755,7 +773,7 @@
 		};
 		FC3591B51D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58CBFCEB04ED3DA3249A75EF /* Pods-unnamed dashboard appTests.debug.xcconfig */;
+			baseConfigurationReference = C66AC4CEEE8D17E2C304F051 /* Pods-WebDeckTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
@@ -768,7 +786,7 @@
 		};
 		FC3591B61D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3789C51E3408EFE8CA14D27B /* Pods-unnamed dashboard appTests.release.xcconfig */;
+			baseConfigurationReference = 9CC03BB890094C473670D16F /* Pods-WebDeckTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "unnamed dashboard appTests/Info.plist";
@@ -781,7 +799,7 @@
 		};
 		FC3591B81D39688000500C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A296C7DF8AE0A05A787C7DC /* Pods-unnamed dashboard appUITests.debug.xcconfig */;
+			baseConfigurationReference = 475BBD4739680BDFF513BF85 /* Pods-WebDeckUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -794,7 +812,7 @@
 		};
 		FC3591B91D39688000500C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 421B07C0E29B45A18149A9EA /* Pods-unnamed dashboard appUITests.release.xcconfig */;
+			baseConfigurationReference = 9601C0291E6F15035BD2E438 /* Pods-WebDeckUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "unnamed dashboard appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

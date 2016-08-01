@@ -1,7 +1,7 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'unnamed dashboard app' do
+target 'WebDeck' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
      pod “CopperKit”
@@ -9,18 +9,20 @@ target 'unnamed dashboard app' do
      pod 'GTMOAuth2', '~> 1.1.0'
      pod 'Alamofire', '~> 3.4'
      pod 'SwiftyJSON'
-     pod "CalendarView"
-pod 'ChameleonFramework/Swift'
+     pod 'ChameleonFramework/Swift'
+     pod 'Fabric'
+     pod 'TwitterKit'
+     pod 'TwitterCore'
 
 
   # Pods for unnamed dashboard app
 
-  target 'unnamed dashboard appTests' do
+  target 'WebDeckTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'unnamed dashboard appUITests' do
+  target 'WebDeckUITests' do
     inherit! :search_paths
     # Pods for testing
   end
