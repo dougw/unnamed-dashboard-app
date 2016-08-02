@@ -25,7 +25,8 @@ class TableViewPageController: UIViewController{
            UIColor(red:0.00, green:0.82, blue:0.62, alpha:1.0), UIColor(red:0.08, green:0.13, blue:0.39, alpha:1.0)
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-           view.backgroundColor = background
+//           view.backgroundColor = background
+        view.backgroundColor = FlatSkyBlue()
 //        self.calendarNameView.layer.borderWidth = 2.5
 //        self.calendarNameView.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
 //        secondView.backgroundColor = background
@@ -40,7 +41,7 @@ class TableViewPageController: UIViewController{
         
         if events != nil {
             for e in events {
-//                myCoolLabel.text = e.title
+                myCoolLabel.text = ("Today you have \(e.title)")
                 print("startDate: \(e.startDate)")
                 print("endDate: \(e.endDate)")
             
