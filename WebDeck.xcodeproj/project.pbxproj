@@ -10,12 +10,12 @@
 		45F99FE026674EB58CB41CF2 /* Pods_WebDeckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646598D477B7DC9F3EA3FA4E /* Pods_WebDeckUITests.framework */; };
 		C0779D0A5E0C34AD0D39F23A /* Pods_WebDeckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */; };
 		F1D83B5C816C9AE2CEDA94B5 /* Pods_WebDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */; };
-		FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */ = {isa = PBXBuildFile; fileRef = FC03D76C1D3FB4B900866DD5 /* googlecal.png */; };
 		FC181E1C1D4FBDA900019994 /* webdecklong.png in Resources */ = {isa = PBXBuildFile; fileRef = FC181E1B1D4FBDA900019994 /* webdecklong.png */; };
 		FC1A1F021D4FCEB4001CB9AF /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */; };
 		FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */; };
 		FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF01D511001009FD8FA /* Custom@2x.png */; };
 		FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF21D5116D5009FD8FA /* menu_2.png */; };
+		FC1F2AF51D5129F7009FD8FA /* Calendar Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */; };
 		FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B65C1D4BE64500B84B25 /* helloworld.png */; };
 		FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
@@ -68,12 +68,12 @@
 		C4F46A9221659445E0585745 /* Pods-WebDeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
 		D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC03D76C1D3FB4B900866DD5 /* googlecal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googlecal.png; path = Views/googlecal.png; sourceTree = "<group>"; };
 		FC181E1B1D4FBDA900019994 /* webdecklong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webdecklong.png; sourceTree = "<group>"; };
 		FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPageController.swift; sourceTree = "<group>"; };
 		FC1F2AF01D511001009FD8FA /* Custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Custom@2x.png"; sourceTree = "<group>"; };
 		FC1F2AF21D5116D5009FD8FA /* menu_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_2.png; sourceTree = "<group>"; };
+		FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar Icon.png"; sourceTree = "<group>"; };
 		FC26B65C1D4BE64500B84B25 /* helloworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helloworld.png; sourceTree = "<group>"; };
 		FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_news_copyrighted.png; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* WebDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,10 +162,10 @@
 		FC03D76E1D3FB4C800866DD5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */,
 				FC1F2AF21D5116D5009FD8FA /* menu_2.png */,
 				FC1F2AF01D511001009FD8FA /* Custom@2x.png */,
 				FC181E1B1D4FBDA900019994 /* webdecklong.png */,
-				FC03D76C1D3FB4B900866DD5 /* googlecal.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -419,6 +419,7 @@
 				FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */,
 				FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */,
 				FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */,
+				FC1F2AF51D5129F7009FD8FA /* Calendar Icon.png in Resources */,
 				FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */,
 				FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */,
 				FC181E1C1D4FBDA900019994 /* webdecklong.png in Resources */,
@@ -426,7 +427,6 @@
 				FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */,
 				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
 				FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */,
-				FC03D76D1D3FB4B900866DD5 /* googlecal.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,
 				FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */,
