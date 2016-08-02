@@ -73,8 +73,8 @@ class SignInViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "hello" {
-            let destinationVC = segue.destinationViewController as! DashboardViewController
-            destinationVC.name = fullName
+            let destinationVC = segue.destinationViewController as! TableViewPageController
+//            destinationVC.name = fullName
             
         }
         //

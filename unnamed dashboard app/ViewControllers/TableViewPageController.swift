@@ -25,7 +25,7 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var calendarNameView: UIView!
     @IBOutlet weak var calendarNameLabel: UILabel!
-    @IBOutlet weak var titlesString: UILabel!
+    @IBOutlet weak var titlesString: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let colors:[UIColor] = [
@@ -34,6 +34,7 @@ class TableViewPageController: UIViewController{
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
 //           view.backgroundColor = background
         view.backgroundColor = FlatSkyBlue()
+        titlesString.editable = false
          self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
 //        self.calendarNameView.layer.borderWidth = 2.5
 //        self.calendarNameView.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
@@ -73,7 +74,7 @@ class TableViewPageController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                var myVar = self.myArticles[0..<1]
+                var myVar = self.myArticles[0..<2]
 //                var firstFive = self.myArticles.stringValue[0..<5]
 //            myTextView.text = firstFive
                 for article in myVar {
