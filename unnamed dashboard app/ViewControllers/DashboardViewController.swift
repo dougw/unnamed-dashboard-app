@@ -18,6 +18,7 @@ class DashboardViewController: UIViewController{
     // IBOutlets for the output(where the Google Cal events go), the connectCalendarButton(where you connect your Google account for the API), the Calendar label(just a label for the calendar section), and a newsTextView(text view for the NewsAPI).
     var myArticles = [JSON]() ?? []
     var titlesString = [String]()
+    var myString = [JSON]() ?? []
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lifestyleButton: UIButton!
@@ -25,7 +26,7 @@ class DashboardViewController: UIViewController{
     @IBOutlet weak var utilitiesButton: UIButton!
     //    @IBOutlet weak var newsTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
-
+    
     
     var name: String?
     
@@ -58,14 +59,14 @@ class DashboardViewController: UIViewController{
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         var backgroundOther = GradientColor(.TopToBottom, frame: view.frame, colors: colorsForTextView)
         view.backgroundColor = background
-//        output.backgroundColor = backgroundOther
+        //        output.backgroundColor = backgroundOther
         //        Makes sure that the newsTextView isn't editable.
         //      newsTextView.editable = false
         
         
         
         
-                
+        
         //Parsing for newsAPI to get stories. There are many choices for the source parameter(bloomberg, google news, the list goes on an on at newsapi.org) and there are 3 options for sortBy(top, latest, featured).
         
         //Alamofire is used to parse the data and a for statement grabs the titles and put its in the newsTextView
@@ -92,7 +93,7 @@ class DashboardViewController: UIViewController{
     
     //This just makes sure that the label that says calendar is hidden if the user isn't logged in to Google.
     override func viewDidAppear(animated: Bool) {
-       
+        
         let url = "https://newsapi.org/v1/articles"
         let params = [ "source" : "googlenews" ,
                        "sortBy" : "top" ,
@@ -103,7 +104,7 @@ class DashboardViewController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                
+
                 for article in self.myArticles {
                     let title = article["title"].stringValue
                     self.titlesString.append(title)
@@ -121,10 +122,10 @@ class DashboardViewController: UIViewController{
         
     }
     
-       override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if name == "nil"{
-        nameLabel.text = "Hello, \(name!)!"
+            nameLabel.text = "Hello, \(name!)!"
         }
         else{
             nameLabel.hidden = true
@@ -156,11 +157,12 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return myArticles.count
+//        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
-        cell.tableViewLabel?.text = titlesString[indexPath.row]
+        cell.tableViewLabel?.text = titlesString[0]
         return cell
     }
     
@@ -168,5 +170,5 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
         
     }
     
-
+    
 }
