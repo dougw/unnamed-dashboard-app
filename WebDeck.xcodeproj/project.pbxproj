@@ -15,6 +15,7 @@
 		FC1A1F021D4FCEB4001CB9AF /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */; };
 		FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */; };
 		FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF01D511001009FD8FA /* Custom@2x.png */; };
+		FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF21D5116D5009FD8FA /* menu_2.png */; };
 		FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B65C1D4BE64500B84B25 /* helloworld.png */; };
 		FC26B6611D4BE70D00B84B25 /* google_news_copyrighted.png in Resources */ = {isa = PBXBuildFile; fileRef = FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */; };
 		FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35918A1D39687F00500C1C /* AppDelegate.swift */; };
@@ -72,6 +73,7 @@
 		FC1A1F011D4FCEB4001CB9AF /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPageController.swift; sourceTree = "<group>"; };
 		FC1F2AF01D511001009FD8FA /* Custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Custom@2x.png"; sourceTree = "<group>"; };
+		FC1F2AF21D5116D5009FD8FA /* menu_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_2.png; sourceTree = "<group>"; };
 		FC26B65C1D4BE64500B84B25 /* helloworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helloworld.png; sourceTree = "<group>"; };
 		FC26B6601D4BE70D00B84B25 /* google_news_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_news_copyrighted.png; sourceTree = "<group>"; };
 		FC3591871D39687F00500C1C /* WebDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 		FC03D76E1D3FB4C800866DD5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FC1F2AF21D5116D5009FD8FA /* menu_2.png */,
 				FC1F2AF01D511001009FD8FA /* Custom@2x.png */,
 				FC181E1B1D4FBDA900019994 /* webdecklong.png */,
 				FC03D76C1D3FB4B900866DD5 /* googlecal.png */,
@@ -412,6 +415,7 @@
 				FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */,
 				FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */,
 				FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */,
+				FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */,
 				FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */,
 				FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */,
 				FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */,

@@ -18,6 +18,7 @@ class TableViewPageController: UIViewController{
 @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var calendarNameView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let colors:[UIColor] = [
@@ -25,7 +26,9 @@ class TableViewPageController: UIViewController{
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
            view.backgroundColor = background
-        secondView.backgroundColor = background
+//        self.calendarNameView.layer.borderWidth = 2.5
+//        self.calendarNameView.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
+//        secondView.backgroundColor = background
         EventStore.requestAccess() { (granted, error) in
             if granted {
                 print("got permission")
