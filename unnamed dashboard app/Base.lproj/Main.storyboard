@@ -66,7 +66,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-mT-ndY">
                                                 <rect key="frame" x="20" y="309" width="68" height="53"/>
                                             </imageView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-c0-DDM">
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-c0-DDM">
                                                 <rect key="frame" x="8" y="429" width="584" height="168"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
@@ -78,8 +78,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-ix-WKd">
-                                                        <rect key="frame" x="97" y="27" width="302" height="133"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
+                                                        <rect key="frame" x="88" y="32" width="352" height="128"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -96,8 +96,10 @@
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="12p-qy-fx5"/>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="5Y9-kG-wzZ"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
+                                            <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="Q5C-cD-74J"/>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="Rf0-hV-Xim"/>
                                             <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="aNl-k3-vw8"/>
+                                            <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="oeD-7C-i4M"/>
                                             <constraint firstItem="7v7-8j-NQU" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="4" id="vMy-e7-TQD"/>
                                             <constraint firstItem="7v7-8j-NQU" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="11" id="vYa-cz-N3h"/>
                                         </constraints>
@@ -125,7 +127,7 @@
                     <connections>
                         <outlet property="calendarNameLabel" destination="pUu-xq-ty0" id="Eio-hy-6UN"/>
                         <outlet property="myCoolLabel" destination="Az1-lC-68q" id="hII-5E-TTH"/>
-                        <outlet property="titlesString" destination="8wW-ix-WKd" id="8d1-jW-6Yu"/>
+                        <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTZ-98-xKg" userLabel="First Responder" sceneMemberID="firstResponder"/>

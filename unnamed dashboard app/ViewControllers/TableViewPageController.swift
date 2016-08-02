@@ -34,7 +34,6 @@ class TableViewPageController: UIViewController{
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
 //           view.backgroundColor = background
         view.backgroundColor = FlatSkyBlue()
-        titlesString.editable = false
          self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
 //        self.calendarNameView.layer.borderWidth = 2.5
 //        self.calendarNameView.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
@@ -74,13 +73,14 @@ class TableViewPageController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                var myVar = self.myArticles[0..<2]
+                var myVar = self.myArticles[0..<3]
 //                var firstFive = self.myArticles.stringValue[0..<5]
 //            myTextView.text = firstFive
                 for article in myVar {
                     let title = article["title"].stringValue
                     print("title \(title)")
-                    self.titlesString.text = title
+                    let textToAppend = title + "              "
+                self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
                     
                 }
 //                self.titlesString.reloadData()
