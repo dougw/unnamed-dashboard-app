@@ -141,15 +141,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPX-eD-gWI">
-                                <rect key="frame" x="0.0" y="124" width="414" height="612"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPX-eD-gWI">
+                                <rect key="frame" x="0.0" y="104" width="600" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="1" reuseIdentifier="MyCell" rowHeight="178" id="4Sz-Em-Isz" customClass="DashboardTableViewCell" customModule="WebDeck" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="178"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Sz-Em-Isz" id="Pg0-YJ-jdC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="177"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-vO-kLm">
@@ -165,19 +165,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="calendarTableViewLabel" destination="hpO-vO-kLm" id="TZr-te-4fS"/>
+                                            <outlet property="calendarTableViewLabel" destination="hpO-vO-kLm" id="GSG-Cv-Scl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BtN-Ef-u98" id="aqm-Go-nhg"/>
+                                    <outlet property="dataSource" destination="BtN-Ef-u98" id="o5A-gg-lH8"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webdecklong.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-rT-hAq">
-                                <rect key="frame" x="75" y="39" width="247" height="57"/>
-                            </imageView>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-gV-MNE">
-                                <rect key="frame" x="0.0" y="-5" width="414" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-gV-MNE">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="LcN-lg-eFk">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Kyp-1c-PKx">
@@ -188,18 +185,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webdecklong.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-rT-hAq">
+                                <rect key="frame" x="194" y="39" width="247" height="57"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CPX-eD-gWI" firstAttribute="bottom" secondItem="Oj7-nd-1td" secondAttribute="top" id="Ccj-ro-7CK"/>
-                            <constraint firstItem="zVD-gV-MNE" firstAttribute="leading" secondItem="CPX-eD-gWI" secondAttribute="leading" id="Cqt-Ox-JGM"/>
-                            <constraint firstItem="q2O-rT-hAq" firstAttribute="leading" secondItem="6ci-8n-SAA" secondAttribute="leadingMargin" constant="55" id="Ugo-KJ-OcW"/>
-                            <constraint firstItem="CPX-eD-gWI" firstAttribute="leading" secondItem="6ci-8n-SAA" secondAttribute="leading" id="WUz-eB-g6V"/>
-                            <constraint firstItem="zVD-gV-MNE" firstAttribute="trailing" secondItem="CPX-eD-gWI" secondAttribute="trailing" id="ZqM-9q-V1i"/>
-                            <constraint firstItem="zVD-gV-MNE" firstAttribute="top" secondItem="6ci-8n-SAA" secondAttribute="topMargin" constant="-5" id="bi2-6U-ITf"/>
-                            <constraint firstAttribute="trailing" secondItem="CPX-eD-gWI" secondAttribute="trailing" id="ct1-o2-poE"/>
-                            <constraint firstItem="q2O-rT-hAq" firstAttribute="top" secondItem="zVD-gV-MNE" secondAttribute="bottom" id="ppp-AZ-TXV"/>
-                            <constraint firstItem="CPX-eD-gWI" firstAttribute="top" secondItem="q2O-rT-hAq" secondAttribute="bottom" constant="28" id="tEB-8W-4lV"/>
+                            <constraint firstItem="CPX-eD-gWI" firstAttribute="bottom" secondItem="Oj7-nd-1td" secondAttribute="top" id="La1-gz-26F"/>
+                            <constraint firstAttribute="trailing" secondItem="CPX-eD-gWI" secondAttribute="trailing" id="PhW-57-C5E"/>
+                            <constraint firstItem="zVD-gV-MNE" firstAttribute="leading" secondItem="CPX-eD-gWI" secondAttribute="leading" id="WCb-uI-ZYo"/>
+                            <constraint firstItem="CPX-eD-gWI" firstAttribute="leading" secondItem="6ci-8n-SAA" secondAttribute="leading" id="bZn-MB-xG9"/>
+                            <constraint firstItem="zVD-gV-MNE" firstAttribute="top" secondItem="6ci-8n-SAA" secondAttribute="topMargin" constant="-5" id="d3C-tg-Olp"/>
+                            <constraint firstItem="q2O-rT-hAq" firstAttribute="leading" secondItem="6ci-8n-SAA" secondAttribute="leading" constant="194" id="dBc-pF-hZz"/>
+                            <constraint firstItem="CPX-eD-gWI" firstAttribute="top" secondItem="q2O-rT-hAq" secondAttribute="bottom" constant="8" symbolic="YES" id="ghX-aG-Tac"/>
+                            <constraint firstItem="q2O-rT-hAq" firstAttribute="top" secondItem="zVD-gV-MNE" secondAttribute="bottom" id="k3F-x4-D6p"/>
+                            <constraint firstItem="zVD-gV-MNE" firstAttribute="trailing" secondItem="CPX-eD-gWI" secondAttribute="trailing" id="qfA-3W-x86"/>
                         </constraints>
                     </view>
                     <connections>

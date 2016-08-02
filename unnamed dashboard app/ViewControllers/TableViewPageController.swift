@@ -7,52 +7,62 @@
 //
 import Foundation
 import UIKit
-import Alamofire
-import SwiftyJSON
+//import Alamofire
+//import SwiftyJSON
 import TTEventKit
 
-class TableViewPageController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-        @IBOutlet weak var tableView: UITableView!
-
+class TableViewPageController: UIViewController{
+    
+@IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         EventStore.requestAccess() { (granted, error) in
             if granted {
-                println("got permission")
+                print("got permission")
             }
         }
         
         
-        let events = EventStore.getEvents(Month(year: 2015, month: 1))
+        let events = EventStore.getEvents(Month(year: 2016, month: 8))
         
         if events != nil {
             for e in events {
-                println("Title \(e.title)")
-                println("startDate: \(e.startDate)")
-                println("endDate: \(e.endDate)")
+                print("Title \(e.title)")
+                print("startDate: \(e.startDate)")
+                print("endDate: \(e.endDate)")
             }
         }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-    
+}
 
+        
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    
+extension TableViewPageController: UITableViewDataSource, UITableViewDelegate {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! DashboardTableViewCell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! DashboardTableViewCell
         cell.calendarTableViewLabel?.text = "Google Calendar"
-       return cell
+        return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
     
     
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }
