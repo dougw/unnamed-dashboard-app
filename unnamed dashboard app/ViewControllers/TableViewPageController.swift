@@ -21,6 +21,7 @@ class TableViewPageController: UIViewController{
     var myVar = [JSON]() ?? []
     var calendar = EKCalendar(forEntityType: .Event, eventStore: EKEventStore()) // Passed in from previous view controller
     var events: [EKEvent]?
+    var eventStore = EKEventStore()
     @IBOutlet weak var myCoolLabel: UITextView!
     var services = ["Calendar", "Google News", "Weather", "Social Feed" ]
     @IBOutlet weak var tableView: UITableView!
@@ -37,13 +38,13 @@ class TableViewPageController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         loadEvents()
-        for event in events! {
-            //            let title = article["title"].stringValue
-            print("title \(event.title)")
-            let textToAppend = event.title
-            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-            
-        }
+//        for event in events! {
+//            //            let title = article["title"].stringValue
+//            print("title \(event.title)")
+//            let textToAppend = event.title
+//            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
+//            
+//        }
         //Date start
         let currentDate = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -86,45 +87,60 @@ class TableViewPageController: UIViewController{
     
     
     func loadEvents() {
-        // Create a date formatter instance to use for converting a string to a date
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        
-        // Create start and end date NSDate instances to build a predicate for which events to select
-        let startDate = dateFormatter.dateFromString("2015-6-25")
-        let endDate = dateFormatter.dateFromString("2017-7-5")
-        print (startDate)
-        print(endDate)
-//        let calendars = eventStore.calendarsForEntityType(EKEntityTypeCalendar)
+//        // Create a date formatter instance to use for converting a string to a date
+//        let dateFormatter = NSDateFormatter()
+//        dateFormatter.dateFormat = "yyyy-MM-dd"
 //        
-//        if(yourReminderCalendar == nil) {
-//            for calendar in calendars {
-//                if calendar.title == "Your Title" {
-//                    yourReminderCalendar = (calendar as EKCalendar)
-//                    break
-//                }
+//        // Create start and end date NSDate instances to build a predicate for which events to select
+//        let startDate = dateFormatter.dateFromString("2015-6-25")
+//        let endDate = dateFormatter.dateFromString("2017-7-5")
+//        print (startDate)
+//        print(endDate)
+////        let calendars = eventStore.calendarsForEntityType(EKEntityTypeCalendar)
+////        
+////        if(yourReminderCalendar == nil) {
+////            for calendar in calendars {
+////                if calendar.title == "Your Title" {
+////                    yourReminderCalendar = (calendar as EKCalendar)
+////                    break
+////                }
+////            }
+//        
+//        if let startDate = startDate, endDate = endDate {
+//            let eventStore = EKEventStore()
+//            
+//            print (calendar)
+//            // Use an event store instance to create and properly configure an NSPredicate
+//            
+//            let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
+//            
+//            // Use the configured NSPredicate to find and return events in the store that match
+//            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort() { (e1: EKEvent, e2: EKEvent) -> Bool in
+//                
+//                return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
 //            }
-        
-        if let startDate = startDate, endDate = endDate {
-            let eventStore = EKEventStore()
-            
-            print (calendar)
-            // Use an event store instance to create and properly configure an NSPredicate
-            
-            let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
-            
-            // Use the configured NSPredicate to find and return events in the store that match
-            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort() { (e1: EKEvent, e2: EKEvent) -> Bool in
-                
-                return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
-            }
-            
-            print("\n Events \(events)")
-            for event in events!{
-                let textToAppend = event.title
-                self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-            }
-        }
+//            
+//            print("\n Events \(events)")
+//            for event in events!{
+//                let textToAppend = event.title
+//                self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
+//            }
+//        }
+        // Get the appropriate calendar
+        var calendar: NSCalendar = NSCalendar.currentCalendar()
+        // Create the start date components
+        var oneDayAgoComponents: NSDateComponents = NSDateComponents()
+        oneDayAgoComponents.day = -1
+        var oneDayAgo: NSDate! = calendar.dateByAddingComponents(oneDayAgoComponents, toDate: NSDate(), options: [])
+        // Create the end date components
+        var oneYearFromNowComponents: NSDateComponents = NSDateComponents()
+        oneYearFromNowComponents.year = 1
+        var oneYearFromNow: NSDate! = calendar.dateByAddingComponents(oneYearFromNowComponents, toDate: NSDate(), options: [])
+        // Create the predicate from the event store's instance method
+        var predicate: NSPredicate = eventStore.predicateForEventsWithStartDate(oneDayAgo, endDate: oneYearFromNow, calendars: nil)
+        // Fetch all events that match the predicate
+        var events: [AnyObject] = eventStore.eventsMatchingPredicate(predicate)
+        print (events)
     }
     
     override func viewDidAppear(animated: Bool) {
