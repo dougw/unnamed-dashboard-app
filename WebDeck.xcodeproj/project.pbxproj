@@ -38,6 +38,7 @@
 		FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */; };
 		FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */; };
 		FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */; };
+		FCA101B51D52360E0080BFD2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101B41D52360E0080BFD2 /* twitter.png */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 		FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA101B41D52360E0080BFD2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */,
 				FC1F2AF21D5116D5009FD8FA /* menu_2.png */,
 				FC1F2AF61D5138DA009FD8FA /* news.png */,
+				FCA101B41D52360E0080BFD2 /* twitter.png */,
 				FC1F2AF01D511001009FD8FA /* Custom@2x.png */,
 				FC181E1B1D4FBDA900019994 /* webdecklong.png */,
 			);
@@ -426,6 +429,7 @@
 				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
 				FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
+				FCA101B51D52360E0080BFD2 /* twitter.png in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,
 				FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */,
 			);

@@ -23,20 +23,28 @@ class TableViewPageController: UIViewController{
     
     @IBOutlet weak var myTextView: UITextView!
     @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var calendarNameView: UIView!
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Date start
+        let currentDate = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
+        var convertedDate = dateFormatter.stringFromDate(currentDate)
+        dayLabel.text = convertedDate
+        //Date end
         let colors:[UIColor] = [
-           UIColor(red:0.00, green:0.82, blue:0.62, alpha:1.0), UIColor(red:0.08, green:0.13, blue:0.39, alpha:1.0)
+      UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-//           view.backgroundColor = background
-        view.backgroundColor = FlatSkyBlue()
+       view.backgroundColor = background
+//        view.backgroundColor = FlatSkyBlue()
          self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
 //        self.calendarNameView.layer.borderWidth = 2.5
-//        self.calendarNameView.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
+//        self.calendarNameVi00ew.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
 //        secondView.backgroundColor = background
         EventStore.requestAccess() { (granted, error) in
             if granted {
@@ -73,13 +81,13 @@ class TableViewPageController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                var myVar = self.myArticles[0..<3]
+                var myVar = self.myArticles[0..<1]
 //                var firstFive = self.myArticles.stringValue[0..<5]
 //            myTextView.text = firstFive
                 for article in myVar {
                     let title = article["title"].stringValue
                     print("title \(title)")
-                    let textToAppend = title + "              "
+                    let textToAppend = title
                 self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
                     
                 }

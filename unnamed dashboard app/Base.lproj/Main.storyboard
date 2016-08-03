@@ -29,7 +29,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-lC-68q">
                                                         <rect key="frame" x="90" y="36" width="490" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -37,8 +37,8 @@
                                                         <rect key="frame" x="5" y="3" width="75" height="75"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
-                                                        <rect key="frame" x="83" y="5" width="69" height="21"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <rect key="frame" x="83" y="5" width="81" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -48,11 +48,8 @@
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pr3-Od-J6a">
                                                 <rect key="frame" x="0.0" y="301" width="600" height="68"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-ZV-R7w">
-                                                        <rect key="frame" x="114" y="8" width="68" height="53"/>
-                                                    </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-iU-ChP">
-                                                        <rect key="frame" x="212" y="8" width="68" height="53"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-iU-ChP">
+                                                        <rect key="frame" x="211" y="8" width="54" height="54"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bx4-DG-xTh">
                                                         <rect key="frame" x="430" y="8" width="68" height="53"/>
@@ -60,12 +57,15 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uO-TW-7KI">
                                                         <rect key="frame" x="321" y="8" width="68" height="53"/>
                                                     </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-mT-ndY">
+                                                        <rect key="frame" x="16" y="0.0" width="68" height="68"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-Kj-siH">
+                                                        <rect key="frame" x="120" y="13" width="48" height="48"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-mT-ndY">
-                                                <rect key="frame" x="20" y="309" width="68" height="53"/>
-                                            </imageView>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-c0-DDM">
                                                 <rect key="frame" x="8" y="429" width="584" height="168"/>
                                                 <subviews>
@@ -74,14 +74,14 @@
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc8-fd-Zg3">
                                                         <rect key="frame" x="83" y="5" width="69" height="21"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                        <rect key="frame" x="88" y="32" width="352" height="128"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
+                                                        <rect key="frame" x="88" y="40" width="224" height="116"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -91,15 +91,28 @@
                                                 <rect key="frame" x="4" y="11" width="48" height="48"/>
                                                 <state key="normal" image="menu_2.png"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
+                                                <rect key="frame" x="280" y="50" width="40" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webdecklong.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZEe-Zp-J9L">
+                                                <rect key="frame" x="177" y="-7" width="247" height="57"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="12p-qy-fx5"/>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="5Y9-kG-wzZ"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
+                                            <constraint firstItem="ZEe-Zp-J9L" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="-7" id="IZz-9c-ZnC"/>
                                             <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="Q5C-cD-74J"/>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="Rf0-hV-Xim"/>
+                                            <constraint firstItem="ZEe-Zp-J9L" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="Zl2-YR-qPU"/>
                                             <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="aNl-k3-vw8"/>
+                                            <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="50" id="hRr-NO-2Xy"/>
                                             <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="oeD-7C-i4M"/>
+                                            <constraint firstItem="nis-cH-AuP" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="tvC-Vp-kpd"/>
                                             <constraint firstItem="7v7-8j-NQU" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="4" id="vMy-e7-TQD"/>
                                             <constraint firstItem="7v7-8j-NQU" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="11" id="vYa-cz-N3h"/>
                                         </constraints>
@@ -126,6 +139,7 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="calendarNameLabel" destination="pUu-xq-ty0" id="Eio-hy-6UN"/>
+                        <outlet property="dayLabel" destination="nis-cH-AuP" id="JCD-OQ-b9Q"/>
                         <outlet property="myCoolLabel" destination="Az1-lC-68q" id="hII-5E-TTH"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
                     </connections>
@@ -193,5 +207,7 @@
         <image name="helloworld.png" width="192" height="168"/>
         <image name="menu_2.png" width="48" height="48"/>
         <image name="news.png" width="48" height="48"/>
+        <image name="twitter.png" width="48" height="48"/>
+        <image name="webdecklong.png" width="247" height="57"/>
     </resources>
 </document>
