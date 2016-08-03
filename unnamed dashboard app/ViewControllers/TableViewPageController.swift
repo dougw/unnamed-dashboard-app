@@ -91,24 +91,28 @@ class TableViewPageController: UIViewController{
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
         // Create start and end date NSDate instances to build a predicate for which events to select
-        let startDate = dateFormatter.dateFromString("2016-12-24")
-        let endDate = dateFormatter.dateFromString("2017-1-1")
-        
+        let startDate = dateFormatter.dateFromString("2016-6-25")
+        let endDate = dateFormatter.dateFromString("2017-7-5")
+        print (startDate)
+        print(endDate)
         if let startDate = startDate, endDate = endDate {
             let eventStore = EKEventStore()
             
             print (calendar)
             // Use an event store instance to create and properly configure an NSPredicate
+            
             let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
             
             // Use the configured NSPredicate to find and return events in the store that match
-            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort(){
-                (e1: EKEvent, e2: EKEvent) -> Bool in
+            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort() { (e1: EKEvent, e2: EKEvent) -> Bool in
+                
                 return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
             }
+            
+            print("\n Events \(events)")
             for event in events!{
-                print (events)
-                myCoolLabel.text = event.title
+                let textToAppend = event.title
+                self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
             }
         }
     }
