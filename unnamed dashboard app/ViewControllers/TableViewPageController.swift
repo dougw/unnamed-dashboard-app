@@ -19,8 +19,6 @@ class TableViewPageController: UIViewController{
 //    var titlesString = [String]()
     var myString = [JSON]() ?? []
     var myVar = [JSON]() ?? []
-    var calendar: EKCalendar! // Passed in from previous view controller
-    var events: [EKEvent]?
     @IBOutlet weak var myCoolLabel: UITextView!
     var services = ["Calendar", "Google News", "Weather", "Social Feed" ]
 @IBOutlet weak var tableView: UITableView!
@@ -32,18 +30,32 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
     
-
+    
+    func getEvents(){
+        EventStore.requestAccess() { (granted, error) in
+            if granted {
+                print("got permission")
+            }
+        }
         
+        let events = EventStore.getEvents(Month(year: 2015, month: 1))
+        
+        if events != nil {
+            for e in events {
+                let textToAppend = e.title
+                self.myCoolLabel.text = self.titlesString.text.stringByAppendingString(textToAppend)
+                print("Title \(e.title)")
+                
+                print("startDate: \(e.startDate)")
+                print("endDate: \(e.endDate)")
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                loadEvents()
-        for event in events! {
-//            let title = article["title"].stringValue
-            print("title \(event.title)")
-            let textToAppend = event.title
-            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-            
-        }
+        getEvents()
         //Date start
         let currentDate = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -65,47 +77,6 @@ class TableViewPageController: UIViewController{
             if granted {
                 print("got permission")
             }
-        }
-    
-    
-//        let events = EventStore.getEvents(Month(year: 2016, month: 7)
-                  }
-   //     if events != nil {
-//            for e in events {
-//                myCoolLabel.text = ("Today you have \(e.title)")
-//                print("startDate: \(e.startDate)")
-//                print("endDate: \(e.endDate)")
-//            
-//        }
-//        
-//    }
-//        else {
-//            print("You have 0 events on your calendar today.")
-//        }
-
-
-    
-    func loadEvents() {
-        // Create a date formatter instance to use for converting a string to a date
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        
-        // Create start and end date NSDate instances to build a predicate for which events to select
-        let startDate = dateFormatter.dateFromString("2016-06-26")
-        let endDate = dateFormatter.dateFromString("2016-6-27")
-        
-        if let startDate = startDate, endDate = endDate {
-            let eventStore = EKEventStore()
-            
-            // Use an event store instance to create and properly configure an NSPredicate
-            let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
-            
-            // Use the configured NSPredicate to find and return events in the store that match
-            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort(){
-                (e1: EKEvent, e2: EKEvent) -> Bool in
-                return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
-            }
-            
         }
     }
     
@@ -142,6 +113,7 @@ class TableViewPageController: UIViewController{
         
         
     }
+    
     
 
 }
