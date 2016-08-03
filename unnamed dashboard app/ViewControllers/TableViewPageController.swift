@@ -91,10 +91,20 @@ class TableViewPageController: UIViewController{
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
         // Create start and end date NSDate instances to build a predicate for which events to select
-        let startDate = dateFormatter.dateFromString("2016-6-25")
+        let startDate = dateFormatter.dateFromString("2015-6-25")
         let endDate = dateFormatter.dateFromString("2017-7-5")
         print (startDate)
         print(endDate)
+//        let calendars = eventStore.calendarsForEntityType(EKEntityTypeCalendar)
+//        
+//        if(yourReminderCalendar == nil) {
+//            for calendar in calendars {
+//                if calendar.title == "Your Title" {
+//                    yourReminderCalendar = (calendar as EKCalendar)
+//                    break
+//                }
+//            }
+        
         if let startDate = startDate, endDate = endDate {
             let eventStore = EKEventStore()
             
