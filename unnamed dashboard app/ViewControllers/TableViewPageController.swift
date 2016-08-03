@@ -9,39 +9,41 @@ import Foundation
 import UIKit
 import Alamofire
 import SwiftyJSON
+import TTEventKit
 import ChameleonFramework
-import GoogleAPIClient
-import GTMOAuth2
+import EventKit
+import EventKitUI
 
 class TableViewPageController: UIViewController{
     var myArticles = [JSON]() ?? []
-//    var titlesString = [String]()
+    //    var titlesString = [String]()
     var myString = [JSON]() ?? []
     var myVar = [JSON]() ?? []
+    var calendar = EKCalendar(forEntityType: .Event, eventStore: EKEventStore()) // Passed in from previous view controller
+    var events: [EKEvent]?
     @IBOutlet weak var myCoolLabel: UITextView!
-@IBOutlet weak var tableView: UITableView!
+    var services = ["Calendar", "Google News", "Weather", "Social Feed" ]
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var connectCalendarButotn: UIButton!
     @IBOutlet weak var myTextView: UITextView!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var calendarNameView: UIView!
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
-    //Google Cal
-    private let kKeychainItemName = "Google Calendar API"
-    private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
     
-    // If modifying these scopes, delete your previously saved credentials by
-    // resetting the iOS simulator or uninstall the app.
-    private let scopes = [kGTLAuthScopeCalendarReadonly]
     
-    private let service = GTLServiceCalendar()
-    
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadEvents()
+        for event in events! {
+            //            let title = article["title"].stringValue
+            print("title \(event.title)")
+            let textToAppend = event.title
+            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
+            
+        }
         //Date start
         let currentDate = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -50,25 +52,65 @@ class TableViewPageController: UIViewController{
         dayLabel.text = convertedDate
         //Date end
         let colors:[UIColor] = [
-      UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
+            UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
-       view.backgroundColor = background
-//        view.backgroundColor = FlatSkyBlue()
-//         self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
-//        self.calendarNameView.layer.borderWidth = 2.5
-//        self.calendarNameVi00ew.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
-//        secondView.backgroundColor = background
-        
-        view.addSubview(myCoolLabel);
-        //Calls on name and client ID for Google Cal again
-        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
-            kKeychainItemName,
-            clientID: kClientID,
-            clientSecret: nil) {
-            service.authorizer = auth
+        view.backgroundColor = background
+        //        view.backgroundColor = FlatSkyBlue()
+        //         self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
+        //        self.calendarNameView.layer.borderWidth = 2.5
+        //        self.calendarNameVi00ew.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
+        //        secondView.backgroundColor = background
+        EventStore.requestAccess() { (granted, error) in
+            if granted {
+                print("got permission")
+            }
         }
-       
+        
+        
+        //        let events = EventStore.getEvents(Month(year: 2016, month: 7)
+    }
+    //     if events != nil {
+    //            for e in events {
+    //                myCoolLabel.text = ("Today you have \(e.title)")
+    //                print("startDate: \(e.startDate)")
+    //                print("endDate: \(e.endDate)")
+    //
+    //        }
+    //
+    //    }
+    //        else {
+    //            print("You have 0 events on your calendar today.")
+    //        }
+    
+    
+    
+    func loadEvents() {
+        // Create a date formatter instance to use for converting a string to a date
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        // Create start and end date NSDate instances to build a predicate for which events to select
+        let startDate = dateFormatter.dateFromString("2016-12-24")
+        let endDate = dateFormatter.dateFromString("2017-1-1")
+        
+        if let startDate = startDate, endDate = endDate {
+            let eventStore = EKEventStore()
+            
+            print (calendar)
+            // Use an event store instance to create and properly configure an NSPredicate
+            let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
+            
+            // Use the configured NSPredicate to find and return events in the store that match
+            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort(){
+                (e1: EKEvent, e2: EKEvent) -> Bool in
+                return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
+            }
+            for event in events!{
+                print (events)
+                myCoolLabel.text = event.title
+            }
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -84,16 +126,16 @@ class TableViewPageController: UIViewController{
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
                 var myVar = self.myArticles[0..<1]
-//                var firstFive = self.myArticles.stringValue[0..<5]
-//            myTextView.text = firstFive
+                //                var firstFive = self.myArticles.stringValue[0..<5]
+                //            myTextView.text = firstFive
                 for article in myVar {
                     let title = article["title"].stringValue
                     print("title \(title)")
                     let textToAppend = title
-                self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
+                    self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
                     
                 }
-//                self.titlesString.reloadData()
+                //                self.titlesString.reloadData()
                 //The titles are displayed on success
             //                self.newsTextView.text = ("\(self.titlesString)\n\n")
             case .Failure(let error):
@@ -105,123 +147,5 @@ class TableViewPageController: UIViewController{
         
     }
     
-    @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
-        
-        if let authorizer = service.authorizer,
-            canAuth = authorizer.canAuthorize where canAuth {
-            connectCalendarButton.hidden = true
-            fetchEvents()
-            
-        } else {
-            presentViewController(
-                createAuthController(),
-                animated: true,
-                completion: nil
-            )
-           
-        }
-    }
-    //This just makes sure that the label that says calendar is hidden if the user isn't logged in to Google.
-    override func viewDidAppear(animated: Bool) {
-        if let authorizer = service.authorizer,
-            canAuth = authorizer.canAuthorize where canAuth {
-            fetchEvents()
-        }
-        else{
-        }
     
-        
-        // Construct a query and get a list of upcoming events from the user calendar
-        func fetchEvents() {
-            let query = GTLQueryCalendar.queryForEventsListWithCalendarId("primary")
-            query.maxResults = 10
-            query.timeMin = GTLDateTime(date: NSDate(), timeZone: NSTimeZone.localTimeZone())
-            query.singleEvents = true
-            query.orderBy = kGTLCalendarOrderByStartTime
-            service.executeQuery(
-                query,
-                delegate: self,
-                didFinishSelector: "displayResultWithTicket:finishedWithObject:error:"
-            )
-        }
-        
-        // Display the start dates and event summaries in the UITextView
-        func displayResultWithTicket(
-            ticket: GTLServiceTicket,
-            finishedWithObject response : GTLCalendarEvents,
-                               error : NSError?) {
-            
-            if let error = error {
-                showAlert("Error", message: error.localizedDescription)
-                return
-            }
-            
-            var eventString = ""
-            
-            if let events = response.items() where !events.isEmpty {
-                for event in events as! [GTLCalendarEvent] {
-                    let start : GTLDateTime! = event.start.dateTime ?? event.start.date
-                    let startString = NSDateFormatter.localizedStringFromDate(
-                        start.date,
-                        dateStyle: .ShortStyle,
-                        timeStyle: .ShortStyle
-                    )
-                    eventString += "\(event.summary) on \(startString)\n"
-                    
-                    
-                }
-            } else {
-                eventString = "No upcoming events found."
-            }
-            
-            myCoolLabel.text = eventString
-            connectCalendarButton.hidden = true
-        }
-        
-        
-        // Creates the auth controller for authorizing access to Google Calendar API
-        private func createAuthController() -> GTMOAuth2ViewControllerTouch {
-            let scopeString = scopes.joinWithSeparator(" ")
-            return GTMOAuth2ViewControllerTouch(
-                scope: scopeString,
-                clientID: kClientID,
-                clientSecret: nil,
-                keychainItemName: kKeychainItemName,
-                delegate: self,
-                finishedSelector: "viewController:finishedWithAuth:error:"
-            )
-        }
-        
-        // Handle completion of the authorization process, and update the Google Calendar API
-        // with the new credentials.
-        func viewController(vc : UIViewController,
-                            finishedWithAuth authResult : GTMOAuth2Authentication, error : NSError?) {
-            
-            if let error = error {
-                service.authorizer = nil
-                showAlert("Authentication Error", message: error.localizedDescription)
-                return
-            }
-            
-            service.authorizer = authResult
-            dismissViewControllerAnimated(true, completion: nil)
-        }
-        
-        // Helper for showing an alert
-        func showAlert(title : String, message: String) {
-            let alert = UIAlertController(
-                title: title,
-                message: message,
-                preferredStyle: UIAlertControllerStyle.Alert
-            )
-            let ok = UIAlertAction(
-                title: "OK",
-                style: UIAlertActionStyle.Default,
-                handler: nil
-            )
-            alert.addAction(ok)
-            presentViewController(alert, animated: true, completion: nil)
-        }
-        
-
 }

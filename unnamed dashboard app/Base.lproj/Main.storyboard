@@ -42,13 +42,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sg-YQ-42D">
-                                                        <rect key="frame" x="111" y="69" width="124" height="30"/>
-                                                        <state key="normal" title="Connect Calendar"/>
-                                                        <connections>
-                                                            <action selector="connectCalendarButtonPressed:" destination="BtN-Ef-u98" eventType="touchUpInside" id="EVi-9b-irX"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pr3-Od-J6a">
@@ -142,7 +135,6 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="calendarNameLabel" destination="pUu-xq-ty0" id="Eio-hy-6UN"/>
-                        <outlet property="connectCalendarButotn" destination="5sg-YQ-42D" id="fT3-ds-fYH"/>
                         <outlet property="dayLabel" destination="nis-cH-AuP" id="JCD-OQ-b9Q"/>
                         <outlet property="myCoolLabel" destination="r3G-FT-Qwd" id="PQN-Og-rlN"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
