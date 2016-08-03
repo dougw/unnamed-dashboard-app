@@ -9,10 +9,9 @@ import Foundation
 import UIKit
 import Alamofire
 import SwiftyJSON
-import TTEventKit
 import ChameleonFramework
-import EventKit
-import EventKitUI
+import GoogleAPIClient
+import GTMOAuth2
 
 class TableViewPageController: UIViewController{
     var myArticles = [JSON]() ?? []
@@ -20,42 +19,29 @@ class TableViewPageController: UIViewController{
     var myString = [JSON]() ?? []
     var myVar = [JSON]() ?? []
     @IBOutlet weak var myCoolLabel: UITextView!
-    var services = ["Calendar", "Google News", "Weather", "Social Feed" ]
 @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var connectCalendarButotn: UIButton!
     @IBOutlet weak var myTextView: UITextView!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var calendarNameView: UIView!
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
+    //Google Cal
+    private let kKeychainItemName = "Google Calendar API"
+    private let kClientID = "973148780218-c56k2gq4a0riejfiok2eun5ffrerja82.apps.googleusercontent.com"
     
+    // If modifying these scopes, delete your previously saved credentials by
+    // resetting the iOS simulator or uninstall the app.
+    private let scopes = [kGTLAuthScopeCalendarReadonly]
     
-    func getEvents(){
-        EventStore.requestAccess() { (granted, error) in
-            if granted {
-                print("got permission")
-            }
-        }
-        
-        let events = EventStore.getEvents(Month(year: 2015, month: 1))
-        
-        if events != nil {
-            for e in events {
-                let textToAppend = e.title
-                self.myCoolLabel.text = self.titlesString.text.stringByAppendingString(textToAppend)
-                print("Title \(e.title)")
-                
-                print("startDate: \(e.startDate)")
-                print("endDate: \(e.endDate)")
-            }
-        }
-        
-    }
+    private let service = GTLServiceCalendar()
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getEvents()
         //Date start
         let currentDate = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -73,11 +59,16 @@ class TableViewPageController: UIViewController{
 //        self.calendarNameView.layer.borderWidth = 2.5
 //        self.calendarNameVi00ew.layer.borderColor = UIColor(red:0.07, green:0.00, blue:0.00, alpha:1.0).CGColor
 //        secondView.backgroundColor = background
-        EventStore.requestAccess() { (granted, error) in
-            if granted {
-                print("got permission")
-            }
+        
+        view.addSubview(myCoolLabel);
+        //Calls on name and client ID for Google Cal again
+        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
+            kKeychainItemName,
+            clientID: kClientID,
+            clientSecret: nil) {
+            service.authorizer = auth
         }
+       
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -114,46 +105,123 @@ class TableViewPageController: UIViewController{
         
     }
     
+    @IBAction func connectCalendarButtonPressed(sender:AnyObject) {
+        
+        if let authorizer = service.authorizer,
+            canAuth = authorizer.canAuthorize where canAuth {
+            connectCalendarButton.hidden = true
+            fetchEvents()
+            
+        } else {
+            presentViewController(
+                createAuthController(),
+                animated: true,
+                completion: nil
+            )
+           
+        }
+    }
+    //This just makes sure that the label that says calendar is hidden if the user isn't logged in to Google.
+    override func viewDidAppear(animated: Bool) {
+        if let authorizer = service.authorizer,
+            canAuth = authorizer.canAuthorize where canAuth {
+            fetchEvents()
+        }
+        else{
+        }
     
+        
+        // Construct a query and get a list of upcoming events from the user calendar
+        func fetchEvents() {
+            let query = GTLQueryCalendar.queryForEventsListWithCalendarId("primary")
+            query.maxResults = 10
+            query.timeMin = GTLDateTime(date: NSDate(), timeZone: NSTimeZone.localTimeZone())
+            query.singleEvents = true
+            query.orderBy = kGTLCalendarOrderByStartTime
+            service.executeQuery(
+                query,
+                delegate: self,
+                didFinishSelector: "displayResultWithTicket:finishedWithObject:error:"
+            )
+        }
+        
+        // Display the start dates and event summaries in the UITextView
+        func displayResultWithTicket(
+            ticket: GTLServiceTicket,
+            finishedWithObject response : GTLCalendarEvents,
+                               error : NSError?) {
+            
+            if let error = error {
+                showAlert("Error", message: error.localizedDescription)
+                return
+            }
+            
+            var eventString = ""
+            
+            if let events = response.items() where !events.isEmpty {
+                for event in events as! [GTLCalendarEvent] {
+                    let start : GTLDateTime! = event.start.dateTime ?? event.start.date
+                    let startString = NSDateFormatter.localizedStringFromDate(
+                        start.date,
+                        dateStyle: .ShortStyle,
+                        timeStyle: .ShortStyle
+                    )
+                    eventString += "\(event.summary) on \(startString)\n"
+                    
+                    
+                }
+            } else {
+                eventString = "No upcoming events found."
+            }
+            
+            myCoolLabel.text = eventString
+            connectCalendarButton.hidden = true
+        }
+        
+        
+        // Creates the auth controller for authorizing access to Google Calendar API
+        private func createAuthController() -> GTMOAuth2ViewControllerTouch {
+            let scopeString = scopes.joinWithSeparator(" ")
+            return GTMOAuth2ViewControllerTouch(
+                scope: scopeString,
+                clientID: kClientID,
+                clientSecret: nil,
+                keychainItemName: kKeychainItemName,
+                delegate: self,
+                finishedSelector: "viewController:finishedWithAuth:error:"
+            )
+        }
+        
+        // Handle completion of the authorization process, and update the Google Calendar API
+        // with the new credentials.
+        func viewController(vc : UIViewController,
+                            finishedWithAuth authResult : GTMOAuth2Authentication, error : NSError?) {
+            
+            if let error = error {
+                service.authorizer = nil
+                showAlert("Authentication Error", message: error.localizedDescription)
+                return
+            }
+            
+            service.authorizer = authResult
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        // Helper for showing an alert
+        func showAlert(title : String, message: String) {
+            let alert = UIAlertController(
+                title: title,
+                message: message,
+                preferredStyle: UIAlertControllerStyle.Alert
+            )
+            let ok = UIAlertAction(
+                title: "OK",
+                style: UIAlertActionStyle.Default,
+                handler: nil
+            )
+            alert.addAction(ok)
+            presentViewController(alert, animated: true, completion: nil)
+        }
+        
 
 }
-
-//extension NSDate {
-//    var dayAfter:NSDate {
-//        let oneDay:Double = 60 * 60 * 24
-//        return self.dateByAddingTimeInterval(oneDay)
-//    }
-//    var dayBefore:NSDate {
-//        let oneDay:Double = 60 * 60 * 24
-//        return self.dateByAddingTimeInterval(-(Double(oneDay)))
-//    }
-//}
-
-
-
-//extension TableViewPageController: UITableViewDataSource, UITableViewDelegate {
-//     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//        return services.count
-//    }
-//    
-//     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! DashboardTableViewCell
-//        //make e.title the calendar table view label
-//        cell.calendarTableViewLabel?.text = services[indexPath.row]
-//        return cell
-//    }
-//    
-//     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//    }
-//    
-//    
-//    
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//}
