@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OnboardingKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WebDeck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,6 +72,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0AEE620AA23360351ABC18DFD43C855D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>228A8785B1C6C6BFE8E1C8D261204DE3</key>
 		<dict>
 			<key>primary</key>
@@ -77,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33430C0CFAA7DF2BD74138A5CCBF7A38</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>39EFD830E6F82181B9D6F38B0A15FFFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BB9B3C3F360469420F302060D50961F</key>
+		<key>43C43EB531BA2C3B9395484A7C546618</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7F947D0FCA09938C1782C439C5454D21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>822630BA0A0295CCCB6D4CD773AFE914</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3C39FBD2F8646186E7013D6E519F28E</key>
+		<key>B63C72D1DDE10E0ED6BE8325350FC079</key>
 		<dict>
 			<key>primary</key>
 			<true/>

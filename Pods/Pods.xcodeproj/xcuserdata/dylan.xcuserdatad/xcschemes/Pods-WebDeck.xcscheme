@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3C39FBD2F8646186E7013D6E519F28E"
+               BlueprintIdentifier = "B63C72D1DDE10E0ED6BE8325350FC079"
                BuildableName = "Pods_WebDeck.framework"
                BlueprintName = "Pods-WebDeck"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A3C39FBD2F8646186E7013D6E519F28E"
+            BlueprintIdentifier = "B63C72D1DDE10E0ED6BE8325350FC079"
             BuildableName = "Pods_WebDeck.framework"
             BlueprintName = "Pods-WebDeck"
             ReferencedContainer = "container:Pods.xcodeproj">
