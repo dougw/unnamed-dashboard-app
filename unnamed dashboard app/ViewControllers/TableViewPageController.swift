@@ -141,17 +141,17 @@ class TableViewPageController: UIViewController{
         // Fetch all events that match the predicate
         var events: [AnyObject] = eventStore.eventsMatchingPredicate(predicate)
   
-        print (events)
+        print(events)
+        if events.isEmpty == true {
+            myCoolLabel.text = "You have no events today."
+        }
         for event in events {
             let formatter = NSDateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
             let dateObj = formatter.stringFromDate(event.startDate)
-            // Returns "Jul 27, 2015, 12:29 PM" PST
             myCoolLabel.text = ("Today you have \(event.title!) at \(dateObj))")
-            if event.title == nil {
-                myCoolLabel.text = "You have no events today."
-            }
         }
+        
     }
     
     override func viewDidAppear(animated: Bool) {
