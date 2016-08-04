@@ -117,7 +117,7 @@ class TableViewPageController: UIViewController{
             let formatter = NSDateFormatter()
             formatter.dateFormat = "EEE, MMM d, y h:mm a"
             let dateObj = formatter.stringFromDate(event.startDate)
-            let textToAppend = ("Today you have \(event.title!) at \(dateObj)") + "\r\n"
+            let textToAppend = ("\(event.title!) at \(dateObj)") + "\r\n"
             self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
         }
         

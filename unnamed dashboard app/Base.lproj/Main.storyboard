@@ -57,7 +57,7 @@
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-c0-DDM">
                                                 <rect key="frame" x="8" y="429" width="584" height="168"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
                                                         <rect key="frame" x="5" y="3" width="75" height="75"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc8-fd-Zg3">
@@ -66,12 +66,16 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                        <rect key="frame" x="88" y="40" width="224" height="116"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
+                                                        <rect key="frame" x="88" y="40" width="488" height="116"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="SNS-Qi-h6f" secondAttribute="trailing" constant="8" id="6OG-Nc-Cln"/>
+                                                    <constraint firstItem="SNS-Qi-h6f" firstAttribute="leading" secondItem="27I-eB-H5w" secondAttribute="trailing" constant="13" id="SCf-Q3-SEE"/>
+                                                </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyw-bm-Rai">
                                                 <rect key="frame" x="279" y="78" width="42" height="21"/>
@@ -88,26 +92,28 @@
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIa-48-Ota">
                                                 <rect key="frame" x="8" y="119" width="584" height="168"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
-                                                        <rect key="frame" x="83" y="5" width="81" height="21"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
+                                                        <rect key="frame" x="88" y="31" width="488" height="138"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar- Today's Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
+                                                        <rect key="frame" x="83" y="8" width="187" height="21"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
-                                                        <rect key="frame" x="88" y="28" width="240" height="141"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5k2-ZZ-nRi">
-                                                        <rect key="frame" x="0.0" y="19" width="75" height="75"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="BJp-Hh-5M1">
+                                                        <rect key="frame" x="1" y="29" width="75" height="75"/>
                                                     </imageView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="r3G-FT-Qwd" secondAttribute="trailing" constant="8" id="Mqh-gv-efa"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="444-D4-7SR"/>
-                                            <constraint firstItem="r3G-FT-Qwd" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="135" id="794-Eb-oT9"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
                                             <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="Q5C-cD-74J"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="TiZ-Pj-tOe"/>
