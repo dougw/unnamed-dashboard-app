@@ -16,6 +16,7 @@ target 'WebDeck' do
      pod 'TTEventKit', '~> 0.0'
       pod 'OnboardingKit'
       pod 'RealmSwift'
+      pod 'EasyTimer', '~> 1.0'
 
 
   # Pods for WebDeck

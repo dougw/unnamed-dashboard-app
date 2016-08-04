@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EasyTimer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,16 +87,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09E218D6B12610C2B932DD385F5E69ED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1DBC40356A6B8900B93AAE2331BF7DB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>228A8785B1C6C6BFE8E1C8D261204DE3</key>
 		<dict>
 			<key>primary</key>
@@ -103,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>39EFD830E6F82181B9D6F38B0A15FFFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41574EA49B49575049F65583C797A630</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70099F14DA714AA1C02E4DDD2C12B1D2</key>
+		<key>6D03A267A7548CA0DE94C0304F9651CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,12 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ACBFBA84DF2F275098EBBE01963CA8C6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B698F6411B72C7B31BB9AEFE9EFBF332</key>
+		<key>AA1775FE108B38751A9CC387891A1EA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +147,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CB0C03BEDA530331DAF3FDDD88AAF337</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D468777BEC2DE5127A16239373FFD11F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE89F00B8A5CEF30AB7048B48CB7C8EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F79E0B0E6E1B0204D5931BB9E7268FB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

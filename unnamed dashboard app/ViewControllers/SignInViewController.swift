@@ -12,6 +12,7 @@ import ChameleonFramework
 import RealmSwift
 
 class SignInViewController: UIViewController {
+    var user: User?
     //IBOutlets: the descLabel is the one that says: Life should be open. Let's start now. The signInButton is the Sign In button.
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var signinButton: UIButton!
@@ -58,21 +59,23 @@ class SignInViewController: UIViewController {
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
             case let .Success(userInfo):
-               let user = User?()
+//                let user = User()
 //                user.fullName = userInfo.fullName
 //                user.userId = userInfo.userId
 //                user.phoneNumber = userInfo.phoneNumber!
 ////                RealmHelper.addUser(User)
-//                
+//
 //                    RealmHelper.addUser(user)
-                // if note exists, update title and content
-                if let user = user {
+//                print(user.fullName)
+//                // if note exists, update title and content
+              if let user = self.user {
                     // 1
                     let newUser = User()
                     user.fullName = userInfo.fullName
                     user.userId = userInfo.userId
                     user.phoneNumber = userInfo.phoneNumber!
                     RealmHelper.updateUser(user, newUser: newUser)
+                  print(user.fullName)
                 } else {
                     // if note does not exist, create new note
                     let user = User()
@@ -81,14 +84,15 @@ class SignInViewController: UIViewController {
                     user.phoneNumber = userInfo.phoneNumber!
                     // 2
                     RealmHelper.addUser(user)
+                  print(user.fullName)
                 }
-               
-                self.fullName =  user!.fullName
-                print(user!.fullName)
-                
-                //                self.setupViewWithUserInfo(userInfo)
+             self.fullName =  userInfo.fullName
+//               print(userInfo.fullName)
+
+                      self.performSegueWithIdentifier("hello", sender: self)
+                // self.setupViewWithUserInfo(userInfo)
                 print("lol")
-                
+            
             case .UserCancelled:
                 print("The user cancelled.")
             case let .Failure(error):
@@ -100,7 +104,7 @@ class SignInViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "hello" {
             let destinationVC = segue.destinationViewController as! TableViewPageController
-//            destinationVC.name = fullName
+       destinationVC.name = fullName!
             
         }
         //

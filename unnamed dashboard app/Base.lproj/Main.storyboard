@@ -24,25 +24,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-HE-jW0">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIa-48-Ota">
-                                                <rect key="frame" x="8" y="72" width="584" height="168"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jix-7B-L3v">
-                                                        <rect key="frame" x="5" y="3" width="75" height="75"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
-                                                        <rect key="frame" x="83" y="5" width="81" height="21"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
-                                                        <rect key="frame" x="88" y="27" width="240" height="141"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                </subviews>
-                                            </view>
                                             <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pr3-Od-J6a">
                                                 <rect key="frame" x="0.0" y="301" width="600" height="68"/>
                                                 <subviews>
@@ -64,8 +45,8 @@
                                                 <rect key="frame" x="20" y="11" width="48" height="48"/>
                                                 <state key="normal" image="menustatus.png"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
-                                                <rect key="frame" x="280" y="50" width="40" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
+                                                <rect key="frame" x="280" y="52" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -92,20 +73,54 @@
                                                     </textView>
                                                 </subviews>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyw-bm-Rai">
+                                                <rect key="frame" x="279" y="78" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-Ef-FuA">
+                                                <rect key="frame" x="27" y="78" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIa-48-Ota">
+                                                <rect key="frame" x="8" y="119" width="584" height="168"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
+                                                        <rect key="frame" x="83" y="5" width="81" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
+                                                        <rect key="frame" x="88" y="28" width="240" height="141"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5k2-ZZ-nRi">
+                                                        <rect key="frame" x="0.0" y="19" width="75" height="75"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="12p-qy-fx5"/>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="444-D4-7SR"/>
-                                            <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="72" id="5Y9-kG-wzZ"/>
+                                            <constraint firstItem="r3G-FT-Qwd" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="135" id="794-Eb-oT9"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
                                             <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="Q5C-cD-74J"/>
-                                            <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="Rf0-hV-Xim"/>
-                                            <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="aNl-k3-vw8"/>
+                                            <constraint firstItem="Lyw-bm-Rai" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="TiZ-Pj-tOe"/>
+                                            <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="119" id="dfy-VY-Nas"/>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="6" id="ew2-gD-h6K"/>
+                                            <constraint firstItem="OJi-Ef-FuA" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="27" id="gDQ-ZD-ioc"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="50" id="hRr-NO-2Xy"/>
+                                            <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="hSY-ii-zTm"/>
+                                            <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="lGo-lA-L30"/>
                                             <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="oeD-7C-i4M"/>
-                                            <constraint firstItem="r3G-FT-Qwd" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="99" id="p03-8r-4Id"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="tvC-Vp-kpd"/>
+                                            <constraint firstItem="Lyw-bm-Rai" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="78" id="wF2-g9-lJ2"/>
+                                            <constraint firstItem="OJi-Ef-FuA" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="78" id="yYD-ki-Xo7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -132,6 +147,8 @@
                         <outlet property="calendarNameLabel" destination="pUu-xq-ty0" id="Eio-hy-6UN"/>
                         <outlet property="dayLabel" destination="nis-cH-AuP" id="JCD-OQ-b9Q"/>
                         <outlet property="myCoolLabel" destination="r3G-FT-Qwd" id="PQN-Og-rlN"/>
+                        <outlet property="myNameLabel" destination="Lyw-bm-Rai" id="x9P-4Y-YLJ"/>
+                        <outlet property="timeLabel" destination="OJi-Ef-FuA" id="McS-f5-pOE"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
                     </connections>
                 </viewController>

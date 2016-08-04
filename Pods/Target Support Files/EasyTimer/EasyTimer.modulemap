@@ -1,0 +1,6 @@
+framework module EasyTimer {
+  umbrella header "EasyTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}

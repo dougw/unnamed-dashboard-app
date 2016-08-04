@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ACBFBA84DF2F275098EBBE01963CA8C6'
+               BlueprintIdentifier = '41574EA49B49575049F65583C797A630'
                BlueprintName = 'TTEventKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TTEventKit.framework'>

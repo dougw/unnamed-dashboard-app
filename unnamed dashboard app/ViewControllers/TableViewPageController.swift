@@ -13,8 +13,10 @@ import TTEventKit
 import ChameleonFramework
 import EventKit
 import EventKitUI
+import EasyTimer
 
 class TableViewPageController: UIViewController{
+    @IBOutlet weak var myNameLabel: UILabel!
     var myArticles = [JSON]() ?? []
     //    var titlesString = [String]()
     var myString = [JSON]() ?? []
@@ -25,7 +27,8 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var myCoolLabel: UITextView!
     var services = ["Calendar", "Google News", "Weather", "Social Feed" ]
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var timeLabel: UILabel!
+    var name = ""
     @IBOutlet weak var myTextView: UITextView!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
@@ -37,6 +40,7 @@ class TableViewPageController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        myNameLabel.text = "Hello "+name+"!"
         loadEvents()
 //        for event in events! {
 //            //            let title = article["title"].stringValue
@@ -45,12 +49,23 @@ class TableViewPageController: UIViewController{
 //            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
 //            
 //        }
-        //Date start
+               //Date start
+       
         let currentDate = NSDate()
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
-        var convertedDate = dateFormatter.stringFromDate(currentDate)
-        dayLabel.text = convertedDate
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE, MMM d, y"
+        let dateObj = formatter.stringFromDate(currentDate)
+        self.dayLabel.text = dateObj
+        1.second.interval {
+            let currentDate = NSDate()
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "h:mm:ss a"
+            let dateObj = formatter.stringFromDate(currentDate)
+            self.timeLabel.text = dateObj
+            print(dateObj)
+            
+        }
+
         //Date end
         let colors:[UIColor] = [
             UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
@@ -100,9 +115,9 @@ class TableViewPageController: UIViewController{
             print(events)
         for event in events {
             let formatter = NSDateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
+            formatter.dateFormat = "EEE, MMM d, y h:mm a"
             let dateObj = formatter.stringFromDate(event.startDate)
-            let textToAppend = ("Today you have \(event.title!) at \(dateObj))") + "\r\n"
+            let textToAppend = ("Today you have \(event.title!) at \(dateObj)") + "\r\n"
             self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
         }
         
