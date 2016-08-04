@@ -130,17 +130,28 @@ class TableViewPageController: UIViewController{
         var calendar: NSCalendar = NSCalendar.currentCalendar()
         // Create the start date components
         var oneDayAgoComponents: NSDateComponents = NSDateComponents()
-        oneDayAgoComponents.day = -1
+        oneDayAgoComponents.day = 0
         var oneDayAgo: NSDate! = calendar.dateByAddingComponents(oneDayAgoComponents, toDate: NSDate(), options: [])
         // Create the end date components
-        var oneYearFromNowComponents: NSDateComponents = NSDateComponents()
-        oneYearFromNowComponents.year = 1
-        var oneYearFromNow: NSDate! = calendar.dateByAddingComponents(oneYearFromNowComponents, toDate: NSDate(), options: [])
+//        var oneYearFromNowComponents: NSDateComponents = NSDateComponents()
+//        oneYearFromNowComponents.day = 0
+//        var oneYearFromNow: NSDate! = calendar.dateByAddingComponents(oneYearFromNowComponents, toDate: NSDate(), options: [])
         // Create the predicate from the event store's instance method
-        var predicate: NSPredicate = eventStore.predicateForEventsWithStartDate(oneDayAgo, endDate: oneYearFromNow, calendars: nil)
+        var predicate: NSPredicate = eventStore.predicateForEventsWithStartDate(oneDayAgo, endDate: oneDayAgo, calendars: nil)
         // Fetch all events that match the predicate
         var events: [AnyObject] = eventStore.eventsMatchingPredicate(predicate)
+  
         print (events)
+        for event in events {
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
+            let dateObj = formatter.stringFromDate(event.startDate)
+            // Returns "Jul 27, 2015, 12:29 PM" PST
+            myCoolLabel.text = ("Today you have \(event.title!) at \(dateObj))")
+            if event.title == nil {
+                myCoolLabel.text = "You have no events today."
+            }
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
