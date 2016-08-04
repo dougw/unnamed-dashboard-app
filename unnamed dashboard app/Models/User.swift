@@ -7,10 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
 
-class User {
-    var name = ""
-    var phonenumber = Int()
-    var email = ""
-    var userID = ""
+class User: Object {
+    dynamic var userId = ""
+    dynamic var fullName = ""
+    dynamic var phoneNumber = ""
 }

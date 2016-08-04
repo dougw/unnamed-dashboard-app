@@ -15,6 +15,7 @@ target 'WebDeck' do
      pod 'TwitterCore'
      pod 'TTEventKit', '~> 0.0'
       pod 'OnboardingKit'
+      pod 'RealmSwift'
 
 
   # Pods for WebDeck

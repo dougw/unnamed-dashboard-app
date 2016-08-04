@@ -24,10 +24,7 @@
 		FC3591AD1D39688000500C1C /* unnamed_dashboard_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591AC1D39688000500C1C /* unnamed_dashboard_appUITests.swift */; };
 		FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591C11D3968D000500C1C /* DashboardViewController.swift */; };
 		FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591C21D3968D000500C1C /* SignInViewController.swift */; };
-		FC3591CC1D3977BC00500C1C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CB1D3977BC00500C1C /* API.swift */; };
-		FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CD1D3977C600500C1C /* Dashboard.swift */; };
 		FC3591D01D3977CD00500C1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3591CF1D3977CD00500C1C /* User.swift */; };
-		FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */; };
 		FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE51D465E1F002D3573 /* DINAlternateBold.ttf */; };
 		FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */; };
 		FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */; };
@@ -42,6 +39,7 @@
 		FCA101B51D52360E0080BFD2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101B41D52360E0080BFD2 /* twitter.png */; };
 		FCA101B71D5262BD0080BFD2 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101B61D5262BD0080BFD2 /* weather.png */; };
 		FCA101BD1D52643B0080BFD2 /* webdeckiphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */; };
+		FCE230E31D53C04000E60F7E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE230E21D53C04000E60F7E /* RealmHelper.swift */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -92,10 +90,7 @@
 		FC3591BA1D3968D000500C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3591C11D3968D000500C1C /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		FC3591C21D3968D000500C1C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		FC3591CB1D3977BC00500C1C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		FC3591CD1D3977C600500C1C /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		FC3591CF1D3977CD00500C1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		FC57AFE51D465E1F002D3573 /* DINAlternateBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINAlternateBold.ttf; sourceTree = "<group>"; };
 		FC57AFE81D466E5F002D3573 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
 		FC57AFE91D466E5F002D3573 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
@@ -111,6 +106,7 @@
 		FCA101B41D52360E0080BFD2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		FCA101B61D5262BD0080BFD2 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
 		FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webdeckiphone.png; sourceTree = "<group>"; };
+		FCE230E21D53C04000E60F7E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +239,7 @@
 		FC3591BB1D3968D000500C1C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FCE230E21D53C04000E60F7E /* RealmHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,10 +247,7 @@
 		FC3591BC1D3968D000500C1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FC3591CB1D3977BC00500C1C /* API.swift */,
-				FC3591CD1D3977C600500C1C /* Dashboard.swift */,
 				FC3591CF1D3977CD00500C1C /* User.swift */,
-				FC5736F11D3D34E000B0FA7D /* HTTPHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -604,14 +598,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3591CE1D3977C600500C1C /* Dashboard.swift in Sources */,
 				FC3591CA1D3968D000500C1C /* SignInViewController.swift in Sources */,
 				FC3591C91D3968D000500C1C /* DashboardViewController.swift in Sources */,
 				FC3591D01D3977CD00500C1C /* User.swift in Sources */,
+				FCE230E31D53C04000E60F7E /* RealmHelper.swift in Sources */,
 				FC35918B1D39687F00500C1C /* AppDelegate.swift in Sources */,
-				FC5736F21D3D34E000B0FA7D /* HTTPHelper.swift in Sources */,
 				FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */,
-				FC3591CC1D3977BC00500C1C /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,11 @@ PODS:
   - GTMSessionFetcher/Full (1.1.4):
     - GTMSessionFetcher/Core (= 1.1.4)
   - OnboardingKit (0.0.2)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
   - SwiftyJSON (2.3.2)
   - TTEventKit (0.0.2)
   - TwitterCore (2.3.0):
@@ -33,6 +38,7 @@ DEPENDENCIES:
   - GoogleAPIClient/Calendar (~> 1.0.2)
   - GTMOAuth2 (~> 1.1.0)
   - OnboardingKit
+  - RealmSwift
   - SwiftyJSON
   - TTEventKit (~> 0.0)
   - TwitterCore
@@ -47,11 +53,13 @@ SPEC CHECKSUMS:
   GTMOAuth2: bdb12f3e0d2110bfe585f6151230b883beb4d042
   GTMSessionFetcher: 174bc61d5238f81f9ddb807b0b0170420f67de85
   OnboardingKit: 0d872f7c2a032689479178ccb732959bb09f37f4
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TTEventKit: ca98039027f14f67da33f9d2405c0b9879dcab32
   TwitterCore: 817eae3e291fa4125b47789e26a4f6f024115c1f
   TwitterKit: 8a383da8d9c21b0423716381ea8bbfce20622d91
 
-PODFILE CHECKSUM: 0353f0d3809de6a005e7614650b3eed1b10401d2
+PODFILE CHECKSUM: f10ffa34c308ca225cac0d6408c4f05996a8fc95
 
 COCOAPODS: 1.0.1

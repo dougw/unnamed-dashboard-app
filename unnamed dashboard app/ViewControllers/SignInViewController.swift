@@ -9,6 +9,7 @@ import Foundation
 import CopperKit
 import UIKit
 import ChameleonFramework
+import RealmSwift
 
 class SignInViewController: UIViewController {
     //IBOutlets: the descLabel is the one that says: Life should be open. Let's start now. The signInButton is the Sign In button.
@@ -57,8 +58,33 @@ class SignInViewController: UIViewController {
         copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
             case let .Success(userInfo):
-                self.fullName =  userInfo.fullName
-                self.performSegueWithIdentifier("hello", sender: self)
+               let user = User?()
+//                user.fullName = userInfo.fullName
+//                user.userId = userInfo.userId
+//                user.phoneNumber = userInfo.phoneNumber!
+////                RealmHelper.addUser(User)
+//                
+//                    RealmHelper.addUser(user)
+                // if note exists, update title and content
+                if let user = user {
+                    // 1
+                    let newUser = User()
+                    user.fullName = userInfo.fullName
+                    user.userId = userInfo.userId
+                    user.phoneNumber = userInfo.phoneNumber!
+                    RealmHelper.updateUser(user, newUser: newUser)
+                } else {
+                    // if note does not exist, create new note
+                    let user = User()
+                    user.fullName = userInfo.fullName
+                    user.userId = userInfo.userId
+                    user.phoneNumber = userInfo.phoneNumber!
+                    // 2
+                    RealmHelper.addUser(user)
+                }
+               
+                self.fullName =  user!.fullName
+                print(user!.fullName)
                 
                 //                self.setupViewWithUserInfo(userInfo)
                 print("lol")
