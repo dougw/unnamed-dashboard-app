@@ -57,6 +57,9 @@ class TableViewPageController: UIViewController{
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
+        //FFFFFF
+        //alpha .2
+        
         //        view.backgroundColor = FlatSkyBlue()
         //         self.calendarNameLabel.font = UIFont(name: "Montserrat-Regular", size: 15)!
         //        self.calendarNameView.layer.borderWidth = 2.5
@@ -69,63 +72,11 @@ class TableViewPageController: UIViewController{
         }
         
         
-        //        let events = EventStore.getEvents(Month(year: 2016, month: 7)
     }
-    //     if events != nil {
-    //            for e in events {
-    //                myCoolLabel.text = ("Today you have \(e.title)")
-    //                print("startDate: \(e.startDate)")
-    //                print("endDate: \(e.endDate)")
-    //
-    //        }
-    //
-    //    }
-    //        else {
-    //            print("You have 0 events on your calendar today.")
-    //        }
     
     
     
     func loadEvents() {
-//        // Create a date formatter instance to use for converting a string to a date
-//        let dateFormatter = NSDateFormatter()
-//        dateFormatter.dateFormat = "yyyy-MM-dd"
-//        
-//        // Create start and end date NSDate instances to build a predicate for which events to select
-//        let startDate = dateFormatter.dateFromString("2015-6-25")
-//        let endDate = dateFormatter.dateFromString("2017-7-5")
-//        print (startDate)
-//        print(endDate)
-////        let calendars = eventStore.calendarsForEntityType(EKEntityTypeCalendar)
-////        
-////        if(yourReminderCalendar == nil) {
-////            for calendar in calendars {
-////                if calendar.title == "Your Title" {
-////                    yourReminderCalendar = (calendar as EKCalendar)
-////                    break
-////                }
-////            }
-//        
-//        if let startDate = startDate, endDate = endDate {
-//            let eventStore = EKEventStore()
-//            
-//            print (calendar)
-//            // Use an event store instance to create and properly configure an NSPredicate
-//            
-//            let eventsPredicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: [calendar])
-//            
-//            // Use the configured NSPredicate to find and return events in the store that match
-//            self.events = eventStore.eventsMatchingPredicate(eventsPredicate).sort() { (e1: EKEvent, e2: EKEvent) -> Bool in
-//                
-//                return e1.startDate.compare(e2.startDate) == NSComparisonResult.OrderedAscending
-//            }
-//            
-//            print("\n Events \(events)")
-//            for event in events!{
-//                let textToAppend = event.title
-//                self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-//            }
-//        }
         // Get the appropriate calendar
         var calendar: NSCalendar = NSCalendar.currentCalendar()
         // Create the start date components
@@ -141,24 +92,28 @@ class TableViewPageController: UIViewController{
         // Fetch all events that match the predicate
         var events: [AnyObject] = eventStore.eventsMatchingPredicate(predicate)
   
-        print(events)
         if events.isEmpty == true {
             myCoolLabel.text = "You have no events today."
+            print("You have no events today.")
         }
+        else {
+            print(events)
         for event in events {
             let formatter = NSDateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
             let dateObj = formatter.stringFromDate(event.startDate)
-            myCoolLabel.text = ("Today you have \(event.title!) at \(dateObj))")
+            let textToAppend = ("Today you have \(event.title!) at \(dateObj))") + "\r\n"
+            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
         }
         
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         
         let url = "https://newsapi.org/v1/articles"
-        let params = [ "source" : "thenewyorktimes" ,
-                       "sortBy" : "popular" ,
+        let params = [ "source" : "googlenews" ,
+                       "sortBy" : "top" ,
                        "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
         myArticles = [JSON]()
         Alamofire.request(.GET, url, parameters: params).responseJSON { response in
