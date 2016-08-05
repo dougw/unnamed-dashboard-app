@@ -14,7 +14,7 @@ import ChameleonFramework
 import EventKit
 import EventKitUI
 import EasyTimer
-
+import TwitterKit
 class TableViewPageController: UIViewController{
     @IBOutlet weak var myNameLabel: UILabel!
     var myArticles = [JSON]() ?? []
@@ -33,6 +33,7 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var calendarNameView: UIView!
+    @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
     
@@ -157,6 +158,48 @@ class TableViewPageController: UIViewController{
         
         
     }
+
+    //// Swift
+    // Users must be logged-in to compose Tweets
+    @IBAction func twitterButtonTapped(sender: AnyObject) {
+//        if let session = Twitter.sharedInstance().sessionStore.session() {
+//            
+//            // User generated image
+//            let image = UIImage()
+//            
+//            // Create the card and composer
+//            let card = TWTRCardConfiguration.appCardConfigurationWithPromoImage(image, iPhoneAppID: "12345", iPadAppID: nil, googlePlayAppID: nil)
+//            let composer = TWTRComposerViewController(userID: session.userID, cardConfiguration: card)
+//            
+//            // Optionally set yourself as the delegate
+////            composer.delegate = self
+//            
+//            // Show the view controller
+//            presentViewController(composer, animated: true, completion: nil)
+//        }
+        // Swift
+        let composer = TWTRComposer()
+        
+        composer.setText("")
+        composer.setImage(UIImage(named: "fabric"))
+        
+        // Called from a UIViewController
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                print("Tweet composition cancelled")
+            }
+            else {
+                print("Sending tweet!")
+                let alertController = UIAlertController(title: "Twitter", message: "Your tweet has sent!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+                    print("OK")
+                }
+                alertController.addAction(okAction)
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+   
     
     
 }

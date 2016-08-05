@@ -36,9 +36,13 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-mT-ndY">
                                                         <rect key="frame" x="16" y="0.0" width="68" height="68"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-Kj-siH">
-                                                        <rect key="frame" x="120" y="13" width="48" height="48"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV7-4k-aks">
+                                                        <rect key="frame" x="88" y="13" width="102" height="48"/>
+                                                        <state key="normal" image="twitter.png"/>
+                                                        <connections>
+                                                            <action selector="twitterButtonTapped:" destination="BtN-Ef-u98" eventType="touchUpInside" id="KpF-nS-tAw"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-8j-NQU">
@@ -107,9 +111,6 @@
                                                         <rect key="frame" x="1" y="29" width="75" height="75"/>
                                                     </imageView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="r3G-FT-Qwd" secondAttribute="trailing" constant="8" id="Mqh-gv-efa"/>
-                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -123,6 +124,7 @@
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="50" id="hRr-NO-2Xy"/>
                                             <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="hSY-ii-zTm"/>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="lGo-lA-L30"/>
+                                            <constraint firstItem="r3G-FT-Qwd" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="150" id="m3T-AE-jje"/>
                                             <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="oeD-7C-i4M"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="tvC-Vp-kpd"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="78" id="wF2-g9-lJ2"/>
@@ -156,6 +158,7 @@
                         <outlet property="myNameLabel" destination="Lyw-bm-Rai" id="x9P-4Y-YLJ"/>
                         <outlet property="timeLabel" destination="OJi-Ef-FuA" id="McS-f5-pOE"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
+                        <outlet property="twitterButton" destination="bV7-4k-aks" id="BJn-Tn-4fH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTZ-98-xKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
