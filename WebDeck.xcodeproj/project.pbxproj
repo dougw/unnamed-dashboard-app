@@ -40,6 +40,7 @@
 		FCA101B71D5262BD0080BFD2 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101B61D5262BD0080BFD2 /* weather.png */; };
 		FCA101BD1D52643B0080BFD2 /* webdeckiphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */; };
 		FCE230E31D53C04000E60F7E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE230E21D53C04000E60F7E /* RealmHelper.swift */; };
+		FCE70DC31D54D72F0055F21D /* checked_user_male.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70DC21D54D72F0055F21D /* checked_user_male.png */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		FCA101B61D5262BD0080BFD2 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
 		FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webdeckiphone.png; sourceTree = "<group>"; };
 		FCE230E21D53C04000E60F7E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		FCE70DC21D54D72F0055F21D /* checked_user_male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_user_male.png; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */,
 				FC1F2AF21D5116D5009FD8FA /* menu_2.png */,
 				FC9D5E061D52AF5E00E2C140 /* alarm.png */,
+				FCE70DC21D54D72F0055F21D /* checked_user_male.png */,
 				FC9D5E071D52AF5E00E2C140 /* menustatus.png */,
 				FC1F2AF61D5138DA009FD8FA /* news.png */,
 				FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */,
@@ -434,6 +437,7 @@
 				FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */,
 				FC9D5E091D52AF5F00E2C140 /* menustatus.png in Resources */,
 				FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */,
+				FCE70DC31D54D72F0055F21D /* checked_user_male.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
 				FCA101B51D52360E0080BFD2 /* twitter.png in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,

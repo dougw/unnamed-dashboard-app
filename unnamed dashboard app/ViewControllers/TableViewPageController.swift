@@ -41,7 +41,7 @@ class TableViewPageController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myNameLabel.text = "Hello "+name+"!"
+        myNameLabel.text = "Hello, "+name+"!"
         loadEvents()
 //        for event in events! {
 //            //            let title = article["title"].stringValue
@@ -50,24 +50,24 @@ class TableViewPageController: UIViewController{
 //            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
 //            
 //        }
-               //Date start
+          //     Date start
        
         let currentDate = NSDate()
         let formatter = NSDateFormatter()
         formatter.dateFormat = "EEEE, MMM d, y"
         let dateObj = formatter.stringFromDate(currentDate)
         self.dayLabel.text = dateObj
-        1.second.interval {
-            let currentDate = NSDate()
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "h:mm:ss a"
-            let dateObj = formatter.stringFromDate(currentDate)
-            self.timeLabel.text = dateObj
-            print(dateObj)
-            
-        }
+//        1.second.interval {
+//            let currentDate = NSDate()
+//            let formatter = NSDateFormatter()
+//            formatter.dateFormat = "h:mm:ss a"
+//            let dateObj = formatter.stringFromDate(currentDate)
+//            self.timeLabel.text = dateObj
+//            print(dateObj)
+//            
+//        }
 
-        //Date end
+     //   Date end
         let colors:[UIColor] = [
             UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
