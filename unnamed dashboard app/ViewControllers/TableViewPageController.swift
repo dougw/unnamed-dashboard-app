@@ -15,8 +15,9 @@ import EventKit
 import EventKitUI
 import EasyTimer
 import TwitterKit
+import CopperKit
 
-import Social
+
 class TableViewPageController: UIViewController{
     @IBOutlet weak var myNameLabel: UILabel!
     var myArticles = [JSON]() ?? []
@@ -32,6 +33,7 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var timeLabel: UILabel!
     var name = ""
     @IBOutlet weak var myTextView: UITextView!
+    @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var calendarNameView: UIView!
@@ -39,7 +41,7 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
     
-    
+        var copper: C29Application?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,13 +141,13 @@ class TableViewPageController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                var myVar = self.myArticles[0..<1]
+                var myVar = self.myArticles[0..<2]
                 //                var firstFive = self.myArticles.stringValue[0..<5]
                 //            myTextView.text = firstFive
                 for article in myVar {
                     let title = article["title"].stringValue
                     print("title \(title)")
-                    let textToAppend = title
+                    let textToAppend = title + "\r\n"
                     self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
                     
                 }
@@ -202,6 +204,22 @@ class TableViewPageController: UIViewController{
         }
     }
    
+    
+    
+//    @IBAction func signOutButtonTapped(sender: AnyObject) {
+//        copper?.closeSession()
+//         self.performSegueWithIdentifier("signOut", sender: self)
+////        resetView()
+//    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "signOut" {
+//            let destinationVC = segue.destinationViewController as! SignInViewController
+//            
+//        }
+//        //
+//        
+//    }
     
     
 }

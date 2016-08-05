@@ -24,8 +24,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-HE-jW0">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
-                                                <rect key="frame" x="280" y="90" width="40" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
+                                                <rect key="frame" x="273" y="90" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                                 <rect key="frame" x="8" y="329" width="584" height="168"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                        <rect key="frame" x="88" y="40" width="488" height="116"/>
+                                                        <rect key="frame" x="88" y="40" width="213" height="116"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -90,17 +90,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV7-4k-aks">
-                                                        <rect key="frame" x="0.0" y="8" width="59" height="48"/>
+                                                        <rect key="frame" x="166" y="37" width="59" height="48"/>
                                                         <state key="normal" image="twitter.png"/>
                                                         <connections>
                                                             <action selector="twitterButtonTapped:" destination="BtN-Ef-u98" eventType="touchUpInside" id="wd8-5G-LNq"/>
                                                         </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send a " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-oT-VzV">
+                                                        <rect key="frame" x="110" y="50" width="58" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="dyI-Jw-sHh">
+                                                        <rect key="frame" x="0.0" y="8" width="59" height="59"/>
+                                                    </imageView>
                                                 </subviews>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockcool.png" translatesAutoresizingMaskIntoConstraints="NO" id="EBx-mh-MLD">
-                                                <rect key="frame" x="199" y="76" width="50" height="50"/>
-                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="444-D4-7SR"/>
@@ -164,9 +170,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-Ue-sbx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Life should be open. Let's start now. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJu-iS-6PF">
+                                <rect key="frame" x="75" y="248" width="276" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webdeckiphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="jKL-8t-Waa">
+                                <rect key="frame" x="96" y="89" width="223" height="43"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-Ue-sbx">
                                 <rect key="frame" x="148" y="340" width="118" height="56"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -174,15 +189,6 @@
                                     <action selector="signinButtonPressed:" destination="b7A-aG-bKf" eventType="touchUpInside" id="Cg5-LF-Tql"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life should be open. Let's start now. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJu-iS-6PF">
-                                <rect key="frame" x="75" y="248" width="265" height="19"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="helloworld.png" translatesAutoresizingMaskIntoConstraints="NO" id="jKL-8t-Waa">
-                                <rect key="frame" x="103" y="27" width="187" height="168"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -208,8 +214,6 @@
     </scenes>
     <resources>
         <image name="Calendar Icon.png" width="400" height="400"/>
-        <image name="clockcool.png" width="200" height="200"/>
-        <image name="helloworld.png" width="192" height="168"/>
         <image name="news.png" width="48" height="48"/>
         <image name="twitter.png" width="48" height="48"/>
         <image name="webdeckiphone.png" width="223" height="43"/>

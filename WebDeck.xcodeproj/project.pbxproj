@@ -43,7 +43,7 @@
 		FCE70DC31D54D72F0055F21D /* checked_user_male.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70DC21D54D72F0055F21D /* checked_user_male.png */; };
 		FCE70E051D5501860055F21D /* clock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E041D5501860055F21D /* clock@3x.png */; };
 		FCE70E071D5501C80055F21D /* clockcool.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E061D5501C80055F21D /* clockcool.png */; };
-		FCE70E091D551D470055F21D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE70E081D551D470055F21D /* Social.framework */; };
+		FCE70E0B1D5527D30055F21D /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E0A1D5527D30055F21D /* exit.png */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +115,7 @@
 		FCE70E041D5501860055F21D /* clock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@3x.png"; sourceTree = "<group>"; };
 		FCE70E061D5501C80055F21D /* clockcool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockcool.png; sourceTree = "<group>"; };
 		FCE70E081D551D470055F21D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FCE70E0A1D5527D30055F21D /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = ../../../../../../var/folders/bz/t03hm6rs1zv8rsm3g7ycx2h80000gn/T/Color/SVG/User_Interface/exit.png; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE70E091D551D470055F21D /* Social.framework in Frameworks */,
 				F1D83B5C816C9AE2CEDA94B5 /* Pods_WebDeck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +183,7 @@
 				FCE70E061D5501C80055F21D /* clockcool.png */,
 				FC1F2AF61D5138DA009FD8FA /* news.png */,
 				FCE70E041D5501860055F21D /* clock@3x.png */,
+				FCE70E0A1D5527D30055F21D /* exit.png */,
 				FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */,
 				FCA101B41D52360E0080BFD2 /* twitter.png */,
 				FC1F2AF01D511001009FD8FA /* Custom@2x.png */,
@@ -430,6 +431,7 @@
 			files = (
 				FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */,
 				FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */,
+				FCE70E0B1D5527D30055F21D /* exit.png in Resources */,
 				FCA101BD1D52643B0080BFD2 /* webdeckiphone.png in Resources */,
 				FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */,
 				FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */,
