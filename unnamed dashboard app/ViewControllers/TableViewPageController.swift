@@ -15,6 +15,8 @@ import EventKit
 import EventKitUI
 import EasyTimer
 import TwitterKit
+
+import Social
 class TableViewPageController: UIViewController{
     @IBOutlet weak var myNameLabel: UILabel!
     var myArticles = [JSON]() ?? []

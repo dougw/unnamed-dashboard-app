@@ -24,8 +24,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-HE-jW0">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
-                                                <rect key="frame" x="89" y="90" width="40" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nis-cH-AuP">
+                                                <rect key="frame" x="280" y="90" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -34,38 +34,37 @@
                                                 <rect key="frame" x="189" y="6" width="223" height="43"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOn-c0-DDM">
-                                                <rect key="frame" x="8" y="429" width="584" height="168"/>
+                                                <rect key="frame" x="8" y="329" width="584" height="168"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
-                                                        <rect key="frame" x="5" y="3" width="75" height="75"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc8-fd-Zg3">
-                                                        <rect key="frame" x="83" y="5" width="69" height="21"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
                                                         <rect key="frame" x="88" y="40" width="488" height="116"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc8-fd-Zg3">
+                                                        <rect key="frame" x="83" y="3" width="69" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
+                                                        <rect key="frame" x="0.0" y="3" width="75" height="75"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="SNS-Qi-h6f" secondAttribute="trailing" constant="8" id="6OG-Nc-Cln"/>
                                                     <constraint firstItem="SNS-Qi-h6f" firstAttribute="leading" secondItem="27I-eB-H5w" secondAttribute="trailing" constant="13" id="SCf-Q3-SEE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIa-48-Ota">
-                                                <rect key="frame" x="8" y="119" width="584" height="168"/>
+                                                <rect key="frame" x="8" y="140" width="584" height="168"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
-                                                        <rect key="frame" x="88" y="31" width="488" height="138"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
+                                                        <rect key="frame" x="88" y="34" width="488" height="138"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar- Today's Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
-                                                        <rect key="frame" x="83" y="8" width="187" height="21"/>
+                                                        <rect key="frame" x="83" y="5" width="187" height="21"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -75,53 +74,49 @@
                                                     </imageView>
                                                 </subviews>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pr3-Od-J6a">
-                                                <rect key="frame" x="-8" y="637" width="600" height="68"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-iU-ChP">
-                                                        <rect key="frame" x="211" y="8" width="54" height="54"/>
-                                                    </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weather.png" translatesAutoresizingMaskIntoConstraints="NO" id="2uO-TW-7KI">
-                                                        <rect key="frame" x="302" y="20" width="49" height="34"/>
-                                                    </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-mT-ndY">
-                                                        <rect key="frame" x="16" y="0.0" width="68" height="68"/>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV7-4k-aks">
-                                                        <rect key="frame" x="88" y="13" width="102" height="48"/>
-                                                        <state key="normal" image="twitter.png"/>
-                                                        <connections>
-                                                            <action selector="twitterButtonTapped:" destination="BtN-Ef-u98" eventType="touchUpInside" id="KpF-nS-tAw"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyw-bm-Rai">
                                                 <rect key="frame" x="271" y="52" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockcool.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ph5-Js-XTz">
-                                                <rect key="frame" x="23" y="80" width="42" height="42"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sCO-Z8-Rmd">
+                                                <rect key="frame" x="12" y="510" width="577" height="186"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-76-L0n">
+                                                        <rect key="frame" x="75" y="21" width="53" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV7-4k-aks">
+                                                        <rect key="frame" x="0.0" y="8" width="59" height="48"/>
+                                                        <state key="normal" image="twitter.png"/>
+                                                        <connections>
+                                                            <action selector="twitterButtonTapped:" destination="BtN-Ef-u98" eventType="touchUpInside" id="wd8-5G-LNq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockcool.png" translatesAutoresizingMaskIntoConstraints="NO" id="EBx-mh-MLD">
+                                                <rect key="frame" x="199" y="76" width="50" height="50"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="444-D4-7SR"/>
-                                            <constraint firstItem="pr3-Od-J6a" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="637" id="6ec-gB-zN9"/>
+                                            <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="6H6-06-XSC"/>
+                                            <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="8Cp-qx-qT9"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
-                                            <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="Q5C-cD-74J"/>
-                                            <constraint firstAttribute="trailing" secondItem="pr3-Od-J6a" secondAttribute="trailing" constant="8" id="YXs-EV-nSD"/>
-                                            <constraint firstItem="rIa-48-Ota" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="119" id="dfy-VY-Nas"/>
+                                            <constraint firstItem="sCO-Z8-Rmd" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="DTc-rt-rve"/>
+                                            <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="90" id="SDK-Pb-AaD"/>
                                             <constraint firstItem="ZEe-Zp-J9L" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="6" id="ew2-gD-h6K"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="fhB-ME-tPk"/>
-                                            <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="hSY-ii-zTm"/>
-                                            <constraint firstItem="pr3-Od-J6a" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="-8" id="ih6-qW-Ttj"/>
-                                            <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="lGo-lA-L30"/>
-                                            <constraint firstItem="r3G-FT-Qwd" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="150" id="m3T-AE-jje"/>
-                                            <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="oeD-7C-i4M"/>
+                                            <constraint firstAttribute="trailing" secondItem="mOn-c0-DDM" secondAttribute="trailing" constant="8" id="jmB-8f-neF"/>
+                                            <constraint firstAttribute="trailing" secondItem="sCO-Z8-Rmd" secondAttribute="trailing" constant="8" id="kdt-HM-5xZ"/>
+                                            <constraint firstItem="mOn-c0-DDM" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="329" id="lJd-lq-0t2"/>
+                                            <constraint firstItem="mOn-c0-DDM" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="nrn-IM-UGq"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="52" id="psu-vP-ZYY"/>
-                                            <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="90" id="v4P-M6-cNh"/>
+                                            <constraint firstItem="nis-cH-AuP" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="u1H-ZL-gnc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -150,7 +145,7 @@
                         <outlet property="myCoolLabel" destination="r3G-FT-Qwd" id="PQN-Og-rlN"/>
                         <outlet property="myNameLabel" destination="Lyw-bm-Rai" id="x9P-4Y-YLJ"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
-                        <outlet property="twitterButton" destination="bV7-4k-aks" id="BJn-Tn-4fH"/>
+                        <outlet property="twitterButton" destination="bV7-4k-aks" id="Qyv-UN-OkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTZ-98-xKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,7 +212,6 @@
         <image name="helloworld.png" width="192" height="168"/>
         <image name="news.png" width="48" height="48"/>
         <image name="twitter.png" width="48" height="48"/>
-        <image name="weather.png" width="49" height="34"/>
         <image name="webdeckiphone.png" width="223" height="43"/>
     </resources>
 </document>
