@@ -75,6 +75,7 @@
 		D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
 		D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0BD2961D58D3440098B07E /* shadowed1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowed1.png; path = "../../../../Google Drive/WebDeck Design and Layout/Logo/shadowed1.png"; sourceTree = "<group>"; };
+		FC0BD2981D590BC30098B07E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPageController.swift; sourceTree = "<group>"; };
 		FC1F2AF01D511001009FD8FA /* Custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Custom@2x.png"; sourceTree = "<group>"; };
 		FC1F2AF21D5116D5009FD8FA /* menu_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_2.png; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		C410FA2970B5EE1FE01C87A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BD2981D590BC30098B07E /* MediaPlayer.framework */,
 				FCE70E081D551D470055F21D /* Social.framework */,
 				FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */,
 				D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */,

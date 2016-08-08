@@ -19,6 +19,7 @@ import CopperKit
 
 
 class TableViewPageController: UIViewController{
+    
     @IBOutlet weak var myNameLabel: UILabel!
     var myArticles = [JSON]() ?? []
     //    var titlesString = [String]()
@@ -36,16 +37,16 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var calendarNameView: UIView!
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var calendarNameLabel: UILabel!
+    @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var titlesString: UITextView!
-    
     var copper: C29Application?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myNameLabel.text = "Hello, "+name+"!"
+//        myNameLabel.textColor = UIColor(red:0.99, green:0.97, blue:0.97, alpha:1.0)
         loadEvents()
         //        for event in events! {
         //            //            let title = article["title"].stringValue
@@ -94,20 +95,40 @@ class TableViewPageController: UIViewController{
         
     }
     
+     func loadImageFromUrl(url: String, view: UIImageView){
+        
+        // Create Url from string
+        let url = NSURL(string: url)!
+        
+        // Download task:
+        // - sharedSession = global NSURLCache, NSHTTPCookieStorage and NSURLCredentialStorage objects.
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (responseData, responseUrl, error) -> Void in
+            // if responseData is not null...
+            if let data = responseData{
+                
+                // execute in UI thread
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    view.image = UIImage(data: data)
+                })
+            }
+        }
+        
+        // Run task
+        task.resume()
+    }
+    
     
     
     func loadEvents() {
         // Get the appropriate calendar
         var calendar: NSCalendar = NSCalendar.currentCalendar()
-        // Create the start date components
-//        var oneDayAgoComponents: NSDateComponents = NSDateComponents()
-//        oneDayAgoComponents.day = 0
-//        var oneDayAgo: NSDate! = calendar.dateByAddingComponents(oneDayAgoComponents, toDate: NSDate(), options: [])
-//        var tomorrowComponents: NSDateComponents = NSDateComponents()
-//        tomorrowComponents.day = 1
-        let today = NSDate()
+        var todayComponents: NSDateComponents = NSDateComponents()
+        todayComponents.day = 0
+        var today: NSDate! = calendar.dateByAddingComponents(todayComponents, toDate: NSDate(), options: [])
+        var tomorrowComponents: NSDateComponents = NSDateComponents()
+        tomorrowComponents.day = 1
         let oneMonthAfter = NSDate(timeIntervalSinceNow: +86400)
-              var tomorrow: NSDate! = calendar.dateByAddingComponents(NSDate(), toDate: oneMonthAfter, options: [])
+              var tomorrow: NSDate! = calendar.dateByAddingComponents(todayComponents, toDate: oneMonthAfter, options: [])
        
   
         // Create the end date components
@@ -127,7 +148,7 @@ class TableViewPageController: UIViewController{
             print(events)
             for event in events {
                 let formatter = NSDateFormatter()
-                formatter.dateFormat = "h:mm a"
+                formatter.dateFormat = "MMM d h:mm a"
                 let dateObj = formatter.stringFromDate(event.startDate)
                 let textToAppend = (" \(dateObj) - \(event.title!)") + "\r\n"
                 self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
@@ -139,8 +160,8 @@ class TableViewPageController: UIViewController{
     override func viewDidAppear(animated: Bool) {
         
         let url = "https://newsapi.org/v1/articles"
-        let params = [ "source" : "googlenews" ,
-                       "sortBy" : "top" ,
+        let params = [ "source" : "thenewyorktimes" ,
+                       "sortBy" : "popular" ,
                        "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
         myArticles = [JSON]()
         Alamofire.request(.GET, url, parameters: params).responseJSON { response in
@@ -148,13 +169,19 @@ class TableViewPageController: UIViewController{
             case .Success(let data):
                 let json = JSON(data)
                 self.myArticles = json["articles"].arrayValue
-                var myVar = self.myArticles[0..<2]
+                var myVar = self.myArticles[0..<1]
                 //                var firstFive = self.myArticles.stringValue[0..<5]
                 //            myTextView.text = firstFive
                 for article in myVar {
                     let title = article["title"].stringValue
+                    let image = article["urlToImage"].stringValue
                     print("title \(title)")
+                    print(image)
                     let textToAppend = title + "\r\n"
+                    self.loadImageFromUrl(image, view: self.newsImageView)
+                
+            
+
                     self.titlesString.text = self.titlesString.text.stringByAppendingString(textToAppend)
                     
                 }
@@ -227,6 +254,5 @@ class TableViewPageController: UIViewController{
     //        //
     //        
     //    }
-    
     
 }

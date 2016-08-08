@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
 //        let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
 //        view.backgroundColor = background
         let colors:[UIColor] = [
-        UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
+        UIColor(red:0.98, green:0.75, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
         let background = GradientColor(.TopToBottom, frame: view.frame, colors: colors)
         view.backgroundColor = background
