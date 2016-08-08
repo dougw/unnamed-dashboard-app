@@ -10,6 +10,7 @@
 		45F99FE026674EB58CB41CF2 /* Pods_WebDeckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646598D477B7DC9F3EA3FA4E /* Pods_WebDeckUITests.framework */; };
 		C0779D0A5E0C34AD0D39F23A /* Pods_WebDeckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */; };
 		F1D83B5C816C9AE2CEDA94B5 /* Pods_WebDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */; };
+		FC0BD2971D58D3440098B07E /* shadowed1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0BD2961D58D3440098B07E /* shadowed1.png */; };
 		FC1A1F041D4FCF6E001CB9AF /* TableViewPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */; };
 		FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF01D511001009FD8FA /* Custom@2x.png */; };
 		FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1F2AF21D5116D5009FD8FA /* menu_2.png */; };
@@ -73,6 +74,7 @@
 		C4F46A9221659445E0585745 /* Pods-WebDeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeckTests/Pods-WebDeckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3074A880E120FF30CC90690 /* Pods-WebDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck/Pods-WebDeck.release.xcconfig"; sourceTree = "<group>"; };
 		D3143ACEC8B34E5A55906FAB /* Pods_WebDeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0BD2961D58D3440098B07E /* shadowed1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadowed1.png; path = "../../../../Google Drive/WebDeck Design and Layout/Logo/shadowed1.png"; sourceTree = "<group>"; };
 		FC1A1F031D4FCF6E001CB9AF /* TableViewPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPageController.swift; sourceTree = "<group>"; };
 		FC1F2AF01D511001009FD8FA /* Custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Custom@2x.png"; sourceTree = "<group>"; };
 		FC1F2AF21D5116D5009FD8FA /* menu_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_2.png; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				FCA101B61D5262BD0080BFD2 /* weather.png */,
 				FC1F2AF41D5129F7009FD8FA /* Calendar Icon.png */,
+				FC0BD2961D58D3440098B07E /* shadowed1.png */,
 				FC1F2AF21D5116D5009FD8FA /* menu_2.png */,
 				FC9D5E061D52AF5E00E2C140 /* alarm.png */,
 				FCE70DC21D54D72F0055F21D /* checked_user_male.png */,
@@ -453,6 +456,7 @@
 				FC57AFE71D465E9B002D3573 /* DINAlternateBold.ttf in Resources */,
 				FCE70DC31D54D72F0055F21D /* checked_user_male.png in Resources */,
 				FC3591941D39687F00500C1C /* Assets.xcassets in Resources */,
+				FC0BD2971D58D3440098B07E /* shadowed1.png in Resources */,
 				FCA101B51D52360E0080BFD2 /* twitter.png in Resources */,
 				FC3591921D39687F00500C1C /* Main.storyboard in Resources */,
 				FC26B65D1D4BE64500B84B25 /* helloworld.png in Resources */,

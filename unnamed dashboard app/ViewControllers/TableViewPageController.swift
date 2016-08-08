@@ -41,37 +41,37 @@ class TableViewPageController: UIViewController{
     @IBOutlet weak var calendarNameLabel: UILabel!
     @IBOutlet weak var titlesString: UITextView!
     
-        var copper: C29Application?
+    var copper: C29Application?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myNameLabel.text = "Hello, "+name+"!"
         loadEvents()
-//        for event in events! {
-//            //            let title = article["title"].stringValue
-//            print("title \(event.title)")
-//            let textToAppend = event.title
-//            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-//            
-//        }
-          //     Date start
-       
+        //        for event in events! {
+        //            //            let title = article["title"].stringValue
+        //            print("title \(event.title)")
+        //            let textToAppend = event.title
+        //            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
+        //
+        //        }
+        //     Date start
+        
         let currentDate = NSDate()
         let formatter = NSDateFormatter()
         formatter.dateFormat = "EEEE, MMM d, y"
         let dateObj = formatter.stringFromDate(currentDate)
         self.dayLabel.text = dateObj
-//        1.second.interval {
-//            let currentDate = NSDate()
-//            let formatter = NSDateFormatter()
-//            formatter.dateFormat = "h:mm:ss a"
-//            let dateObj = formatter.stringFromDate(currentDate)
-//            self.timeLabel.text = dateObj
-//            print(dateObj)
-//            
-//        }
-
-     //   Date end
+        //        1.second.interval {
+        //            let currentDate = NSDate()
+        //            let formatter = NSDateFormatter()
+        //            formatter.dateFormat = "h:mm:ss a"
+        //            let dateObj = formatter.stringFromDate(currentDate)
+        //            self.timeLabel.text = dateObj
+        //            print(dateObj)
+        //
+        //        }
+        
+        //   Date end
         let colors:[UIColor] = [
             UIColor(red:0.95, green:0.77, blue:0.79, alpha:1.0), UIColor(red:0.52, green:0.67, blue:0.79, alpha:1.0)
         ]
@@ -100,32 +100,39 @@ class TableViewPageController: UIViewController{
         // Get the appropriate calendar
         var calendar: NSCalendar = NSCalendar.currentCalendar()
         // Create the start date components
-        var oneDayAgoComponents: NSDateComponents = NSDateComponents()
-        oneDayAgoComponents.day = 0
-        var oneDayAgo: NSDate! = calendar.dateByAddingComponents(oneDayAgoComponents, toDate: NSDate(), options: [])
+//        var oneDayAgoComponents: NSDateComponents = NSDateComponents()
+//        oneDayAgoComponents.day = 0
+//        var oneDayAgo: NSDate! = calendar.dateByAddingComponents(oneDayAgoComponents, toDate: NSDate(), options: [])
+//        var tomorrowComponents: NSDateComponents = NSDateComponents()
+//        tomorrowComponents.day = 1
+        let today = NSDate()
+        let oneMonthAfter = NSDate(timeIntervalSinceNow: +86400)
+              var tomorrow: NSDate! = calendar.dateByAddingComponents(NSDate(), toDate: oneMonthAfter, options: [])
+       
+  
         // Create the end date components
-//        var oneYearFromNowComponents: NSDateComponents = NSDateComponents()
-//        oneYearFromNowComponents.day = 0
-//        var oneYearFromNow: NSDate! = calendar.dateByAddingComponents(oneYearFromNowComponents, toDate: NSDate(), options: [])
+        //        var oneYearFromNowComponents: NSDateComponents = NSDateComponents()
+        //        oneYearFromNowComponents.day = 0
+        //        var oneYearFromNow: NSDate! = calendar.dateByAddingComponents(oneYearFromNowComponents, toDate: NSDate(), options: [])
         // Create the predicate from the event store's instance method
-        var predicate: NSPredicate = eventStore.predicateForEventsWithStartDate(oneDayAgo, endDate: oneDayAgo, calendars: nil)
+        var predicate: NSPredicate = eventStore.predicateForEventsWithStartDate(today, endDate: oneMonthAfter, calendars: nil)
         // Fetch all events that match the predicate
         var events: [AnyObject] = eventStore.eventsMatchingPredicate(predicate)
-  
+        
         if events.isEmpty == true {
             myCoolLabel.text = "You have no events today."
             print("You have no events today.")
         }
         else {
             print(events)
-        for event in events {
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "EEE, MMM d, y h:mm a"
-            let dateObj = formatter.stringFromDate(event.startDate)
-            let textToAppend = ("\(event.title!) at \(dateObj)") + "\r\n"
-            self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
-        }
-        
+            for event in events {
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "h:mm a"
+                let dateObj = formatter.stringFromDate(event.startDate)
+                let textToAppend = (" \(dateObj) - \(event.title!)") + "\r\n"
+                self.myCoolLabel.text = self.myCoolLabel.text.stringByAppendingString(textToAppend)
+            }
+            
         }
     }
     
@@ -162,25 +169,25 @@ class TableViewPageController: UIViewController{
         
         
     }
-
+    
     //// Swift
     // Users must be logged-in to compose Tweets
     @IBAction func twitterButtonTapped(sender: AnyObject) {
-//        if let session = Twitter.sharedInstance().sessionStore.session() {
-//            
-//            // User generated image
-//            let image = UIImage()
-//            
-//            // Create the card and composer
-//            let card = TWTRCardConfiguration.appCardConfigurationWithPromoImage(image, iPhoneAppID: "12345", iPadAppID: nil, googlePlayAppID: nil)
-//            let composer = TWTRComposerViewController(userID: session.userID, cardConfiguration: card)
-//            
-//            // Optionally set yourself as the delegate
-////            composer.delegate = self
-//            
-//            // Show the view controller
-//            presentViewController(composer, animated: true, completion: nil)
-//        }
+        //        if let session = Twitter.sharedInstance().sessionStore.session() {
+        //
+        //            // User generated image
+        //            let image = UIImage()
+        //
+        //            // Create the card and composer
+        //            let card = TWTRCardConfiguration.appCardConfigurationWithPromoImage(image, iPhoneAppID: "12345", iPadAppID: nil, googlePlayAppID: nil)
+        //            let composer = TWTRComposerViewController(userID: session.userID, cardConfiguration: card)
+        //
+        //            // Optionally set yourself as the delegate
+        ////            composer.delegate = self
+        //
+        //            // Show the view controller
+        //            presentViewController(composer, animated: true, completion: nil)
+        //        }
         // Swift
         let composer = TWTRComposer()
         
@@ -203,23 +210,23 @@ class TableViewPageController: UIViewController{
             }
         }
     }
-   
     
     
-//    @IBAction func signOutButtonTapped(sender: AnyObject) {
-//        copper?.closeSession()
-//         self.performSegueWithIdentifier("signOut", sender: self)
-////        resetView()
-//    }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "signOut" {
-//            let destinationVC = segue.destinationViewController as! SignInViewController
-//            
-//        }
-//        //
-//        
-//    }
+    //    @IBAction func signOutButtonTapped(sender: AnyObject) {
+    //        copper?.closeSession()
+    //         self.performSegueWithIdentifier("signOut", sender: self)
+    ////        resetView()
+    //    }
+    
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //        if segue.identifier == "signOut" {
+    //            let destinationVC = segue.destinationViewController as! SignInViewController
+    //            
+    //        }
+    //        //
+    //        
+    //    }
     
     
 }
