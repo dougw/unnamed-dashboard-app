@@ -153,6 +153,7 @@
                         <outlet property="dayLabel" destination="nis-cH-AuP" id="JCD-OQ-b9Q"/>
                         <outlet property="myCoolLabel" destination="r3G-FT-Qwd" id="PQN-Og-rlN"/>
                         <outlet property="myNameLabel" destination="Lyw-bm-Rai" id="x9P-4Y-YLJ"/>
+                        <outlet property="newsImageView" destination="ZHs-7R-rc3" id="H2H-6y-7Tc"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
                         <outlet property="twitterButton" destination="bV7-4k-aks" id="Qyv-UN-OkS"/>
                     </connections>
