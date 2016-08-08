@@ -160,8 +160,8 @@ class TableViewPageController: UIViewController{
     override func viewDidAppear(animated: Bool) {
         
         let url = "https://newsapi.org/v1/articles"
-        let params = [ "source" : "thenewyorktimes" ,
-                       "sortBy" : "popular" ,
+        let params = [ "source" : "techcrunch" ,
+                       "sortBy" : "latest" ,
                        "apiKey" : "76bf0e6c09c846fcae1484659167aa91"]
         myArticles = [JSON]()
         Alamofire.request(.GET, url, parameters: params).responseJSON { response in

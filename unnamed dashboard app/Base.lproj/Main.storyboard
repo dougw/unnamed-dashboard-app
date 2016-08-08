@@ -34,9 +34,9 @@
                                                 <rect key="frame" x="8" y="140" width="584" height="168"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-FT-Qwd">
-                                                        <rect key="frame" x="88" y="34" width="332" height="119"/>
+                                                        <rect key="frame" x="-6" y="0.0" width="599" height="168"/>
                                                         <color key="textColor" red="1" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Upcoming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-xq-ty0">
@@ -64,9 +64,6 @@
                                                 </constraints>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
-                                                <rect key="frame" x="25" y="288" width="75" height="75"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Missed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8M-g3-3Nm">
                                                 <rect key="frame" x="237" y="336" width="55" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,21 +89,23 @@
                                                     </button>
                                                 </subviews>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzD-eQ-TO4">
-                                                <rect key="frame" x="77" y="532" width="447" height="216"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzD-eQ-TO4">
+                                                <rect key="frame" x="52" y="530" width="482" height="216"/>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                <rect key="frame" x="88" y="662" width="425" height="80"/>
+                                                <rect key="frame" x="52" y="660" width="475" height="80"/>
                                                 <color key="textColor" red="1" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
+                                                <rect key="frame" x="67" y="541" width="75" height="75"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="6H6-06-XSC"/>
                                             <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="8Cp-qx-qT9"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
-                                            <constraint firstAttribute="bottom" secondItem="WzD-eQ-TO4" secondAttribute="bottom" constant="252" id="NW8-rZ-n6e"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="90" id="SDK-Pb-AaD"/>
                                             <constraint firstItem="u8M-g3-3Nm" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="avQ-5m-75q"/>
                                             <constraint firstItem="JZB-lb-ksx" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="c8S-EF-t7P"/>
@@ -126,7 +125,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WzD-eQ-TO4" firstAttribute="width" secondItem="pYE-JN-0QZ" secondAttribute="width" id="169-Ay-F25"/>
                             <constraint firstItem="s69-su-KYa" firstAttribute="top" secondItem="GEs-nh-d1v" secondAttribute="bottom" id="C7e-4B-JCn"/>
                             <constraint firstItem="GEs-nh-d1v" firstAttribute="top" secondItem="Tbq-Nf-Xmb" secondAttribute="bottom" id="ODM-jh-OmT"/>
                             <constraint firstItem="dm0-HE-jW0" firstAttribute="width" secondItem="pYE-JN-0QZ" secondAttribute="width" id="nTD-cm-3gQ"/>
