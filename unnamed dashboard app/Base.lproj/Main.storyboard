@@ -89,26 +89,40 @@
                                                     </button>
                                                 </subviews>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzD-eQ-TO4">
-                                                <rect key="frame" x="52" y="530" width="482" height="216"/>
-                                            </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                <rect key="frame" x="52" y="660" width="475" height="80"/>
-                                                <color key="textColor" red="1" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
-                                                <rect key="frame" x="67" y="541" width="75" height="75"/>
-                                            </imageView>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-AW-g3l">
+                                                <rect key="frame" x="8" y="682" width="584" height="246"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHs-7R-rc3">
+                                                        <rect key="frame" x="18" y="8" width="542" height="230"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="230" id="IUI-qg-C3D"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
+                                                        <rect key="frame" x="25" y="13" width="75" height="75"/>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
+                                                        <rect key="frame" x="52" y="149" width="475" height="80"/>
+                                                        <color key="textColor" red="1" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="SNS-Qi-h6f" firstAttribute="width" secondItem="ZHs-7R-rc3" secondAttribute="width" id="jYL-Dd-eMO"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="6H6-06-XSC"/>
                                             <constraint firstAttribute="trailing" secondItem="rIa-48-Ota" secondAttribute="trailing" constant="8" id="8Cp-qx-qT9"/>
                                             <constraint firstAttribute="height" constant="1000" id="Crm-QV-IWs"/>
+                                            <constraint firstAttribute="trailing" secondItem="NZA-AW-g3l" secondAttribute="trailing" constant="8" id="Iqs-wW-XHA"/>
+                                            <constraint firstItem="NZA-AW-g3l" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="KsN-h5-2ct"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="90" id="SDK-Pb-AaD"/>
                                             <constraint firstItem="u8M-g3-3Nm" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="avQ-5m-75q"/>
                                             <constraint firstItem="JZB-lb-ksx" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="c8S-EF-t7P"/>
+                                            <constraint firstAttribute="bottom" secondItem="NZA-AW-g3l" secondAttribute="bottom" constant="72" id="dRe-fl-59b"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="fhB-ME-tPk"/>
                                             <constraint firstItem="Lyw-bm-Rai" firstAttribute="top" secondItem="dm0-HE-jW0" secondAttribute="top" constant="52" id="psu-vP-ZYY"/>
                                             <constraint firstItem="nis-cH-AuP" firstAttribute="centerX" secondItem="dm0-HE-jW0" secondAttribute="centerX" id="u1H-ZL-gnc"/>
@@ -139,7 +153,6 @@
                         <outlet property="dayLabel" destination="nis-cH-AuP" id="JCD-OQ-b9Q"/>
                         <outlet property="myCoolLabel" destination="r3G-FT-Qwd" id="PQN-Og-rlN"/>
                         <outlet property="myNameLabel" destination="Lyw-bm-Rai" id="x9P-4Y-YLJ"/>
-                        <outlet property="newsImageView" destination="WzD-eQ-TO4" id="wmD-TX-Z01"/>
                         <outlet property="titlesString" destination="SNS-Qi-h6f" id="a0W-Ph-NBX"/>
                         <outlet property="twitterButton" destination="bV7-4k-aks" id="Qyv-UN-OkS"/>
                     </connections>
