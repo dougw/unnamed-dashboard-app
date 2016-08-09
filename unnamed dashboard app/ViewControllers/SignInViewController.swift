@@ -54,17 +54,21 @@ class SignInViewController: UIViewController {
         //        topLogo.alpha = 0.0
         //        UIView.animateWithDuration(3.0) {
         //          self.topLogo.alpha = 1.0
-    }
-    // get a reference to our CopperKit application instance
-    // get a reference to our CopperKit application instance
-    @IBAction func signinButtonPressed(sender: AnyObject){
-        copper = C29Application.sharedInstance
+        
+                copper = C29Application.sharedInstance
         // Required: configure it with our app's token
         copper!.configureForApplication("579A489835846340FC4C4B41A8FD48B5893B470C")
         // Optionally, decide what information we want from the user, defaults to C29Scope.DefaultScopes = [C29Scope.Name, C29Scope.Picture, C29Scope.Phone]
         copper!.scopes = desiredScopes
+    }
+    // get a reference to our CopperKit application instance
+    // get a reference to our CopperKit application instance
+    @IBAction func signinButtonPressed(sender: AnyObject){
+        guard let copper = copper where !copper.authenticated else {
+            self.performSegueWithIdentifier("hello", sender: self)
+        }
         // OK, let's make our call
-        copper!.login(withViewController: self, completion: { (result: C29UserInfoResult) in
+        copper.login(withViewController: self, completion: { (result: C29UserInfoResult) in
             switch result {
             case let .Success(userInfo):
 //                let user = User()
