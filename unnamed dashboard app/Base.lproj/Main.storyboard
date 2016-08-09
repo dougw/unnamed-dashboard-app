@@ -92,25 +92,19 @@
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-AW-g3l">
                                                 <rect key="frame" x="8" y="682" width="584" height="246"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHs-7R-rc3">
-                                                        <rect key="frame" x="18" y="8" width="542" height="230"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="230" id="IUI-qg-C3D"/>
-                                                        </constraints>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHs-7R-rc3">
+                                                        <rect key="frame" x="18" y="8" width="340" height="230"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-eB-H5w">
-                                                        <rect key="frame" x="25" y="13" width="75" height="75"/>
+                                                        <rect key="frame" x="36" y="15" width="75" height="75"/>
                                                     </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
-                                                        <rect key="frame" x="52" y="149" width="475" height="80"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Qi-h6f">
+                                                        <rect key="frame" x="24" y="189" width="329" height="44"/>
                                                         <color key="textColor" red="1" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="SNS-Qi-h6f" firstAttribute="width" secondItem="ZHs-7R-rc3" secondAttribute="width" id="jYL-Dd-eMO"/>
-                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
