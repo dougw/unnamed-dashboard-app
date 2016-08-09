@@ -35,6 +35,8 @@
 		FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */; };
 		FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */; };
 		FC57AFF71D466E73002D3573 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */; };
+		FC6AD9301D5A0FE700417D09 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6AD92F1D5A0FE700417D09 /* exit.png */; };
+		FC6AD9321D5A103400417D09 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6AD9311D5A103400417D09 /* settings.png */; };
 		FC9D5E081D52AF5F00E2C140 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9D5E061D52AF5E00E2C140 /* alarm.png */; };
 		FC9D5E091D52AF5F00E2C140 /* menustatus.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9D5E071D52AF5E00E2C140 /* menustatus.png */; };
 		FCA101B51D52360E0080BFD2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA101B41D52360E0080BFD2 /* twitter.png */; };
@@ -44,7 +46,6 @@
 		FCE70DC31D54D72F0055F21D /* checked_user_male.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70DC21D54D72F0055F21D /* checked_user_male.png */; };
 		FCE70E051D5501860055F21D /* clock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E041D5501860055F21D /* clock@3x.png */; };
 		FCE70E071D5501C80055F21D /* clockcool.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E061D5501C80055F21D /* clockcool.png */; };
-		FCE70E0B1D5527D30055F21D /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE70E0A1D5527D30055F21D /* exit.png */; };
 		FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,8 @@
 		FC57AFED1D466E5F002D3573 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		FC57AFEE1D466E5F002D3573 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		FC57AFEF1D466E5F002D3573 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		FC6AD92F1D5A0FE700417D09 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = ../../../../../../var/folders/bz/t03hm6rs1zv8rsm3g7ycx2h80000gn/T/Color/SVG/User_Interface/exit.png; sourceTree = "<group>"; };
+		FC6AD9311D5A103400417D09 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../../../../var/folders/bz/t03hm6rs1zv8rsm3g7ycx2h80000gn/T/Color/SVG/Very_Basic/settings.png; sourceTree = "<group>"; };
 		FC94520345E8C5DB097D33B7 /* Pods_WebDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9D5E061D52AF5E00E2C140 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
 		FC9D5E071D52AF5E00E2C140 /* menustatus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menustatus.png; sourceTree = "<group>"; };
@@ -118,7 +121,6 @@
 		FCE70E041D5501860055F21D /* clock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@3x.png"; sourceTree = "<group>"; };
 		FCE70E061D5501C80055F21D /* clockcool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockcool.png; sourceTree = "<group>"; };
 		FCE70E081D551D470055F21D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		FCE70E0A1D5527D30055F21D /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = ../../../../../../var/folders/bz/t03hm6rs1zv8rsm3g7ycx2h80000gn/T/Color/SVG/User_Interface/exit.png; sourceTree = "<group>"; };
 		FCFA4D011D48079600703F65 /* PlayfairDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,10 +187,11 @@
 				FC9D5E061D52AF5E00E2C140 /* alarm.png */,
 				FCE70DC21D54D72F0055F21D /* checked_user_male.png */,
 				FC9D5E071D52AF5E00E2C140 /* menustatus.png */,
+				FC6AD92F1D5A0FE700417D09 /* exit.png */,
+				FC6AD9311D5A103400417D09 /* settings.png */,
 				FCE70E061D5501C80055F21D /* clockcool.png */,
 				FC1F2AF61D5138DA009FD8FA /* news.png */,
 				FCE70E041D5501860055F21D /* clock@3x.png */,
-				FCE70E0A1D5527D30055F21D /* exit.png */,
 				FCA101BC1D52643A0080BFD2 /* webdeckiphone.png */,
 				FCA101B41D52360E0080BFD2 /* twitter.png */,
 				FC1F2AF01D511001009FD8FA /* Custom@2x.png */,
@@ -436,16 +439,17 @@
 			files = (
 				FCFA4D021D4807A900703F65 /* PlayfairDisplay-Regular.otf in Resources */,
 				FC57AFF01D466E73002D3573 /* Montserrat-Black.otf in Resources */,
-				FCE70E0B1D5527D30055F21D /* exit.png in Resources */,
 				FCA101BD1D52643B0080BFD2 /* webdeckiphone.png in Resources */,
 				FC57AFF11D466E73002D3573 /* Montserrat-Bold.otf in Resources */,
 				FC1F2AF31D5116D5009FD8FA /* menu_2.png in Resources */,
+				FC6AD9301D5A0FE700417D09 /* exit.png in Resources */,
 				FCA101B71D5262BD0080BFD2 /* weather.png in Resources */,
 				FC57AFF21D466E73002D3573 /* Montserrat-ExtraBold.otf in Resources */,
 				FC57AFF31D466E73002D3573 /* Montserrat-Hairline.otf in Resources */,
 				FC1F2AF11D511001009FD8FA /* Custom@2x.png in Resources */,
 				FCE70E071D5501C80055F21D /* clockcool.png in Resources */,
 				FC1F2AF51D5129F7009FD8FA /* Calendar Icon.png in Resources */,
+				FC6AD9321D5A103400417D09 /* settings.png in Resources */,
 				FC57AFF41D466E73002D3573 /* Montserrat-Light.otf in Resources */,
 				FC57AFF51D466E73002D3573 /* Montserrat-Regular.otf in Resources */,
 				FC57AFF61D466E73002D3573 /* Montserrat-SemiBold.otf in Resources */,

@@ -106,6 +106,14 @@
                                                     </textView>
                                                 </subviews>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-1c-55V">
+                                                <rect key="frame" x="527" y="8" width="48" height="48"/>
+                                                <state key="normal" image="exit.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-z0-XUV">
+                                                <rect key="frame" x="18" y="8" width="48" height="48"/>
+                                                <state key="normal" image="settings.png"/>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="rIa-48-Ota" firstAttribute="leading" secondItem="dm0-HE-jW0" secondAttribute="leading" constant="8" id="6H6-06-XSC"/>
@@ -211,7 +219,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="exit.png" width="48" height="48"/>
         <image name="news.png" width="48" height="48"/>
+        <image name="settings.png" width="48" height="48"/>
         <image name="shadowed1.png" width="1016" height="1016"/>
         <image name="twitter.png" width="48" height="48"/>
         <image name="webdeckiphone.png" width="223" height="43"/>
